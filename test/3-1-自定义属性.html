@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自定义属性</title>
+
+    <style>
+        input[type="button"]{
+            width: 50px;
+            height: 50px;
+            color:#666666;
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var arr = ["A","B","C","D"];
+            var aBtn = document.getElementsByTagName("input");
+            var aSpan = document.getElementsByClassName("span1");
+            var len = aBtn.length;
+            for(var i = 0; i<len;i++){
+                aBtn[i].num = 0;
+                aBtn[i].index = i;
+                aBtn[i].onclick = function(){
+                    aSpan[0].innerHTML = this.index + 1;
+                    this.value = arr[this.num];
+                    this.num ++;
+                    if(this.num == arr.length){
+                        this.num = 0;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>自定义属性适用于所有html标签</p>
+    <input type="button" value="0" />
+    <input type="button" value="0" />
+    <input type="button" value="0" />
+    <p>你现在点击的是第 <span class="span1"></span> 个按钮</p>
+</body>
+</html>
