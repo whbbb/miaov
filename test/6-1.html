@@ -5,7 +5,12 @@
     <title>6-1 作用域</title>
     <script>
         window.onload = function(){
-            alert(a);
+            /**
+             *  = + - / 参数 ... 表达式
+             *  function()   函数
+             *  fn1()        函数调用
+            */
+            /*alert(a);
             var a = 1;
             alert(a);
             function a(){alert(2);}
@@ -13,11 +18,74 @@
             var a = 3;
             alert(a);
             function a(){alert(4);}
+            alert(a);*/
+
+            /*
+            var a = 1;     //表达式
+            function fn1(a){
+                alert (a);
+                a = 2;
+            }
+            fn1(a);
             alert(a);
+            */
+
+            /*
+            var num = 0;
+            function fn1(){
+                num++;
+            }
+            function fn2(){
+                num--;
+            }
+            fn2();
+            fn1();
+            fn2();
+            alert(num);
+            */
+
+            /*
+            //读取局部变量的方法一:
+            //局部函数可以改变全局函数的值
+            var str;
+            function fn1(){
+                var a = 2122121212;
+                str = a;
+            }
+            fn1();
+            alert(str);
+            */
+
+            /*
+            //方法二 局部吊局部的方法
+            function fn2(){
+                var a = "99999999999";
+                fn3(a);
+            }
+            fn2();
+            function fn3(a){
+                alert(a);
+            }
+            */
+
+
+            //for 循环的 " i "
+            var aBtn = document.getElementsByTagName("input");
+            for(var i = 0; i<aBtn.length;i++){
+                aBtn[i].onclick = function(){
+                    for(var i = 0;i<aBtn.length;i++){
+                        aBtn[i].style.backgroundColor = "green";
+                    }
+                }
+            }
+
+
         }
     </script>
 </head>
 <body>
-
+<input type="button" value="按钮1" />
+<input type="button" value="按钮2" />
+<input type="button" value="按钮3" />
 </body>
 </html>
