@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>canvas动画-1 小方块碰壁运动</title>
+    <style>
+        #cav1{
+            border:1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<canvas id="cav1" width="600" height="200"></canvas>
+<script>
+    window.onload = function(){
+        var cav = document.getElementById("cav1");
+        var cxt = cav.getContext("2d");
+
+        cxt.fillStyle = "red";
+        var y = 0;
+        var x = 0;
+        var cavHeight = cav.height-10;
+        var cavWidth = cav.width-10;
+        var onOff = true;
+        var onOff2 = true;
+        init();
+
+        setInterval(function(){
+            if(onOff){
+                y++;
+                if(y == cavHeight){
+                    onOff = false;
+                }
+            }else{
+                y--;
+                if(y == 0){
+                    onOff = true;
+                }
+            }
+
+            if(onOff2){
+                x++;
+                if(x == cavWidth){
+                    onOff2 = false;
+                }
+            }else{
+                x--;
+                if(x == 0){
+                    onOff2 = true;
+                }
+            }
+            init();
+        },10);
+
+
+        function init(){
+            cxt.clearRect(0,0,600,200);
+            cxt.fillRect(x,y,10,10);
+        }
+
+    }
+</script>
+</body>
+</html>

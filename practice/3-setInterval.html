@@ -14,23 +14,40 @@
     <script>
 
         $().ready(function(){
-
-            $("#btn1").click(function(){
-
-                doMove();
-            })
-        });
-        function doMove(){
             var num = 0;
-            num+=15;
-            $("#div1").css({"margin-top": "10"+ num +"px"});
+            var onOff = true;
 
-        }
+            setInterval(function(){
+                if(onOff){
+                    num++;
+                    if(num == 100){
+                        onOff = false;
+                    }
+                }else{
+                    num--;
+                    if(num == 0){
+                        onOff = true;
+                    }
+                }
+                init();
+            },10);
+
+            init();
+
+            function init(){
+                $("#div1").css({"margin-left": +  num +"px"}).html(num);
+            }
+
+
+
+        })
+
     </script>
 </head>
 
 <body>
 <input id="btn1" type="button" value="向前移动" />
+<input id="btn2" type="button" value="向后移动" />
 <div id="div1"></div>
 </body>
 </html>
