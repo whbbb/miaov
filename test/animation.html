@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>四块图片切换</title>
+    <style>
+        #box{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid #000000;
+            border-right: none;
+        }
+        #box div{
+            width: 249px;
+            height: 100%;
+            border-right: 1px solid #000000;
+            float: left;
+            background-position: center center;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div onclick="window.open('http://www.baidu.com','_self')"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<script>
+    window.onload = function(){
+        var divBox = document.getElementById("box");
+        var div = divBox.getElementsByTagName("div");
+        var len = div.length;
+        var arr_0 = ['../images/1.png','../images/2.png','../images/3.png','../images/4.png'];
+        var arr_1 = ['../images/2.png','../images/3.png','../images/4.png','../images/1.png'];
+        var arr_2 = ['../images/3.png','../images/4.png','../images/1.png','../images/2.png'];
+        var arr_3 = ['../images/4.png','../images/1.png','../images/2.png','../images/3.png'];
+
+        for(var i = 0;i<len;i++){
+            div[i].index = i;
+            div[0].onmouseover = function(){
+                for(var j = 0;j<len;j++) {
+                    div[j].style.backgroundImage = "url(" + arr_0[j] + ")";
+                }
+            };
+            div[1].onmouseover = function(){
+                for(var j = 0;j<len;j++){
+                    div[j].style.backgroundImage = "url("+ arr_1[j] +")";
+                }
+            };
+            div[2].onmouseover = function(){
+                for(var j = 0;j<len;j++){
+                    div[j].style.backgroundImage = "url("+ arr_2[j] +")";
+                }
+            };
+            div[3].onmouseover = function(){
+                for(var j = 0;j<len;j++){
+                    div[j].style.backgroundImage = "url("+ arr_3[j] +")";
+                }
+            }
+        }
+    };
+</script>
+</body>
+</html>

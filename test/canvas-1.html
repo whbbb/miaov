@@ -6,17 +6,18 @@
     <style>
         #cav1{
             border:1px solid #000000;
+            width: 600px;
+            height: 300px;
         }
     </style>
 </head>
 <body>
-<canvas id="cav1" width="600" height="200"></canvas>
+<canvas id="cav1"></canvas>
 <script>
     window.onload = function(){
         var cav = document.getElementById("cav1");
         var cxt = cav.getContext("2d");
 
-        cxt.fillStyle = "red";
         var y = 0;
         var x = 0;
         var cavHeight = cav.height-10;
@@ -28,11 +29,13 @@
         setInterval(function(){
             if(onOff){
                 y++;
+                cxt.fillStyle = "red";
                 if(y == cavHeight){
                     onOff = false;
                 }
             }else{
                 y--;
+                cxt.fillStyle = "green";
                 if(y == 0){
                     onOff = true;
                 }
