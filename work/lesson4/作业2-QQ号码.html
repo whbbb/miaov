@@ -7,7 +7,8 @@
 
 <body>
 
-请输入QQ号码：<input type="text" id="qq" />
+请输入QQ号码：<input type="text" id="qq" autofocus />
+<input type="text" id="username"  />
 <input id="btn1" type="button" value="判断" />
 
 
@@ -19,7 +20,14 @@
 5、输入的数字必须在5位以上、10位以内<br />
 
 <script>
-
+    window.onload = function(){
+        var btn1 = document.getElementById("btn1");
+        var qq = document.getElementById("qq").value;
+        var v = Number(qq);
+        btn1.onclick = function(){
+            alert(typeof (v));
+        }
+    }
 </script>
 
 </body>
