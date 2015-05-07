@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    window.onload = function(){
+
+        /*
+        var a = "Hello";    //声明全局变量
+
+        text_1();
+        a = "新开始";
+        console.log(a);     // 新开始   全局变量被改变
+        text_2();
+        console.log(a);     //world  全局变量被text_2()函数改变
+
+        function text_1(){
+            var a;             //声明新的局部变量
+            console.log(a);    // undefined
+            a = "world";       //局部变量赋值
+            console.log(a);     // world
+        }                       //{} 局部变量的作用域
+
+        function text_2(){
+            console.log(a);     //新开始  由上而下 依次执行
+            a = "world";        //改变全局变量的值
+            console.log(a);     //world
+        }
+
+        var b = "你好!";
+        function text_3(){
+            console.log(b);
+            var b = 22222;
+            console.log(b);
+        }
+        //text_3();
+        //console.log(b);
+
+        var oMyObject = {
+            name : "wang",
+            id   : 123456,
+            age  : 28
+        };
+
+        console.log(oMyObject.name);
+
+        var oMyArr = new Array("1","2","3");
+        console.log(oMyArr[0]);*/
+
+        /*
+        var c = "22323233";
+        console.log(c);
+        console.log(Number(c));
+        console.log(typeof (c));
+        console.log(typeof (Number(c)));
+        */
+
+        function sString(){
+            var ss;
+            var s = "hello world";
+            ss = s.substring(3,8);
+            return ss;
+        }
+
+        console.log(sString());   //"lo wo"
+    }
+</script>
+</body>
+</html>

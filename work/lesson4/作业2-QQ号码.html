@@ -7,8 +7,7 @@
 
 <body>
 
-请输入QQ号码：<input type="text" id="qq" autofocus />
-<input type="text" id="username"  />
+请输入QQ号码：<input type="text" id="qq"  />
 <input id="btn1" type="button" value="判断" />
 
 
@@ -22,11 +21,37 @@
 <script>
     window.onload = function(){
         var btn1 = document.getElementById("btn1");
-        var qq = document.getElementById("qq").value;
-        var v = Number(qq);
+        var a = [1,2];
+        alert(typeof (a));
+
         btn1.onclick = function(){
-            alert(typeof (v));
-        }
+            var qq = document.getElementById("qq").value;
+            var qqlen = qq.length;
+            var typeqq = parseInt(qq);
+            var tylen = typeqq.toString().length;
+
+            two();
+
+            function one(){
+                alert("请输入您的QQ号");
+            }
+
+            function two(){
+                if(!isNaN(typeqq)){
+                    if(tylen<qqlen){
+                        alert("您输入的不是数字")
+                    }else{
+                        alert("输入的是数字")
+                    }
+                }else{
+                    alert("请输入数字")
+                }
+            }
+
+
+        };
+
+
     }
 </script>
 
