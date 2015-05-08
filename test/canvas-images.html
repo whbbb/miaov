@@ -20,24 +20,29 @@
         var cav1 = document.getElementById("cav1");
         var img = document.getElementById("img1");
         var cxt = cav1.getContext("2d");
-        var x = 0;
+        var x = 100;
         var onOff = true;
-        
-        setInterval(function(){
+
+        _init();
+        var cavAnimation = setInterval(function(){
             if(onOff){
-                x++;
-                if(x == 100){
+                cxt.fillStyle = "#ffffff";
+                cxt.fillRect(0,0,1000,724);
+                x--;
+                if(x == 1){
                     onOff = false;
                 }
-                _init();
             }else{
-
+               x++;
+                if(x == 100){
+                    onOff = true;
+                }
             }
-
-        },10);
+            _init();
+        },100);
 
         function _init(){
-            for(var i = 0;i<=1000; i+=100){
+            for(var i = 0;i<1000; i+=100){
                 cxt.drawImage(img,i,0,x,724,i,0,x,724);
             }
         }

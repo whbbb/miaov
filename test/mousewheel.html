@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>监听鼠标滚轮上下滚动的事件</title>
     <script src="../js/jquery-1.7.2.min.js"></script>
 </head>
 <body>
@@ -27,19 +27,36 @@
         if(e.wheelDelta){//IE/Opera/Chrome
             t1.value=e.wheelDelta;
             if(e.wheelDelta>0){
-                c++;
+                if(c==4){
+                    c = 4;
+                }else{
+                    c++;
+                }
                 console.log(c);
             }else{
-                c--;
+                if(c == 0){
+                    c = 0;
+                }else{
+                    c--;
+                }
+
                 console.log(c);
             }
         }else if(e.detail){//Firefox
             t2.value=e.detail;
             if(e.detail < 0 ){
-                c++;
+                if(c==4){
+                    c = 4;
+                }else{
+                    c++;
+                }
                 console.log(c);
             }else{
-                c--;
+                if(c == 0){
+                    c = 0;
+                }else{
+                    c--;
+                }
                 console.log(c);
             }
         }
