@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #img1{
+            display: none;
+        }
+        #cav1{
+            border:1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<img id="img1" src="../images/che3.jpg"  />
+<canvas id="cav1" width="1000" height="724"></canvas>
+<script>
+    window.onload = function(){
+        var cav1 = document.getElementById("cav1");
+        var img = document.getElementById("img1");
+        var cxt = cav1.getContext("2d");
+        var x = 0;
+        var onOff = true;
+        
+        setInterval(function(){
+            if(onOff){
+                x++;
+                if(x == 100){
+                    onOff = false;
+                }
+                _init();
+            }else{
+
+            }
+
+        },10);
+
+        function _init(){
+            for(var i = 0;i<=1000; i+=100){
+                cxt.drawImage(img,i,0,x,724,i,0,x,724);
+            }
+        }
+
+
+
+
+    }
+</script>
+</body>
+</html>

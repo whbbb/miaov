@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<script>
+    window.onload = function(){
+        var a = 0;
+        var oDiv = document.getElementById("div1");
+        var onOff = true;
+        window.onmousemove = function() {
+            a++;
+            oDiv.style.marginLeft = a + "px";
+            onOff = false;
+            var mTime = setInterval(function(){
+
+                if(onOff){
+                    oDiv.style.display = "none";
+                }else{
+                    oDiv.style.display = "block";
+                }
+            },2000);
+        };
+
+
+
+
+    }
+</script>
+</body>
+</html>
