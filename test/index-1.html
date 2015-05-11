@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页全屏展示</title>
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            overflow: hidden;
+        }
+        canvas{
+            border:1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+    <canvas class="cav1"></canvas>
+    <canvas class="cav2"></canvas>
+</div>
+<script>
+    $().ready(function(){
+        function window_init(){
+            var boxWidth = window.innerWidth;
+            var boxHeight = window.innerHeight;
+            $(".box").css({"height":boxHeight,"widht":boxWidth});
+            $("canvas").attr({"width":boxWidth,"height":boxHeight});
+        }
+        window_init();
+        $(window).resize(function(){
+            window_init();
+        });
+
+    })
+</script>
+</body>
+</html>
