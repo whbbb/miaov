@@ -4,14 +4,50 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>首页全屏展示</title>
-    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
     <style>
-        body{
+        body,li,ul{
             margin: 0;
             padding: 0;
         }
+        li{
+            list-style: none;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color:red;
+            opacity: 0.5;
+            filter:opacity(50%);
+            position: fixed;
+            top:0;
+            left: 0;
+        }
         .box{
             overflow: hidden;
+            position: relative;
+        }
+        .box img{
+            display: none;
+        }
+        .ul{
+            position: absolute;
+            top:50%;
+            left:20px;
+        }
+        .ul li {
+            width: 8px;
+            height: 8px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+        .ul li.action{
+            background: red;
+            width: 12px;
+            height: 12px;
+            border-radius: 12px;
         }
         canvas{
             border:1px solid #000000;
@@ -20,26 +56,111 @@
 </head>
 <body>
 <div class="box">
-    <ul>
-        <li></li>
-        <li></li>
-    </ul>
-    <canvas class="cav1"></canvas>
-    <canvas class="cav2"></canvas>
+    <div class="header"></div>
+    <ul class="ul"></ul>
+    <img class="img_0" src="../images/star.jpg">
+    <canvas class="cav0">1111111111111</canvas>
+    <canvas class="cav1">11111111</canvas>
+    <canvas class="cav2">11111111</canvas>
+    <canvas class="cav3"></canvas>
+    <canvas class="cav4"></canvas>
+    <canvas class="cav5"></canvas>
 </div>
 <script>
     $().ready(function(){
-        function window_init(){
-            var boxWidth = window.innerWidth;
-            var boxHeight = window.innerHeight;
-            $(".box").css({"height":boxHeight,"widht":boxWidth});
-            $("canvas").attr({"width":boxWidth,"height":boxHeight});
-        }
+
+        var par = {
+            box : $(".box"),
+            ul  : $(".ul")
+        };
+        var boxWidth;
+        var boxHeight;
+        var i = 0;
+        var c = 0;
+        var len = $(".box canvas").length;
+
+        append_li();
         window_init();
+        ul_init();
+
+
+
         $(window).resize(function(){
             window_init();
         });
 
+        function window_init(){
+            boxWidth = window.innerWidth;
+            boxHeight = window.innerHeight;
+
+            par.box.css({"height":boxHeight,"widht":boxWidth});
+            par.ul.css({"top":(boxHeight-100)*0.5});
+            $("canvas").attr({"width":boxWidth,"height":boxHeight});
+
+        }
+        function append_li(){
+            for(var i = 0; i<len;i++){
+                par.ul.append("<li></li>");
+            }
+        }
+        function ul_init(){
+            $(".ul li").removeClass("action");
+            $(".ul li:eq("+i+")").addClass("action");
+        }
+        $(".ul li").each(function(){
+           $(this).click(function(){
+               $(".ul li").removeClass("action");
+               $(this).addClass("action");
+           })
+        });
+
+        var scrollFunc=function(e){
+
+                e = e || window.event;
+                if(e.wheelDelta){//IE/Opera/Chrome
+                    if(e.wheelDelta<0){    //滚轮下滚
+                        if(c>=len-1){
+                            c = len - 1;
+                        }else{
+                            c+=0.2;
+                        }
+                    }else{                 //滚轮上滚
+                        if(c < 1){
+                            c = 0;
+                        }else{
+                            c -= 0.2 ;
+                        }
+                    }
+                    i = Math.floor(c);
+                }else if(e.detail){//Firefox
+                    if(e.detail > 0 ){
+                        if(c>= len - 1){
+                            c = len -1;
+                        }else{
+                            c+=0.2;
+                        }
+                    }else{
+                        if(c < 1){
+                            c = 0;
+                        }else{
+                            c-=0.2;
+                        }
+                    }
+                    i = Math.floor(c);
+                }
+                console.log(c);
+                ul_init();
+
+        };
+        /*注册事件*/
+        if(document.addEventListener){
+            document.addEventListener('DOMMouseScroll',scrollFunc,false);
+        }// Firefox
+        window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome/Safari
+
+        var img = $(".img_0");
+        var cxt_0 = $(".cav0").getContext("2d");
+        cxt_0.drawImage(img,0,0,boxWidth,boxHeight,0,0,boxWidth,boxHeight);
     })
 </script>
 </body>
