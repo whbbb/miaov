@@ -10,7 +10,7 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3','page4'],
-        sectionsColor: ['#ffffff', '#cccccc', '#2C3E50', '#51bec4'],
+        //sectionsColor: ['#ffffff', '#cccccc', '#2C3E50', '#51bec4'],
         onLeave: function(index, nextIndex, direction){
             if(deleteLog){
                 $('#callbacksDiv').html('');

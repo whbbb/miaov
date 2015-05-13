@@ -17,30 +17,33 @@ $().ready(function(){
     $(window).resize(function(){
         pageHeight = $(window).height();
         pageWidth = $(window).width();
-        animateFirst();
     });
-    function animateFirst(){
+    function animateBg(){
         cav1.width = pageWidth;
         cav1.height = pageHeight;
-        setInterval(function(){
+        var animateTime = setInterval(function(){
             if(onOff) {
                 i += 0.1;
                 if (i > 100) {
                     onOff = false;
                 }
+            }else{
+                i-=0.1;
+                if(i < 1){
+                    onOff = true;
+                }
             }
             _init();
-            console.log(i);
-        },50);
+        },60);
     }
 
 
     _init();
-    animateFirst();
+    animateBg();
 
 
     function _init(){
-        cxt1.drawImage(img1,i,i,1000,700,0,0,pageWidth,pageHeight);
+        cxt1.drawImage(img1,i,i,1820,1100,0,0,pageWidth,pageHeight);
     }
 
 });

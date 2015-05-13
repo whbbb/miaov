@@ -33,8 +33,8 @@
             css3: true,
             navigation: {
                 'textColor': '#000',
-                'bulletsColor': '#000',
-                'position': 'right',
+                'bulletsColor': '#fff',
+                'position': 'left',
                 'tooltips': ['section1', 'section2', 'section3', 'section4']
             },
             normalScrollElementTouchThreshold: 5,

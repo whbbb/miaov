@@ -1,6 +1,14 @@
-#section1{
-    background:url(../../project/miaov/images/star.jpg) center center no-repeat;
+#pagepiling img{
+    display: none;
 }
+#pagepiling canvas{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+
 #section2 .intro{
     left: -150%;
     position: relative;
@@ -12,6 +20,15 @@
     left: 140%;
     position: relative;
 }
-.section img{
-    display: none;
+
+.section{
+    text-align: center;
+}
+
+.section .center{
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
 }
