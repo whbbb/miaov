@@ -13,13 +13,13 @@
     </style>
 </head>
 <body>
-<img id="img1" src="../images/che3.jpg"  />
 <canvas id="cav1" width="1000" height="724"></canvas>
 <script>
     window.onload = function(){
         var cav1 = document.getElementById("cav1");
-        var img = document.getElementById("img1");
         var cxt = cav1.getContext("2d");
+        var img = new Image();
+        img.src = "../images/che3.jpg";
         var x = 100;
         var onOff = true;
 

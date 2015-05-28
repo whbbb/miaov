@@ -5,37 +5,52 @@
     <title></title>
     <style>
         #demoCanvas{
-            background-color: #000000;
-            position: absolute;
-            left:50%;
-            top:50%;
-            margin-top: -100px;
-            margin-left:-100px;
+            border:1px solid #000000;
         }
     </style>
 </head>
 <body>
-<div id="demoCanvasBox">
-    <canvas id="demoCanvas" width="200" height="200"></canvas>
-</div>
+    <canvas id="demoCanvas" width="500" height="500"></canvas>
 
 <script type="text/javascript">
     //通过id获得当前的Canvas对象
     var canvasDom = document.getElementById("demoCanvas");
     //通过Canvas Dom对象获取Context的对象
-    var context = canvasDom.getContext("2d");
-    context.moveTo(200,200);
+    var cxt = canvasDom.getContext("2d");
 
-    // 设置字体
-    context.font = "Bold 50px Arial";
-    // 设置对齐方式
-    context.textAlign = "left";
-    // 设置填充颜色
-    context.fillStyle = "#005600";
-    // 设置字体内容，以及在画布上的位置
-    context.fillText("老马!", 10, 50);
-    // 绘制空心字
-    context.strokeText("blog.itjeek.com!", 10, 100);
+    /*
+    cxt.fillStyle = "#cccccc";
+    cxt.fillRect(0,0,500,500);
+
+    cxt.fillStyle = "#fff";
+    cxt.globalAlpha = 0.2;
+    for(var i=0;i<20;i++){
+        cxt.beginPath();
+        cxt.arc(250,250,10+10*i,0,2*Math.PI,true);
+        cxt.fill();
+    }
+    */
+
+    cxt.moveTo(90,150);
+    cxt.lineTo(60,10);
+    cxt.lineTo(30,150);
+    cxt.lineTo(90,150);
+    cxt.stroke();
+
+
+    cxt.moveTo(300,150);
+    cxt.lineTo(60,10);
+    cxt.lineTo(90,150);
+    cxt.lineTo(300,150);
+    cxt.stroke();
+
+    cxt.moveTo(500,300);
+    cxt.lineTo(300,150);
+    cxt.lineTo(400,300);
+    cxt.stroke();
+
+   // cxt.clearRect(0,0,500,100);  //清除指定的像素
+
 </script>
 </body>
 </html>

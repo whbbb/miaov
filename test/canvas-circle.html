@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>canvas内容旋转</title>
+    <style>
+        #cav1{
+            border:1px solid #000000;
+        }
+    </style>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            this._init = {
+                p : {
+                    cav1 : document.getElementById("cav1"),
+                    cxt : cav1.getContext("2d")
+                },
+                init : function(){
+                    var that = this;
+                    that.drawRect();
+                },
+                drawRect : function(){
+                    var that = this;
+
+                    that.p.cxt.clearRect(0,0,1000,500);
+
+                    that.p.cxt.strokeRect(10,10,50,20);
+
+                    that.p.cxt.strokeRect(30,30,50,20);
+                }
+            };
+            this._init.init();
+        })
+    </script>
+</head>
+<body>
+<canvas id="cav1" width="1000" height="500"></canvas>
+</body>
+</html>
