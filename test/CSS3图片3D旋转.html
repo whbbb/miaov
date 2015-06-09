@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <style>
+        .photo-container {
+            perspective: 1200px; /* 透视视图 */
+            -webkit-perspective: 1800px;
+            width:30%;
+            float: left;
+            margin-top:100px;
+        }
+        .rotate-box {
+            position:relative;
+            transform-style: preserve-3d; /* 3D 转换 */
+            -webkit-transform-style:preserve-3d ;
+            transition:1s ease; /* 转换效果持续 1秒 */
+            -webkit-transition:1s ease;
+        }
+        .box-1{
+            transform: rotateY(-45deg);
+            -webkit-transform: rotateY(-45deg);
+            position: relative;
+            z-index: 1;
+        }
+        .box-2{
+            transform: rotateY(360deg);
+            -webkit-transform: rotateY(360deg);
+            position: relative;
+            z-index: 2;
+        }
+        .box-3{
+            transform: rotateY(45deg);
+            -webkit-transform: rotateY(45deg);
+            position: relative;
+            z-index: 1;
+        }
+        .rotate-box img {width:100%;height:auto;}
+        .box-2 img{
+            width: 120%;
+            margin-left:-10%;
+            margin-top:-10%;
+        }
+    </style>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+
+</head>
+<body>
+<div class="photo-container">
+    <div class="rotate-box box-1">
+        <img src="../images/che1.jpg"/>
+    </div>
+</div>
+<div class="photo-container">
+    <div class="rotate-box box-2">
+        <img src="../images/che2.jpg"/>
+    </div>
+</div>
+<div class="photo-container">
+    <div class="rotate-box box-3">
+        <img src="../images/che3.jpg"/>
+    </div>
+</div>
+</body>
+</html>  

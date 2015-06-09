@@ -1,0 +1,10 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+.carousel-container{position:relative;width:960px;margin:0 auto;}
+#carousel{height:449px;width:960px;position:relative;}
+.carousel-image{border:0;display:block; width:411px;}
+.carousel-feature{position:absolute;top:-1000px;left:-1000px;cursor:pointer; perspective:1200px;}
+.box{transform-style:preserva-3d;transform:rotateY(45deg);transition:1s ease; /* 转换效果持续 1秒 */}

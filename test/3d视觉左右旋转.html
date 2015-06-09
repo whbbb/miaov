@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>A Standard Roundabout</title>
+
+    <style type="text/css">
+        *{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;}
+        body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+        /* demo */
+        .demo{margin:0 auto;height:320px;width:720px;perspective: 1200px /* 透视视图 */;margin-top: 200px;}
+        .demo li{height:320px;width:480px;background-color:#ccc;text-align:center;cursor:pointer;transform-style:preserve-3d;transform: 1s ease;}
+        .demo li img{width: 100%;}
+        .demo li.roundabout-in-focus{cursor:default;}
+    </style>
+
+</head>
+<body>
+<ul class="demo">
+    <li><img src="../images/che1.jpg"/></li>
+    <li><img src="../images/che2.jpg"/></li>
+    <li><img src="../images/che3.jpg"/></li>
+</ul>
+
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/jquery.roundabout2.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.demo').roundabout();
+    });
+</script>
+
+</body>
+</html>
