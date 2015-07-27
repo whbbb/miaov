@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>显示动态时间</p>
+
+</body>
+
+<script>
+    window.onload = function(){
+        function showTime(){
+            var time = new Date();
+            var hours = time.getHours();
+            alert(hours);
+        }
+        showTime();
+    }
+</script>
+</html>
