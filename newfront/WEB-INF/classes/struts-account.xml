@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="accountPackage" namespace="/account" extends="common-config">
+		<!-- 充值 -->
+		<action name="recharge" class="com.cn.pxzd.account.action.RechargeAction">
+			<result name="success">/WEB-INF/view/recharge/recharge.jsp</result>
+			<result name="escrow-account" type="redirect">escrow-account.do</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 提现 -->
+		<action name="withdraw_cash" class="com.cn.pxzd.account.action.WithdrawCashAction">
+			<result name="success">/WEB-INF/view/withdraw_cash/withdraw_cash.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+			<result name="escrow-account" type="redirect">escrow-account.do</result>
+		</action>
+		<!-- 网银限制表 -->
+		<action name="limit">
+			<result name="success">/WEB-INF/view/limit/limit.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 开通资金托管账户 -->
+		<action name="escrow-account" class ="com.cn.pxzd.account.action.EscrowAccountAction">
+			<result name="success">/WEB-INF/view/f-account/f-account.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 开通托管账户中转页 -->
+		<action name="escrow_accountNext" class="com.cn.pxzd.account.action.EscrowAccountNextAction">
+			<result name="success">/WEB-INF/view/f-account/escrow_accountNext/escrow_accountNext.jsp</result>
+			<result name="error">/WEB-INF/view/error.jsp</result>
+ 			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 丰付用户管理 -->
+		<action name="escrow_manage" class="com.cn.pxzd.account.action.EscrowManageAction">
+			<result name="success">/WEB-INF/view/account/escrow_manage.jsp</result>
+ 			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		
+		<!-- 注册 -->
+		<action name="regist" class="com.cn.pxzd.account.action.RegistAction">
+			<result name="success">/WEB-INF/view/register/register.jsp</result>
+		</action>
+		<!-- 注册成功 -->
+		<action name="regist_success">
+			<result name="success">/WEB-INF/view/enroll-success/enroll-success.jsp</result>
+			<result name="input">/WEB-INF/view/register/register.jsp</result>
+		</action>
+		
+		<!-- 我的账户 -->
+		<action name="my_account" class="com.cn.pxzd.account.action.MyAccountAction">
+			<result name="success">/WEB-INF/view/account/account.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 我的借款 -->
+		<action name="account-loan" class="com.cn.pxzd.account.action.AccountLoanAction">
+			<result name="success">/WEB-INF/view/account-loan/account-loan.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 我的借款统计列表 -->
+		<action name="accountLoanTable" class="com.cn.pxzd.account.action.AccountLoanTableAction">
+			<result name="success">/WEB-INF/view/account-loan/my_loan_right/my_loan/my_loan_footlist/my_loan_footlist.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 我的借款还款基本信息 -->
+		<action name="accountLoanDetail" class="com.cn.pxzd.account.action.AccountLoanDetailAction">
+			<result name="success">/WEB-INF/view/account-loan/my_loan_right/my_loan/account_loan_Detail/account-loan-Detail.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		
+		<!-- 账户管理 -->
+		<action name="acccount-manage" class="com.cn.pxzd.account.action.AccountManageAction">
+			<result name="success">/WEB-INF/view/account-manage/acccount-manage.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 用户管理跳转到第三方 -->
+		<action name="escrow_manage" class="com.cn.pxzd.account.action.EscrowManageAction">
+			<result name="success">/WEB-INF/view/account/escrow_manage.jsp</result>
+ 			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 取得验证码图片 -->
+		<action name="imgCode" class="com.cn.pxzd.account.action.GetImgHashAction">
+		</action>
+		<!-- 取得验证码图片 -->
+		<action name="imgCode2" class="com.cn.pxzd.account.action.GetImgHashTwoAction">
+		</action>
+		<!-- 我的账户  我的理财 首页-->
+		<action name="account-financing" class="com.cn.pxzd.account.action.MyFinancAction">
+			<result name="success">/WEB-INF/view/account-financing/account-financing.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 我的账户  我的理财  列表+详情-->
+		<action name="account-financing-details" class="com.cn.pxzd.account.action.MyFinancDetailsAction">
+			<!--还款中-->
+			<result name="yeting">/WEB-INF/view/account-financing/my_financing_right/my_financing/my_fin_footlist/content/house/house_body/yeting/yeting.jsp</result>
+			<!--投标中-->
+			<result name="tender">/WEB-INF/view/account-financing/my_financing_right/my_financing/my_fin_footlist/content/house/house_body/tender/tender.jsp</result>
+			<!--预约中-->
+			<result name="bespoke">/WEB-INF/view/account-financing/my_financing_right/my_financing/my_fin_footlist/content/house/house_body/bespoke/bespoke.jsp</result>
+			<!--放款审核-->
+			<result name="audit">/WEB-INF/view/account-financing/my_financing_right/my_financing/my_fin_footlist/content/house/house_body/audit/audit.jsp</result>
+			<!--已还完-->
+			<result name="intact">/WEB-INF/view/account-financing/my_financing_right/my_financing/my_fin_footlist/content/house/house_body/intact/intact.jsp</result>
+			<!--流标-->
+			<result name="sichuan">/WEB-INF/view/account-financing/my_financing_right/my_financing/my_fin_footlist/content/house/house_body/sichuan/sichuan.jsp</result>
+			<!--坏账还款中-->
+			<result name="awfully">/WEB-INF/view/account-financing/my_financing_right/my_financing/my_fin_footlist/content/house/house_body/awfully/awfully.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		
+		<!-- 重置密码第一步 -->
+		<action name="resetting-p1">
+			<result name="success">/WEB-INF/view/resetting-p1/resetting-p1.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 重置密码第二步 -->
+		<action name="resetting-p2" class="com.cn.pxzd.account.action.ResetPasswordTwoAction">
+			<result name="success">/WEB-INF/view/resetting-p2/resetting-p2.jsp</result>
+			<result name="input">/WEB-INF/view/resetting-p1/resetting-p1.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 重置密码第三步 -->
+		<action name="resetting-p3" class="com.cn.pxzd.account.action.ResetPasswordThreeAction">
+			<result name="success">/WEB-INF/view/resetting-p3/resetting-p3.jsp</result>
+			<result name="input">/WEB-INF/view/resetting-p2/resetting-p2.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 重置密码成功或失败 -->
+		<action name="resetting-success" class="com.cn.pxzd.account.action.ResetPasswordResultAction">
+			<result name="success">/WEB-INF/view/resetting-success/resetting-success.jsp</result>
+<!-- 			<result name="resettingFail">/WEB-INF/view/resetting-fail/resetting-fail.jsp</result> -->
+			<result name="resetting-p1">/WEB-INF/view/resetting-p1/resetting-p1.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		
+		<!-- 还款显示 -->
+		<action name="bid_repayment" class="com.cn.pxzd.account.action.BidRepaymentAction">
+			<result name="success">/WEB-INF/view/repayment/repayment.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 账户还款中转 -->
+		<action name="repayment" class="com.cn.pxzd.account.action.RepaymentAction">
+			<result name="success" >/WEB-INF/view/repayment-next/repayment-next.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+	</package>
+</struts>

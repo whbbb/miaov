@@ -1,0 +1,14 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<script type="text/javascript" src="../../../js/salary/page5/page5.js"></script>
+
+<div class="page5">
+	<img id="J_text_5_1" src="../../../images/salary/page5/text_1.png" style="display: none;" />
+	<img id="J_text_5_2" src="../../../images/salary/page5/text_2.png" style="display: none;" />
+	<img id="J_umbrella" src="../../../images/salary/page5/umbrella.png" style="display: none;" />
+	<div id="J_lightning" style="display: none;">
+		<img id="J_lightning_img" src="../../../images/salary/page5/lightning.png" />
+		<div id="J_lightning_cover"></div>
+	</div>
+	<img id="J_rain" src="../../../images/salary/page5/rain.gif" style="display: none;" />
+</div>

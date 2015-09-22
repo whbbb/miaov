@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="loanPackage" namespace="/loan" extends="common-config">
+		<!-- 我要借款-->
+		<action name="loan" class="com.cn.pxzd.loan.action.LoanAction">
+			<result name="success">/WEB-INF/view/loan/loan.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+			<result name="escrow_account" type="redirect">../account/escrow-account.do</result>
+			<result name="repeat">/WEB-INF/view/auditing/auditing.jsp</result>
+		</action>
+		<!-- 我要借款提交 -->
+		<action name="loanSubmit" class="com.cn.pxzd.loan.action.LoanSubmitAction">
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 我要借款 消费贷详细介绍 -->
+		<action name="loan-detail">
+			<result name="success">/WEB-INF/view/loan-detial/loan-detail.jsp</result>
+		</action>
+		
+		<!-- 一次性，无担保 -->
+		<action name="lump_sum_no" class="com.cn.pxzd.loan.action.FinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/lump_sum_no.jsp</result>
+		</action>
+		<!-- 一次性，有担保 -->
+		<action name="lump_sum_has" class="com.cn.pxzd.loan.action.FinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/lump_sum_has.jsp</result>
+		</action>
+		<!-- 等额本息，无担保 -->
+		<action name="constant_no" class="com.cn.pxzd.loan.action.FinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/constant_no.jsp</result>
+		</action>
+		<!-- 等额本息，有担保 -->
+		<action name="constant_has" class="com.cn.pxzd.loan.action.FinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/constant_has.jsp</result>
+		</action>
+		<!-- 先息后本，无担保 -->
+		<action name="interest_no" class="com.cn.pxzd.loan.action.FinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/interest_no.jsp</result>
+		</action>
+		<!-- 先息后本，有担保 -->
+		<action name="interest_has" class="com.cn.pxzd.loan.action.FinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/interest_has.jsp</result>
+		</action>
+		
+		<!--精选 一次性，无担保 -->
+		<action name="selection_lump_sum_no" class="com.cn.pxzd.loan.action.SelectionFinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/selection_lump_sum_no.jsp</result>
+		</action>
+		<!--精选  一次性，有担保 -->
+		<action name="selection_lump_sum_has" class="com.cn.pxzd.loan.action.SelectionFinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/selection_lump_sum_has.jsp</result>
+		</action>
+		<!--精选  等额本息，无担保 -->
+		<action name="selection_constant_no" class="com.cn.pxzd.loan.action.SelectionFinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/selection_constant_no.jsp</result>
+		</action>
+		<!--精选  等额本息，有担保 -->
+		<action name="selection_constant_has" class="com.cn.pxzd.loan.action.SelectionFinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/selection_constant_has.jsp</result>
+		</action>
+		<!-- 精选 先息后本，无担保 -->
+		<action name="selection_interest_no" class="com.cn.pxzd.loan.action.SelectionFinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/selection_interest_no.jsp</result>
+		</action>
+		<!--精选  先息后本，有担保 -->
+		<action name="selection_interest_has" class="com.cn.pxzd.loan.action.SelectionFinancingAction">
+			<result name="success">/WEB-INF/view/other/protocol/selection_interest_has.jsp</result>
+		</action>
+	</package>
+</struts>

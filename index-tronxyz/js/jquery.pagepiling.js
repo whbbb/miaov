@@ -121,7 +121,7 @@
         };
 
         /**
-         * Moves the site to the given anchor or index
+         * Moves the site to the given anchor or product
          */
         $.fn.pagepiling.moveTo = function (section){
             var destiny = '';
@@ -165,8 +165,8 @@
         var zIndex = $('.pp-section').length;
 
         $('.pp-section').each(function (index) {
-            $(this).data('data-index', index);
-            $(this).css('z-index', zIndex);
+            $(this).data('data-product', index);
+            $(this).css('z-product', zIndex);
 
             //if no active section is defined, the 1st one will be the default one
             if (!index && $('.pp-section.active').length === 0) {
@@ -475,7 +475,7 @@
         /**
          * Detecting mousewheel scrolling
          *
-         * http://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
+         * http://blogs.sitepointstatic.com/examples/tech/mouse-wheel/product.html
          * http://www.sitepoint.com/html5-javascript-mouse-wheel/
          */
         function MouseWheelHandler(e) {
@@ -667,7 +667,7 @@
                     touchEndY = touchEvents['y'];
                     touchEndX = touchEvents['x'];
 
-                    //$('body').append('<span style="position:fixed; top: 250px; left: 20px; z-index:88; font-size: 25px; color: #000;">touchEndY: ' + touchEndY  + '</div>');
+                    //$('body').append('<span style="position:fixed; top: 250px; left: 20px; z-product:88; font-size: 25px; color: #000;">touchEndY: ' + touchEndY  + '</div>');
 
 
                     //is the movement greater than the minimum resistance to scroll?

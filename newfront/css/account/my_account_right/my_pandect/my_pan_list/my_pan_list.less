@@ -1,0 +1,229 @@
+.my_pan_list(){
+  .floatleft{
+    float:left;
+  }
+  .greenfont{
+    color:#33CC99;
+  }
+  .orangefont{
+    color:#ff9900;
+  }
+  .pan-list{
+    width:739px;
+    height:500px;
+    padding:33px 34px 30px 37px;
+    background:#FFF;
+    margin-bottom:30px;
+    text-align:left;
+    .pan-list-tit{
+      width:739px;
+      height:40px;
+      clear:both;
+      line-height:40px;
+      position: relative;
+      z-index: 99;
+
+      .fltit{
+        width:400px;
+        li{
+          width:100px;
+          height:40px;
+          cursor:pointer;
+        }
+      }
+
+      .firsttit{
+        width:95px;
+        height:40px;
+        margin-right:43px;
+        cursor:default;
+        background:url( "../../images/account/my_account_right/my_pandect/my_pan_list-minline.png") right 12px no-repeat;
+      }
+      .menu{
+        width:200px;
+        position:relative;
+        font-size:14px;
+        color:#CCC;
+        line-height:25px;
+        .fl-select{
+          width:195px;
+          height:33px;
+          padding:0 10px;
+        }
+        .fl-hidebut{
+          width:193px;
+          position:absolute;
+          right:5px;
+          top:33px;
+          background:#FFF;
+          border-left:1px solid #ccc;
+          border-bottom:1px solid #ccc;
+          border-right:1px solid #ccc;
+          height:120px;
+          overflow-y:auto;
+          z-index:9;
+          li{
+            height:30px;
+            color:#333;
+            padding:0 10px;
+            &:hover{
+              background:#33CC99;
+            }
+          }
+        }
+        .next-triangle{
+          width:20px;
+          height:31px;
+          position:absolute;
+          top:1px;
+          right:6px;
+          background:url("../../images/account/my_account_right/my_pandect/next-triangle.png") 3px  13px  no-repeat #FFF;
+          &:hover{
+            cursor:pointer;
+            background:url("../../images/account/my_account_right/my_pandect/next-triangle.png") -14px 13px  no-repeat #FFF;
+          }
+        }
+      }
+    }
+  }
+  .recordtit{
+    width:740px;
+    height:40px;
+    background:#d9f5ec;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    margin-bottom:1px;
+    .fldate{
+      width:190px;
+    }
+    .flmold{
+      width:90px;
+    }
+    .flmoney{
+      width:155px;
+    }
+    .flremarks{
+      width:290px;
+    }
+  }
+  .recordlist{
+    display:none;
+  }
+  .record{
+    width:740px;
+   /* height:385px;*/
+    font-size:12px;
+    text-align:center;
+    cursor:pointer;
+    .table-adjust();
+    position:relative;
+    tr{
+      position:relative;
+      left:0;
+      top:0;
+      height:35px;
+      line-height:35px;
+      &:hover{
+        background:#fafafa;
+      }
+    }
+    .first{
+      width:190px;
+    }
+    .second{
+      width:115px
+    }
+    .third{
+      width:155px;
+    }
+    .fourth{
+      text-align:left;
+      width:290px;
+      padding-left:30px;
+    }
+  }
+  .record-detail{
+    width:740px;
+    position: relative;
+    top:0px;
+    display: none;
+    .takeoff{
+      padding-bottom:15px;
+      text-align:center;
+      position:relative;
+      background:#fafafa;
+      padding-right:40px;
+      .re-detail-tit{
+        font-size:12px;
+        background:#fafafa;
+        height:25px;
+        width:100%;
+        cursor:default;
+        li{
+          line-height:24px;
+          padding:0 20px;
+          width:90px;
+          float:left;
+        }
+      }
+      .detailed-contents{
+        color:#999;
+        padding:15px 0;
+      }
+      .recordoff{
+        width:20px;
+        height:20px;
+        position:absolute;
+        right:10px;
+        top:20px;
+        cursor:pointer;
+        background:url("../../images/account/my_account_right/my_pandect/my_pan_list.recordoff.png") no-repeat;
+      }
+    }
+
+  }
+  .rednone{
+    display:none;
+  }
+  .pagination{
+    float:right;
+    display:none;
+    margin-top:10px;
+    span{
+      display:inline-block;
+      margin:0 5px;
+    }
+    ul{
+      float:left;
+
+      li{
+        float:left;
+        margin:0 5px;
+        cursor:pointer;
+      }
+      .current-page{
+        color:#33cc99;
+      }
+    }
+  }
+  .list-banner{
+    width:810px;
+    height:115px;
+    background:url("../../images/account/my_account_right/my_pandect/my_pan_list_footbanner.png") no-repeat;
+  }
+
+
+  .no-record{
+    display:none;
+    width:290px;
+    height:80px;
+    line-height:65px;
+    text-indent:90px;
+    background:url("../../images/account-loan/no-record.png") no-repeat;
+    margin:230px 0 0 220px;
+  }
+  .thisShow{
+    display:block;
+  }
+}

@@ -1,0 +1,187 @@
+
+  //引入公共样式方法
+  @import url( "./commonFun" );
+
+  .footer(){
+    #J_footer{
+      cursor: default;
+
+      .maxCenter();
+      letter-spacing: 1px;
+      font-size: 13px;
+      border-top: 1px solid #E5E5E5;
+
+      .friend-link{
+        .outer-size();
+        height: 50px;
+        line-height: 50px;
+        *line-height: normal;
+        background-color: #666666;
+        text-align: center;
+
+        p{
+          .center();
+          .inner-size();
+          color: #FFFFFF;
+          cursor: default;
+          text-align: left;
+
+          a{
+            color: #FFFFFF;
+            margin-left: 10px;
+            *margin-left: 14px;
+            margin-left: 14px\9;
+            margin-right: 18px;
+
+            &:hover{
+              color: #DDDDDD;
+            }
+          }
+        }
+      }
+
+      .footer-other{
+        width: 100%;
+        min-width: @container-width;
+        height: 280px;
+        background-color: #333333;
+
+        div.footer-container{
+          .center();
+          width: @container-width - @container-padding * 2;
+          color: #FFFFFF;
+          padding: 0 @container-padding;
+          padding-top: 24px;
+
+          .footer-link{
+            width: 100%;
+            text-align: left;
+
+            span.last{
+              width: 174px;
+
+              span{
+                width: 174px;
+              }
+            }
+
+            span{
+              display: inline-block;
+              color: #FFFFFF;
+              width: 260px;
+
+              span{
+                a{
+                  color: #FFFFFF;
+                  font-weight: bold;
+
+                  &:hover{
+                    color: #DDDDDD;
+                  }
+                }
+              }
+
+              p{
+                a{
+                  color: #999999;
+                  margin-right: 10px;
+                  position: relative;
+                  &:hover .tips{
+                    display: block;
+                  }
+                  img{
+                    position: relative;
+                    top: 4px;
+                    left: 4px;
+                    &.tips{
+                      position: absolute;
+                      top:18px;
+                      left: 22px;
+                      display: none;
+                    }
+                  }
+
+                  &:hover{
+                    color: #FFFFFF;
+                  }
+                }
+
+                a.first{
+                  color: @theme-color;
+
+                  &:hover{
+                    color: lighten( @theme-color, 10% );
+                  }
+                }
+              }
+            }
+          }
+
+          .footer-service{
+            width: 100%;
+            text-align: left;
+            margin-top: 24px;
+
+            b{
+              font-size: 28px;
+              margin-right: 20px;
+            }
+
+            span{
+              margin-right: 70px;
+            }
+
+            input[ type="button" ]{
+              border: 2px solid @theme-color;
+              color: @theme-color;
+              background-color: #333333;
+              cursor: pointer;
+              width: 170px;
+              height: 40px;
+              *top: 10px;
+              *position: relative;
+
+              &:hover{
+                border-color: lighten( @theme-color, 20% );
+                color: lighten( @theme-color, 20% );
+                background-color: lighten( #333333, 20% );
+              }
+            }
+          }
+        }
+
+        div.footer-split{
+          margin-top: 24px;
+          margin-bottom: 20px;
+          width: 100%;
+          min-width: @container-width;
+          height: 1px;
+          border-bottom: 1px solid #666666;
+        }
+
+        div.footer-bottom{
+          .center();
+          width: @container-width - @container-padding * 2;
+          color: #FFFFFF;
+          padding: 0 @container-padding;
+          text-align: left;
+          color: #818181;
+          cursor: default;
+
+          div{
+            span{
+              margin-left: 3px;
+              *margin-left: 6px;
+              margin-right: 10px;
+              font-family: "微软雅黑";
+            }
+
+            img{
+              margin-top: 18px;
+              margin-right: 14px;
+            }
+          }
+        }
+      }
+    }
+  }

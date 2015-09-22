@@ -1,0 +1,178 @@
+
+  //引入公共样式方法
+  @import url( "./commonFun" );
+  //引入公共页头
+  @import url( "./header" );
+  //引入公共页脚
+  @import url( "./footer" );
+
+  //公用样式定义
+  .common(){
+    html{
+      .maxCenter();
+      min-width: @container-width;
+
+      body{
+        .maxCenter();
+        margin: 0px;
+        padding: 0px;
+        min-width: @container-width;
+        font-family: @font-family;
+        color: @font-color;
+
+        .header();
+
+        .footer();
+
+        .left{
+          float: left;
+        }
+
+        .right{
+          float: right;
+        }
+
+        .clear-both{
+          clear: both;
+        }
+
+        //回到顶部
+        .scroll_to_top{
+          .scroll-to-top();
+        }
+
+        a{
+          text-decoration: none;
+          font-size: 12px;
+          color: @theme-color;
+
+          &:hover{
+            color: @theme-dark-color;
+          }
+        }
+
+        img{
+          border: none;
+        }
+
+        dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,
+        form,input,th,td{
+          margin: 0px;
+          padding: 0px;
+        }
+
+        ol,ul{
+          list-style: none;
+        }
+
+        input{
+          font-family: @font-family;
+        }
+
+        input[ type = "button" ],
+        input[ type = "submit" ],
+        input[ type = "reset" ]{
+          cursor: pointer;
+          border: none;
+          font-size: 14px;
+          background-color: @theme-color;
+          color: #FFFFFF;
+
+          &:hover{
+          background-color: lighten( @theme-color, 10% );
+        }
+
+          &:active{
+            background-color: darken( @theme-color, 10% );
+          }
+        }
+
+        input[ type = "button" ].large,
+        input[ type = "submit" ].large,
+        input[ type = "reset" ].large{
+          height: 40px;
+          width: 250px;
+        }
+
+        input[ type = "button" ].short,
+        input[ type = "submit" ].short,
+        input[ type = "reset" ].short{
+          height: 40px;
+          width: 150px;
+        }
+
+        input[ type = "button" ].tender,
+        input[ type = "submit" ].tender,
+        input[ type = "reset" ].tender{
+          width:185px;
+          height:32px;
+          line-height:32px;
+          font-size:14px;
+          background:#33CB99;
+          color:#fff;
+          &:hover{
+            background:#2cb386;
+          }
+        }
+
+        input[ type = "button" ].inv-ten,
+        input[ type = "submit" ].inv-ten,
+        input[ type = "reset" ].inv-ten{
+          width:250px;
+          height:40px;
+          line-height:40px;
+          font-size:14px;
+          background:#33CB99;
+          color:#fff;
+          &:hover{
+            background:#2cb386;
+          }
+        }
+
+        input[ type = "text" ], input[ type = "password" ], textarea, select{
+          border: 1px solid #CCCCCC;
+          font-size: 12px;
+          letter-spacing: 1px;
+          width: 240px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0px 6px;
+
+          &:hover{
+            border-color: @theme-color;
+          }
+
+          &:focus{
+            border-color: @theme-dark-color;
+            box-shadow: 0px 0px 3px @theme-color;
+          }
+        }
+
+        input[ type = "text" ].normal, input[ type = "password" ].normal{
+          height: 40px;
+          line-height: 40px;
+          width: 196px;
+          padding-left: 6px;
+          padding-right: 46px;
+        }
+
+        select.normal{
+          height: 40px;
+          width: 250px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 6px;
+        }
+
+        textarea.normal{
+          height: 120px;
+          width: 510px;
+          padding-top: 5px;
+          padding-left: 6px;
+          padding-right: 6px;
+          line-height: 20px;
+          resize: none;
+        }
+      }
+    }
+  }

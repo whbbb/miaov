@@ -1,0 +1,251 @@
+//引入公共样式
+@import url( "../../common/commonFun" );
+
+//模块：明星标的 star
+//作者：whb
+//说明：明星标的
+
+.star(){
+  #J_star{
+    .outer-size();
+    height: 710px;
+    background-color: #fafafa;
+    cursor: default;
+    .star {
+      .inner-size();
+      text-align: center;
+      margin: 0px auto;
+      height: 100%;
+      .title, .subhead {
+        width: 100%;
+        float: left;
+        text-align: center;
+      }
+      .title {
+        font-size: 30px;
+        color: @font-color;
+        margin-top: 10px;
+      }
+      .subhead {
+        font-size: 18px;
+        color: @gray-color;
+        margin-top: 25px;
+      }
+      ul{
+        float: left;
+        text-align: center;
+        margin-top:48px;
+        width: 100%;
+        li{
+          width: 280px;
+          height: 458px;
+          border: 1px solid @gray-color;
+          text-align: left;
+          float: left;
+          position: relative;
+          .star-shadow{
+            z-index: 1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color:#e2e2e2;
+          }
+          .star-bid-box{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            z-index: 2;
+            word-spacing: 5px;
+            &:hover{
+              .bid-a{
+                color:@theme-color;
+              }
+            }
+            .star-finan-img{
+              position: absolute;
+              right: 2px;
+              top:-18px;
+            }
+            .star-type-img{
+              position: absolute;
+              right: 12px;
+              top:12px;
+            }
+          }
+
+          .star-top{
+            width: 100%;
+            border-bottom: 1px solid #CCCCCC;
+          }
+
+          .star-type{
+            background: url("../../images/index/star/star_type.png") no-repeat;
+            width: 34px;
+            height: 67px;
+            margin-top: 15px;
+          }
+          .star-type.car{
+            background-position: -34px 0px;
+          }
+          .star-type.house{
+            background-position: -68px 0px;
+          }
+          .star-type.choose{
+            background-position: 0px 0px;
+          }
+
+          .bid-title{
+            font-size:18px;
+            color:@font-color;
+            padding: 20px 50px 12px 20px;
+            overflow: hidden;
+            a{
+              color:@font-color;
+            }
+          }
+          .bid-sunhead{
+            font-size: 12px;
+            color:#CCCCCC;
+            padding:8px 10px 15px 20px;
+          }
+          .bid-message{
+            width: 180px;
+            height: 85px;
+            padding: 25px 80px 0px 10px;
+            text-align:center;
+            position: relative;
+           .bid-rate {
+             font-size: 66px;
+             color: @font-color;
+             line-height: 78px;
+             font-weight: 400;
+             display: block;
+             width: 150px;
+             text-align: right;
+             .rate-float{
+               font-size:40px;
+             }
+           }
+           .rate-box{
+             width: 80px;
+             height: 68px;
+             overflow: hidden;
+             position: absolute;
+             right: 10px;
+             top:30px;
+             .bid-rate-mark{
+               font-size: 26px;
+               color:@font-color;
+             }
+             .bid-rate-name{
+               font-size: 12px;
+               color:#aaaaaa;
+             }
+             .bid-time{
+               display: block;
+               width:75px ;
+               height: 25px;
+               line-height: 25px;
+               color:#ffffff;
+               background-color: @gray-color;
+             }
+           }
+          }
+          .bid-level,.bid-remain,.bid-raise,.bid-time-remaining{
+            font-size: 12px;
+            color:#CCCCCC;
+            padding:10px 40px;
+            span{
+              font-size: 14px;
+              color:@font-color;
+            }
+          }
+          .bid-level{
+            height: 25px;
+            line-height: 25px;
+            img{
+              vertical-align: middle;
+            }
+          }
+          .bid-time-remaining{
+            padding: 10px 40px 30px 40px;
+          }
+          .progress-box{
+            width: 243px;
+            margin:0px auto;
+            position: relative;
+            .progress-val{
+              height: 20px;
+              width: 32px;
+              text-align: center;
+              position: absolute;
+              top: -24px;
+              left:0;
+              margin-left:-16px;
+              .val {
+                width: 32px;
+                height: 16px;
+                background-color: @theme-color;
+                font-size: 10px;
+                line-height: 16px;
+                color: #ffffff;
+                text-align: center;
+              }
+              .triangle {
+                width: 7px;
+                height: 4px;
+                background-image: url("../../images/index/staff/triangle.png");
+                margin:0px auto;
+              }
+            }
+          }
+          .bid-rad-background{
+            margin: 14px auto 5px auto;
+            width: 243px;
+            height: 2px;
+            background-color: @gray-color;
+            border-radius: 3px;
+            position: relative;
+            .bid-bar{
+              position: absolute;
+              top:0px;
+              left:0px;
+              width: 0px;
+              height: 2px;
+              border-radius: 3px;
+              background-color: @theme-color;
+            }
+          }
+          .button{
+            display: block;
+            text-align: center;
+            width:100%;
+            height: 48px;
+            line-height: 48px;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            .button-hover();
+            border: none;
+            &:hover{
+              background-color: #2bbf8e;
+            }
+          }
+        }
+
+        li.right{
+          float: right;
+        }
+        li.li-middle{
+          margin-left:66px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+
+
+<script type="text/javascript" src="../../../js/financial-details/detailtop/detailtop.js"></script>
+
+<div class="datum">
+    <div class="head-portrait"></div>
+    <div class="substance">
+        <div class="sub-fin">
+            优车宝_001
+            <!-- 等级的class名以及对应显示的图片   class=sr1 图片 A  sr2  图片AA  sr3 图片AAA   sr4  图片 B     sr5   图片 C-->
+            <span class="sub-rank sr1"></span>
+        </div>
+        <ul class="sub-num">
+            <li class="sum-first">
+                <div class="numb"><span class="sun-big">13</span><span class="sub-sm">.5%</span></div>
+                <div class="annotate">年化收益率</div>
+            </li>
+            <li>
+                <div class="numb midd">1个月</div>
+                <div class="annotate">借款期限</div>
+            </li>
+            <li>
+                <div class="numb midd">100000元</div>
+                <div class="annotate">借款金额</div>
+            </li>
+            <li>
+                <div class="numb midd">50元</div>
+                <div class="annotate">起投金额</div>
+            </li>
+        </ul>
+        <ul class="sub-underscore">
+            <li class="su-left">
+                等额本息，每月还款
+            </li>
+            <li class="su-right">
+                <span class="sur-grd"></span>个人贷
+                <span class="sur-db"></span>担保
+                <span class="sur-dy"></span>抵押
+            </li>
+        </ul>
+        <ul class="sub-date">
+            <li class="sub-d2 sd">
+                起投时间：
+                <input type="hidden" value="2340000" class="ytimer">
+                <span class="ytime"></span>
+            </li>
+            <li class="sub-d3">
+                剩余时间：
+                <input type="hidden" value="2340000" class="stimer">
+                <span class="stime"></span>
+            </li>
+        </ul>
+    </div>
+    <div class="investment">
+        <ul class="inv-balance">
+            <li class="inv-bal">
+                可用余额：
+                <span style="color:#ff6600;">￥0.00</span>
+            </li>
+            <li class="inv-money">
+                可投金额：
+                <span>￥211,942.00</span>
+            </li>
+            <li class="inv-profit">
+                预计可赚：
+                <span>￥22.00</span>
+            </li>
+        </ul>
+        <form id="J_findetail_form" action="www.sohu.com" method="post" target="_blank">
+            <div  class="inv-input-box">
+                <input type="hidden" value="2" class="min_money">
+                <input type="hidden" value="20000" class="max_money">
+                <input type="hidden" value="100" class="account-balance">
+                <input type="text"  value="" placeholder="投资金额为50的整数倍" data-name="financing_money">
+                <span class="inv-yuan">元</span>
+            </div>
+            <!-- <div class="inv-button">立即投资</div>-->
+            <div class="inv-button"><input type="button" class="inv-ten" value="立即投资" id="resetp3-next"></div>
+            <!--<div class="ten"><input type="button" class="tender" value="理财投标"></div>-->
+        </form>
+    </div>
+
+    <!--  未登录是右侧显示-->
+    <div class="not-remind">
+        <div class="remind">
+            <p class="remind-p">亲，您还未登录~</p>
+            <p class="remind-p min-font">登录优金客，享受高收益！</p>
+        </div>
+        <div class="remind-but">
+            <input type="button" class=" ashore" value="登录"/>
+        </div>
+    </div>
+    <!-- 章-->
+    <div class=" chapter ">
+        <!--放款审核-->             <!--  添加 class = current-show 为显示对象-->
+        <div class=" chapter-pic audit dis-none "></div>
+        <!--已还完-->
+        <div class=" chapter-pic intact dis-none "></div>
+        <!--还款中-->
+        <div class=" chapter-pic repayment dis-none "></div>
+        <!--已流标-->
+        <div class=" chapter-pic  liu-cease dis-none "></div>
+        <!--您的投资已达上限-->
+        <div class=" chapter-pic  top-limit dis-none current-show"></div>
+    </div>
+
+
+    <div class="prompt">
+        <span class="san"></span>
+        <div class="pormpt-credit">信用信息</div>
+        <ul class="yours">
+            <li>用户名：<span>啥啥啥啥啥</span></li>
+            <li>申请笔数：<span>1笔</span></li>
+            <li>成功笔数：<span>0笔</span></li>
+            <li>还清笔数：<span>0笔</span></li>
+            <li>信用积分：<span>60</span></li>
+            <li>授信额度：<span>1,000,000元</span></li>
+            <li>借款总额：<span>50，000元</span></li>
+            <li>逾期笔数：<span>0笔</span></li>
+            <li>平均逾期天数：<span>0天</span></li>
+        </ul>
+    </div>
+</div>
+<div class="loan-depict">
+    <h3>借款描述</h3>
+    <p>借款企业主要经营便民水果超市，改超市的上下游均为稳定客户群体，有良好的进货渠道，且超市周围有成熟的生活社区。在
+        该区域内口碑较好，属于大众化行业。与大众生活息息相关。</p>
+</div>

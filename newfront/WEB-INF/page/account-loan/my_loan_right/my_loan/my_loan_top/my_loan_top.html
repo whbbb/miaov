@@ -1,0 +1,298 @@
+<script type="text/javascript" src="../../../js/account-loan/my_loan_right/my_loan/my_loan_top/my_loan_top.js" ></script>
+
+<div class="my_loan">
+    <div class="floatleft no-yet loanbigbox">
+        <ul class="loan-yet">
+            <!--   class="  loan-no-accord  "  控制显示的对象-->
+            <li class="yet yet1">
+                <div class="yet-bg ybg1"></div>
+                <div class="yet-money">未还金额</div>
+                <p><span class="orangefont">0.00</span>元</p>
+            </li>
+            <li class="yet yet2 oranbg loan-no-accord">
+                <div class="yet-money">未还金额</div>
+                <p class="yetmon"><span class="orangefont loan-money">0.00</span>元</p>
+                <div class="yet-detail">
+                    <p><span class="symbol">+</span><span class="sum">未&nbsp;还&nbsp;本&nbsp;金</span>0.00 元</p>
+                    <p><span class="symbol">+</span><span class="sum">未&nbsp;还&nbsp;利&nbsp;息</span>10000.00元</p>
+                    <p><span class="symbol">+</span><span class="sum">管&nbsp;&nbsp;&nbsp;&nbsp;理&nbsp;&nbsp;&nbsp;费</span>0.00 元</p>
+                    <p><span class="symbol">+</span><span class="sum">逾期管理费</span>0.00 元</p>
+                    <p><span class="symbol">+</span><span class="sum">坏&nbsp;账&nbsp;金&nbsp;额</span>0.00 元</p>
+                </div>
+            </li>
+            <li class="yet yet3 oranbg">
+                <div class="loan-cue">
+                    <h3 class="dear">亲，您还没有任何借款哟</h3>
+                    <p>人生诸多不易</p>
+                    <p>我们愿帮您一把</p>
+                </div>
+                <div class="borrow-mone">
+                    <input type="button" class="lend-money" value="借款">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="floatleft should-yet loanbigbox">
+        <ul class="loan-yet">
+            <li class="yet yet1">
+                <div class="yet-bg ybg2"></div>
+                <div class="yet-money">本月应还</div>
+                <p><span class="orangefont">90,000,000.00</span>元</p>
+            </li>
+            <li class="yet yet2 yellbg">
+                <div class="yet-money">未还金额</div>
+                <p class="yetmon"><span class="orangefont loan-money">0.00</span>元</p>
+                <div class="yet-detail minlinhei">
+                    <p><span class="symbol">+</span><span class="sum">应&nbsp;还&nbsp;本&nbsp;金</span>0.00 元</p>
+                    <p><span class="symbol">+</span><span class="sum">应&nbsp;还&nbsp;利&nbsp;息</span>10000.00元</p>
+                    <p><span class="symbol">+</span><span class="sum">管&nbsp;&nbsp;&nbsp;&nbsp;理&nbsp;&nbsp;&nbsp;费</span>10000.00元</p>
+                    <p><span class="symbol">+</span><span class="sum">逾&nbsp;期&nbsp;利&nbsp;息</span>0.00 元</p>
+                    <p><span class="symbol">+</span><span class="sum">逾期管理费</span>0.00 元</p>
+                </div>
+                <!--<div class="yet-still">
+                    <input type="button" value="还款" class="h-money">
+                </div>-->
+            </li>
+            <li class="yet yet3 yellbg loan-no-accord " >
+                <div class="loan-cue">
+                    <h3 class="dear">亲，您这个月没有任何未还借款哟</h3>
+                    <p>优金客祝您一臂之力</p>
+                </div>
+                <div class="borrow-mone">
+                    <input type="button" class="lend-money" value="借款" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="mp-balance">
+    <div class="bal-left">
+        <p class="acc-balance">账户余额</p>
+        <p><span class="bigorange orangefont">0.00</span>元</p>
+    </div>
+    <div class="bal-right">
+        <p>亲，账户余额不足以支付本月还款，快来<span class="borange">充值</span>吧</p>
+        <input  class="br-button" type="button" value="投标" id="bal-invest">
+        <input  class="br-button" type="button" value="充值" id="bal-recharge">
+    </div>
+</div>
+
+<div class="calendar">
+    <!-- 还款日 -->
+    <input id="J_payment_days" type="hidden" value="20150701|20150711|20150721" />
+    <!-- 当前日期 -->
+    <input id="J_current_day" type="hidden" value="20150721" />
+
+    <div class="caltit"><span class="cal-mr">本期应还</span>200000.00元 </div>
+    <div class="caltit"><span class="cal-mr">本期累计逾期</span>200000.00元</div>
+    <div class="date-particulars">
+        <div class=" date-left left-date">
+            <p class="date-l-years"></p>
+            <table>
+                <tr class="date-tit">
+                    <td>日</td>
+                    <td>一</td>
+                    <td>二</td>
+                    <td>三</td>
+                    <td>四</td>
+                    <td>五</td>
+                    <td class="tdnobordr">六</td>
+                </tr>
+                <tr class="day">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdnobordr"></td>
+                </tr>
+                <tr class="day">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdnobordr"></td>
+                </tr>
+                <tr class="day">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdnobordr"></td>
+                </tr>
+                <tr class="day">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdnobordr"></td>
+                </tr>
+                <tr class="day">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdnobordr"></td>
+                </tr>
+                <tr class="day tdnobordr">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdnobordr"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="date-left right-particulars" detail-data-count="1">
+            <div class="the-last"></div>
+            <div class="dl-a">
+                <ul class="nowul">
+                    <li class="nowaday ">
+                        <h3 class="alteration">资产变动</h3>
+                        <p>标的名称：最多几个字啊最多1</p>
+                        <p>标的编号：03000</p>
+                        <p>本期应还本金：99.999.999.00元</p>
+                        <p>本期应还利息：99.999.999.00元</p>
+                        <p>本期逾期利息：<span class="nowadaygreen">99.999.999.00元</span></p>
+                        <p>还款方式：按月付息，到期还本</p>
+                        <p>管理费：</p>
+                        <p>逾期管理费：</p>
+                        <p class="nowaday-minfont">本月应还编号为123213的服装出口资金周转标的20000元</p>
+                        <div class="nowaday-ok"></div>
+                        <div class="repay-money">
+                            <input type="button" value="还款" class="torepay">
+                        </div>
+                    </li>
+                    <li class="nowaday ">
+                        <h3 class="alteration">资产变动</h3>
+                        <p>标的名称：最多几个字啊最多</p>
+                        <p>标的编号：03000</p>
+                        <p>本期应还本金：99.999.999.00元</p>
+                        <p>本期应还利息：99.999.999.00元</p>
+                        <p>本期逾期利息：<span class="nowadaygreen">99.999.999.00元</span></p>
+                        <p>还款方式：按月付息，到期还本</p>
+                        <p>管理费：</p>
+                        <p>逾期管理费：</p>
+                        <p class="nowaday-minfont">本月应还编号为123213的服装出口资金周转标的20000元</p>
+                        <div class="nowaday-ok"></div>
+                        <div class="repay-money">
+                            <input type="button" value="还款" class="torepay">
+                        </div>
+                    </li>
+                    <li class="nowaday ">
+                        <h3 class="alteration">资产变动</h3>
+                        <p>标的名称：最多几个字啊最多</p>
+                        <p>标的编号：03000</p>
+                        <p>本期应还本金：99.999.999.00元</p>
+                        <p>本期应还利息：99.999.999.00元</p>
+                        <p>本期逾期利息：<span class="nowadaygreen">99.999.999.00元</span></p>
+                        <p>还款方式：按月付息，到期还本</p>
+                        <p>管理费：</p>
+                        <p>逾期管理费：</p>
+                        <p class="nowaday-minfont">本月应还编号为123213的服装出口资金周转标的20000元</p>
+                        <div class="nowaday-ok"></div>
+                        <div class="repay-money">
+                            <input type="button" value="还款" class="torepay">
+                        </div>
+                    </li>
+                    <li class="nowaday ">
+                        <h3 class="alteration">资产变动</h3>
+                        <p>标的名称：最多几个字啊最多</p>
+                        <p>标的编号：03000</p>
+                        <p>本期应还本金：99.999.999.00元</p>
+                        <p>本期应还利息：99.999.999.00元</p>
+                        <p>本期逾期利息：<span class="nowadaygreen">99.999.999.00元</span></p>
+                        <p>还款方式：按月付息，到期还本</p>
+                        <p>管理费：</p>
+                        <p>逾期管理费：</p>
+                        <p class="nowaday-minfont">本月应还编号为123213的服装出口资金周转标的20000元</p>
+                        <div class="nowaday-ok"></div>
+                        <div class="repay-money">
+                            <input type="button" value="还款" class="torepay">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="next"></div>
+        </div>
+        <div class="date-left right-particulars" detail-data-count="1">
+            <div class="the-last"></div>
+            <div class="dl-a">
+                <ul class="nowul">
+                    <li class="nowaday ">
+                        <h3 class="alteration">资产变动</h3>
+                        <p>标的名称：最多几个字啊最多2</p>
+                        <p>标的编号：03000</p>
+                        <p>本期应还本金：99.999.999.00元</p>
+                        <p>本期应还利息：99.999.999.00元</p>
+                        <p>本期逾期利息：<span class="nowadaygreen">99.999.999.00元</span></p>
+                        <p>还款方式：按月付息，到期还本</p>
+                        <p>管理费：</p>
+                        <p>逾期管理费：</p>
+                        <p class="nowaday-minfont">本月应还编号为123213的服装出口资金周转标的20000元</p>
+                        <div class="nowaday-ok"></div>
+                        <div class="repay-money">
+                            <input type="button" value="还款" class="torepay">
+                        </div>
+                    </li>
+                    <li class="nowaday ">
+                        <h3 class="alteration">资产变动</h3>
+                        <p>标的名称：最多几个字啊最多</p>
+                        <p>标的编号：03000</p>
+                        <p>本期应还本金：99.999.999.00元</p>
+                        <p>本期应还利息：99.999.999.00元</p>
+                        <p>本期逾期利息：<span class="nowadaygreen">99.999.999.00元</span></p>
+                        <p>还款方式：按月付息，到期还本</p>
+                        <p>管理费：</p>
+                        <p>逾期管理费：</p>
+                        <p class="nowaday-minfont">本月应还编号为123213的服装出口资金周转标的20000元</p>
+                        <div class="nowaday-ok"></div>
+                        <div class="repay-money">
+                            <input type="button" value="还款" class="torepay">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="next"></div>
+        </div>
+        <div class="date-left right-particulars" detail-data-count="1">
+            <div class="the-last"></div>
+            <div class="dl-a">
+                <ul class="nowul">
+                    <li class="nowaday ">
+                        <h3 class="alteration">资产变动</h3>
+                        <p>标的名称：最多几个字啊最多3</p>
+                        <p>标的编号：03000</p>
+                        <p>本期应还本金：99.999.999.00元</p>
+                        <p>本期应还利息：99.999.999.00元</p>
+                        <p>本期逾期利息：<span class="nowadaygreen">99.999.999.00元</span></p>
+                        <p>还款方式：按月付息，到期还本</p>
+                        <p>管理费：</p>
+                        <p>逾期管理费：</p>
+                        <p class="nowaday-minfont">本月应还编号为123213的服装出口资金周转标的20000元</p>
+                        <div class="nowaday-ok"></div>
+                        <div class="repay-money">
+                            <input type="button" value="还款" class="torepay">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="next"></div>
+        </div>
+        <div class=" date-left right-particulars" detail-data-count="0">
+            <p class="no-record">亲，您还没有交易记录哟~</p>
+        </div>
+    </div>
+</div>

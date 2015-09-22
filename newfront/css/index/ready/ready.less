@@ -1,0 +1,47 @@
+
+  //引入公共样式
+  @import url( "../../common/commonFun" );
+
+  //模块：ready
+  //作者：peikai
+  //说明：准备好了吗
+
+  .ready(){
+    #J_ready{
+      .ready{
+        width: 100%;
+        min-width: @container-width;
+
+        height: 250px;
+        background-color: #FFFFFF;
+
+        img{
+          margin-top: 50px;
+          margin-bottom: 40px;
+        }
+
+        input{
+          width: 252px;
+          height: 40px;
+          border: 1px solid @theme-color;
+          color: @theme-color;
+          background-color: #FFFFFF;
+          font-size: 15px;
+          font-weight: bold;
+          margin: 0px 40px;
+
+          &:hover{
+            color: #FFFFFF;
+            border-color: #CCCCCC;
+            background-color: @theme-color;
+          }
+
+          &:active{
+            color: #FFFFFF;
+            border-color: #CCCCCC;
+            background-color: #2bbf8e;
+          }
+        }
+      }
+    }
+  }

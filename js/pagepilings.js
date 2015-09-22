@@ -192,7 +192,7 @@
                     textColor: "#000",
                     bulletsColor: "#000",
                     position: "right",
-                    tooltips: ["Ò»Æð»ÝCPSÁªÃËÓÅÊÆ", "¸ßÓ¶½ð", "¸ß½±Àø", "½áËã¿ì", "ÎÞË°ÊÕ", "Ãâ·Ñ¼¼ÊõÖ§³Ö"]
+                    tooltips: ["Ò»ï¿½ï¿½ï¿½CPSï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½Ó¶ï¿½ï¿½", "ï¿½ß½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½Ë°ï¿½ï¿½", "ï¿½ï¿½Ñ¼ï¿½ï¿½ï¿½Ö§ï¿½ï¿½"]
                 },
                 normalScrollElementTouchThreshold: 5,
                 touchSensitivity: 5,
@@ -242,8 +242,8 @@
         b.isEmptyObject(c.navigation) || F();
         var m = b(".pp-section").length;
         b(".pp-section").each(function(a) {
-            b(this).data("data-index", a);
-            b(this).css("z-index", m);
+            b(this).data("data-product", a);
+            b(this).css("z-product", m);
             a || 0 !== b(".pp-section.active").length || b(this).addClass("active");
             "undefined" !== typeof c.anchors[a] && b(this).attr("data-anchor", c.anchors[a]);
             "undefined" !== typeof c.sectionsColor[a] && b(this).css("background", c.sectionsColor[a]);

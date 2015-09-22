@@ -1,0 +1,210 @@
+
+  //引入公共样式
+  @import url( "../../common/commonFun" );
+
+  //模块：apply
+  //作者：pk
+  //说明：
+
+  .apply(){
+    #J_apply {
+      .outer-size();
+      .maxCenter();
+
+      .apply{
+        .inner-size();
+        .center();
+        text-align: left;
+
+        .line-container{
+          margin-bottom: 26px;
+
+          .title{
+            .inline-block();
+            font-size: 14px;
+            width: 70px;
+            text-align: right;
+            margin-right: 12px;
+            vertical-align: top;
+            margin-top: 12px;
+          }
+
+          p{
+            font-weight: bold;
+            width: 34px;
+            height: 20px;
+            padding-top: 11px;
+            padding-bottom: 9px;
+            text-align: center;
+            .inline-block();
+            *margin-top: -2px;
+            position: absolute;
+            cursor: default;
+          }
+
+          p.one{
+            margin-left: -38px;
+          }
+
+          p.two{
+            margin-left: -44px;
+          }
+
+          #J_fast_apply_button{
+            *margin-left: 8px;
+          }
+        }
+
+        #J_computer_container{
+
+          #J_computer_frame_container{
+            width: 660px;
+            height: auto;
+            border: 1px solid #333333;
+
+            ul{
+              li.computer{
+                padding-left: 206px;
+                margin-bottom: 50px;
+              }
+
+              li.show-detail{
+                margin: 0px;
+                padding: 20px 0px 20px 206px;
+
+                p{
+                  .inline-block();
+                  color: #333333;
+                  font-size: 12px;
+                  margin-left: 2px;
+                }
+              }
+
+              li.line-container{
+                margin: 0px;
+                padding-top: 40px;
+                padding-left: 120px;
+              }
+
+              li.split{
+                div{
+                  border-top: 1px solid #CCCCCC;
+                }
+              }
+
+              li.title{
+                height: 60px;
+                line-height: 60px;
+
+                span{
+                  float: left;
+                  vertical-align: baseline;
+                  margin-left: 26px;
+                }
+
+                div{
+                  vertical-align: baseline;
+                  cursor: pointer;
+                  margin-right: 26px;
+                  margin-top: 16px;
+                  float: right;
+                  width: 28px;
+                  height: 28px;
+                  background: url( "../../images/common/ico/ico_circ_close.png" ) no-repeat;
+
+                  &:hover{
+                    background-position: 0px -28px;
+                  }
+                }
+              }
+            }
+
+            div#J_computer_result{
+              margin-left: 26px;
+              margin-bottom: 32px;
+
+              p.title{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+
+              div{
+                margin-bottom: 20px;
+                margin-left: 108px;
+
+                span{
+                  font-size: 14px;
+                  font-weight: bold;
+                }
+
+                span.green-number{
+                  font-size: 20px;
+                  color: @theme-color;
+                  font-weight: normal;
+                }
+              }
+            }
+
+            div#J_computer_detail{
+              padding: 0px 10px 10px 10px;
+              text-align: center;
+
+              div.split{
+                .center();
+                border-bottom: 1px solid #CCCCCC;
+                margin-bottom: 12px;
+              }
+
+              div#J_detail_table_container{
+                table{
+                  //.table-adjust();
+                  width: 100%;
+                  text-align: center;
+                  font-size: 12px;
+                  margin-bottom: 10px;
+
+                  tr{
+                    height: 30px;
+                    vertical-align: middle;
+
+                    th{
+                      background-color: #eefffa;
+                      color: @theme-color;
+                      font-weight: normal;
+                    }
+
+                    td{
+                      width: 25%;
+                    }
+
+                    td.bottom{
+                      background-color: #eefffa;
+                    }
+                  }
+
+                  tr.gray{
+                    td{
+                      background-color: #FAFAFA;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .apply-container{
+          padding: 40px 50px;
+          background-color: #FFFFFF;
+
+          img#J_computer{
+            position: absolute;
+            margin-top: -30px;
+            margin-left: 896px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }

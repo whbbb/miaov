@@ -1,0 +1,295 @@
+
+  //引入公共参数
+  @import url( "./commonParameter" );
+
+
+  //元素100%宽度并使内容居中
+  .maxCenter(){
+    width: 100%;
+    text-align: center;
+  }
+
+  //元素居中
+  .center(){
+    margin: auto auto;
+  }
+
+  //li元素样式
+
+ .list(){
+   list-style: none;
+ }
+
+  //元素透明
+  .opacity( @value ){
+    opacity: @value / 100;
+    filter: alpha( opacity=@value );
+  }
+
+  //模块外框架
+  .outer-size(){
+    width: 100%;
+    min-width: @container-width;
+  }
+
+  //模块内框架
+  .inner-size(){
+    width: @container-width - @container-padding * 2;
+    padding: 0px @container-padding;
+  }
+
+  //模块内框架
+  .max-inner-size(){
+    width: @container-width;
+  }
+
+  //display: inline-block
+  .inline-block(){
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  }
+
+  //内容部分背景色
+  .container-bg-color(){
+    #J_container{
+      background-color: @container-bg-color;
+    }
+  }
+
+  //table紧凑样式
+  .table-adjust(){
+    border: 0px;
+    border-collapse:collapse;
+    border-spacing:0px;
+
+    th, td, tfoot{
+      padding: 0px;
+    }
+  }
+
+  //自动换行
+  .auto-change(){
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  //不换行
+  .no-auto-change(){
+    white-space: nowrap;
+    word-wrap: normal;
+    word-break: normal;
+  }
+
+  //button主要样式
+
+  .button-big(){
+    width: 252px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .banner-middle(){
+    width: 146px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .button-normalcy(){
+    border:1px solid @theme-color;
+    background-color: #ffffff;
+    color:@theme-color;
+  }
+  .button-hover(){
+    background-color: @theme-color;
+    color:#ffffff;
+  }
+
+  .result_tips(){
+    div#J_result_tips_frame_container{
+      display: none;
+
+      .result-frame{
+        display: none;
+
+        .tips-header{
+          width: 650px;
+          background-color: @theme-color;
+          color: #FFFFFF;
+          font-size: 18px;
+          padding: 16px 30px;
+
+          label{
+            float: left;
+          }
+          span{
+            float: right;
+            display: block;
+            cursor: pointer;
+          }
+          div{
+            clear: both;
+          }
+        }
+
+        .tips-content{
+          padding-top: 60px;
+          padding-bottom: 45px;
+          background: #FFFFFF url("../../images/common/ico/ico_tip_bang.png") 180px 56px no-repeat;
+
+          .tip-message{
+            color: #333333;
+            text-align: left;
+            width: 266px;
+            margin-left: 270px;
+
+            h4{
+              font-size: 18px;
+              padding-bottom: 20px;
+
+              p{
+                padding-bottom: 0px;
+                padding-top: 6px;
+                color: @theme-color;
+              }
+            }
+
+            p{
+              font-size: 14px;
+              padding-bottom: 20px;
+              line-height: 20px;
+            }
+          }
+        }
+        &.loan-success{
+            .tips-content {
+              background: #FFFFFF url("../../images/common/ico/ico_tip_bang.png") 180px 52px no-repeat;
+            }
+        }
+
+        &.loan-fail{
+            .tips-content {
+              background: #FFFFFF url("../../images/common/ico/ico_tip_error.png") 195px 52px no-repeat;
+            }
+        }
+
+        /*安全退出*/
+        &.logout-complete{
+          margin:0 auto;
+          width:660px;
+          height:390px;
+          position:relative;
+          background:url("../../images/common/ico/complete.png") no-repeat;
+          .complete-top{
+            width:540px;
+            height:170px;
+            text-align:left;
+            margin:0 auto;
+            padding-top:50px;
+            .top-left{
+              width:275px;
+              height:170px;
+              float:left;
+              font-size:18px;
+              line-height:40px;
+              padding-left:15px;
+              .dear{
+                padding-top:25px;
+                font-size:24px;
+                height:50px;
+                font-weight:normal;
+              }
+              .company{
+                color:#33CC99;
+              }
+            }
+            .top-right{
+              width:245px;
+              height:170px;
+              float:left;
+              .code{
+                padding:10px 0 28px 30px;
+              }
+              .company-code{
+                width:245px;
+                height:115px;
+                .code-xin{
+                  width:122px;
+                  height:115px;
+                  float:left;
+                  .wei-code{
+                    padding:15px 0 0 25px;
+                  }
+                }
+                .code-tweet{
+                  width:122px;
+                  height:115px;
+                  float:left;
+                  .tweet-code{
+                    padding:15px 0 0 25px;
+                  }
+                }
+                .code-tit{
+                  font-size:14px;
+                  line-height:20px;
+                  font-style:italic;
+                  text-indent:55px;
+                }
+                .wei-xin{
+                  background:url("../../images/common/ico/weixin.png") 20px center  no-repeat;
+                }
+                .tweet{
+                  background:url("../../images/common/ico/tweet.png") 20px center  no-repeat;
+                }
+              }
+            }
+          }
+          .complete-bottom{
+            margin:34px auto 0;
+            width:250px;
+            height:40px;
+            .ensure{
+              width:250px;
+              height:40px;
+              &:hover{
+                background:#2CB386;
+              }
+            }
+          }
+          .close{
+            width:15px;
+            height:15px;
+            position:absolute;
+            right:18px;
+            top:18px;
+            cursor:pointer;
+            background:url("../../images/common/ico/close.png") no-repeat;
+          }
+          .login-bg{
+            width:215px;
+            height:160px;
+            position:absolute;
+            left:-80px;
+            top:210px;
+            background:url("../../images/common/ico/login-bg.png") no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+  //回到顶部
+  .scroll-to-top(){
+    width: 79px;
+    height: 79px;
+    background: url("../../images/common/bg/scroll_to_top_hover.png") no-repeat 0 0;
+    position: fixed;
+    right: 5%;
+    bottom: 50px;
+    cursor: pointer;
+    z-index: 10;
+    .opacity(50);
+    &:hover{
+      .opacity(100);
+    }
+  }

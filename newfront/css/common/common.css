@@ -1,0 +1,156 @@
+div#J_result_tips_frame_container {
+  display: none;
+}
+div#J_result_tips_frame_container .result-frame {
+  display: none;
+  /*安全退出*/
+}
+div#J_result_tips_frame_container .result-frame .tips-header {
+  width: 650px;
+  background-color: #33cc99;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 16px 30px;
+}
+div#J_result_tips_frame_container .result-frame .tips-header label {
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame .tips-header span {
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+div#J_result_tips_frame_container .result-frame .tips-header div {
+  clear: both;
+}
+div#J_result_tips_frame_container .result-frame .tips-content {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background: #ffffff url("../../images/common/ico/ico_tip_bang.png") 180px 56px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message {
+  color: #333333;
+  text-align: left;
+  width: 266px;
+  margin-left: 270px;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message h4 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message h4 p {
+  padding-bottom: 0px;
+  padding-top: 6px;
+  color: #33cc99;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message p {
+  font-size: 14px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+div#J_result_tips_frame_container .result-frame.loan-success .tips-content {
+  background: #ffffff url("../../images/common/ico/ico_tip_bang.png") 180px 52px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.loan-fail .tips-content {
+  background: #ffffff url("../../images/common/ico/ico_tip_error.png") 195px 52px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete {
+  margin: 0 auto;
+  width: 660px;
+  height: 390px;
+  position: relative;
+  background: url("../../images/common/ico/complete.png") no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top {
+  width: 540px;
+  height: 170px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left {
+  width: 275px;
+  height: 170px;
+  float: left;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left .dear {
+  padding-top: 25px;
+  font-size: 24px;
+  height: 50px;
+  font-weight: normal;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left .company {
+  color: #33CC99;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right {
+  width: 245px;
+  height: 170px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .code {
+  padding: 10px 0 28px 30px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code {
+  width: 245px;
+  height: 115px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-xin {
+  width: 122px;
+  height: 115px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-xin .wei-code {
+  padding: 15px 0 0 25px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tweet {
+  width: 122px;
+  height: 115px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tweet .tweet-code {
+  padding: 15px 0 0 25px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tit {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  text-indent: 55px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .wei-xin {
+  background: url("../../images/common/ico/weixin.png") 20px center no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .tweet {
+  background: url("../../images/common/ico/tweet.png") 20px center no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom {
+  margin: 34px auto 0;
+  width: 250px;
+  height: 40px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom .ensure {
+  width: 250px;
+  height: 40px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom .ensure:hover {
+  background: #2CB386;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  cursor: pointer;
+  background: url("../../images/common/ico/close.png") no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .login-bg {
+  width: 215px;
+  height: 160px;
+  position: absolute;
+  left: -80px;
+  top: 210px;
+  background: url("../../images/common/ico/login-bg.png") no-repeat;
+}

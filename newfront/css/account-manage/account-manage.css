@@ -1,0 +1,1280 @@
+div#J_result_tips_frame_container {
+  display: none;
+}
+div#J_result_tips_frame_container .result-frame {
+  display: none;
+  /*安全退出*/
+}
+div#J_result_tips_frame_container .result-frame .tips-header {
+  width: 650px;
+  background-color: #33cc99;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 16px 30px;
+}
+div#J_result_tips_frame_container .result-frame .tips-header label {
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame .tips-header span {
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+div#J_result_tips_frame_container .result-frame .tips-header div {
+  clear: both;
+}
+div#J_result_tips_frame_container .result-frame .tips-content {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background: #ffffff url("../../images/common/ico/ico_tip_bang.png") 180px 56px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message {
+  color: #333333;
+  text-align: left;
+  width: 266px;
+  margin-left: 270px;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message h4 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message h4 p {
+  padding-bottom: 0px;
+  padding-top: 6px;
+  color: #33cc99;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message p {
+  font-size: 14px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+div#J_result_tips_frame_container .result-frame.loan-success .tips-content {
+  background: #ffffff url("../../images/common/ico/ico_tip_bang.png") 180px 52px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.loan-fail .tips-content {
+  background: #ffffff url("../../images/common/ico/ico_tip_error.png") 195px 52px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete {
+  margin: 0 auto;
+  width: 660px;
+  height: 390px;
+  position: relative;
+  background: url("../../images/common/ico/complete.png") no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top {
+  width: 540px;
+  height: 170px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left {
+  width: 275px;
+  height: 170px;
+  float: left;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left .dear {
+  padding-top: 25px;
+  font-size: 24px;
+  height: 50px;
+  font-weight: normal;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left .company {
+  color: #33CC99;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right {
+  width: 245px;
+  height: 170px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .code {
+  padding: 10px 0 28px 30px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code {
+  width: 245px;
+  height: 115px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-xin {
+  width: 122px;
+  height: 115px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-xin .wei-code {
+  padding: 15px 0 0 25px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tweet {
+  width: 122px;
+  height: 115px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tweet .tweet-code {
+  padding: 15px 0 0 25px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tit {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  text-indent: 55px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .wei-xin {
+  background: url("../../images/common/ico/weixin.png") 20px center no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .tweet {
+  background: url("../../images/common/ico/tweet.png") 20px center no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom {
+  margin: 34px auto 0;
+  width: 250px;
+  height: 40px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom .ensure {
+  width: 250px;
+  height: 40px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom .ensure:hover {
+  background: #2CB386;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  cursor: pointer;
+  background: url("../../images/common/ico/close.png") no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .login-bg {
+  width: 215px;
+  height: 160px;
+  position: absolute;
+  left: -80px;
+  top: 210px;
+  background: url("../../images/common/ico/login-bg.png") no-repeat;
+}
+html {
+  width: 100%;
+  text-align: center;
+  min-width: 1000px;
+}
+html body {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  min-width: 1000px;
+  font-family: '微软雅黑', sans-serif;
+  color: #333333;
+}
+html body #J_header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  min-width: 1000px;
+  height: 140px;
+  z-index: 100;
+}
+html body #J_header .header {
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  min-width: 1000px;
+  background-color: #333333;
+  border-top: 2px solid #33cc99;
+  color: #FFFFFF;
+}
+html body #J_header .header table {
+  margin: auto auto;
+  text-align: center;
+  width: 1000px;
+  height: 45px;
+  border-collapse: collapse;
+  padding: 0px;
+  font-size: 14px;
+}
+html body #J_header .header table tr td {
+  padding: 0px;
+}
+html body #J_header .header table tr td#J_left {
+  text-align: left;
+  padding-left: 10px;
+}
+html body #J_header .header table tr td#J_left div {
+  float: left;
+}
+html body #J_header .header table tr td#J_left a {
+  float: left;
+  margin-left: 14px;
+}
+html body #J_header .header table tr td#J_left a img {
+  border: none;
+  display: block;
+}
+html body #J_header .header table tr td#J_left a img.color {
+  border: none;
+  display: none;
+}
+html body #J_header .header table tr td#J_left a img.tip {
+  display: none;
+  position: absolute;
+  margin-left: -43px;
+  margin-top: 8px;
+}
+html body #J_header .header table tr td#J_left a img.tip.qq {
+  margin-left: -47px;
+}
+html body #J_header .header table tr td#J_left a:hover img {
+  display: none;
+}
+html body #J_header .header table tr td#J_left a:hover img.color {
+  display: block;
+}
+html body #J_header .header table tr td#J_left a:hover img.tip {
+  display: block;
+}
+html body #J_header .header table tr td#J_left a.qq div {
+  height: 91px;
+}
+html body #J_header .header table tr td#J_right {
+  text-align: right;
+  padding-right: 10px;
+}
+html body #J_header .header table tr td#J_right div#J_help,
+html body #J_header .header table tr td#J_right div#J_login,
+html body #J_header .header table tr td#J_right div#J_user {
+  float: right;
+  color: #FFFFFF;
+  line-height: 44px;
+  height: 44px;
+}
+html body #J_header .header table tr td#J_right #J_help {
+  margin-left: 8px;
+  margin-right: 3px;
+}
+html body #J_header .header table tr td#J_right #J_help a {
+  color: #FFFFFF;
+  margin-left: 14px;
+}
+html body #J_header .header table tr td#J_right #J_help a:hover {
+  color: #DDDDDD;
+}
+html body #J_header .header table tr td#J_right #J_login a {
+  color: #FFFFFF;
+  margin-left: 14px;
+}
+html body #J_header .header table tr td#J_right #J_login a:hover {
+  color: #DDDDDD;
+}
+html body #J_header .header table tr td#J_right #J_user {
+  *margin-right: -50px;
+}
+html body #J_header .header table tr td#J_right #J_user table {
+  width: auto;
+}
+html body #J_header .header table tr td#J_right #J_user .flow-table {
+  vertical-align: top;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu {
+  text-align: center;
+  height: 43px;
+  overflow: hidden;
+  margin-left: 6px;
+  color: #FFFFFF;
+  background-color: #333333;
+  cursor: pointer;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table {
+  width: 100%;
+  height: 135px;
+  border-collapse: collapse;
+  padding: 0px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.first-td {
+  padding-left: 12px;
+  padding-right: 20px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.first-td b {
+  white-space: nowrap;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td {
+  text-align: left;
+  height: 45px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td a {
+  display: block;
+  padding-left: 12px;
+  padding-right: 20px;
+  height: 45px;
+  width: auto;
+  color: #9F9F9F;
+  font-size: 12px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td a:hover {
+  background-color: #F6F6F6;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td a:active {
+  color: #33cc99;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu div {
+  display: block;
+  width: 6px;
+  height: 5px;
+  line-height: 5px;
+  margin-top: -24px;
+  margin-left: 80px;
+  *margin-top: 5px;
+  *margin-left: 0px;
+  position: absolute;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu .white {
+  display: block;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu .black {
+  display: none;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  height: 135px;
+  border-color: #DDDDDD;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu:hover .black {
+  display: block;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu:hover .white {
+  display: none;
+}
+html body #J_header .nav {
+  width: 100%;
+  height: 93px;
+  line-height: 93px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CCCCCC;
+}
+html body #J_header .nav .nav-container {
+  margin: auto auto;
+  width: 1000px;
+}
+html body #J_header .nav .nav-container .logo {
+  float: left;
+  width: 395px;
+  padding-left: 10px;
+}
+html body #J_header .nav .nav-container .logo a {
+  display: block;
+  width: 395px;
+  height: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 22px;
+}
+html body #J_header .nav .nav-container .inner-nav {
+  float: right;
+  height: 93px;
+  position: relative;
+}
+html body #J_header .nav .nav-container .inner-nav a {
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 93px;
+  font-size: 18px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+html body #J_header .nav .nav-container .inner-nav a.last {
+  margin-right: 0px;
+}
+html body #J_header .nav .nav-container .inner-nav span {
+  width: 100px;
+  height: 3px;
+  display: none;
+  background-color: #33cc99;
+  position: absolute;
+  margin-left: 0px;
+  *margin-left: -500px;
+  margin-top: 90px;
+}
+html body #J_header #J_user_login_container #J_login_frame {
+  margin: auto auto;
+  width: 940px;
+  height: 408px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: default;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel {
+  float: right;
+  width: 244px;
+  height: 248px;
+  display: none;
+  padding: 64px;
+  *padding-bottom: 44px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel #J_user_login_close {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  left: 910px;
+  cursor: pointer;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="text"],
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="password"] {
+  width: 172px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 70px;
+  border-style: solid;
+  border-width: 1px;
+  color: #D2D2D2;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="text"]:focus,
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="password"]:focus {
+  color: #333333;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel img {
+  position: relative;
+  top: -32px;
+  *top: -34px;
+  left: -84px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container {
+  width: 253px;
+  margin-top: -26px;
+  *margin-top: -12px;
+  text-align: left;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container input[type="text"] {
+  width: 110px;
+  padding: 0px;
+  text-align: center;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container img {
+  width: 85px;
+  height: 40px;
+  border: 1px #cccccc solid;
+  position: relative;
+  top: 17px;
+  top: 16px\9;
+  *top: 6px;
+  left: 0px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container a {
+  vertical-align: baseline;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 5px;
+  *position: relative;
+  *top: -13px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .forget {
+  margin-top: 10px;
+  height: 38px;
+  text-align: left;
+  vertical-align: middle;
+  width: 250px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .forget p {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 12px;
+  color: #333333;
+  margin-left: 2px;
+  height: 17px;
+  line-height: 17px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .forget a {
+  margin-left: 100px;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #33cc99;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .register span {
+  font-size: 12px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel #J_user_login_button {
+  width: 252px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #33cc99;
+  color: #FFFFFF;
+  border: none;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel #J_user_login_button:hover {
+  background-color: #5cd6ad;
+}
+html body #J_footer {
+  cursor: default;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border-top: 1px solid #E5E5E5;
+}
+html body #J_footer .friend-link {
+  width: 100%;
+  min-width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  *line-height: normal;
+  background-color: #666666;
+  text-align: center;
+}
+html body #J_footer .friend-link p {
+  margin: auto auto;
+  width: 980px;
+  padding: 0px 10px;
+  color: #FFFFFF;
+  cursor: default;
+  text-align: left;
+}
+html body #J_footer .friend-link p a {
+  color: #FFFFFF;
+  margin-left: 10px;
+  *margin-left: 14px;
+  margin-left: 14px\9;
+  margin-right: 18px;
+}
+html body #J_footer .friend-link p a:hover {
+  color: #DDDDDD;
+}
+html body #J_footer .footer-other {
+  width: 100%;
+  min-width: 1000px;
+  height: 280px;
+  background-color: #333333;
+}
+html body #J_footer .footer-other div.footer-container {
+  margin: auto auto;
+  width: 980px;
+  color: #FFFFFF;
+  padding: 0 10px;
+  padding-top: 24px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link {
+  width: 100%;
+  text-align: left;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span.last {
+  width: 174px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span.last span {
+  width: 174px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span {
+  display: inline-block;
+  color: #FFFFFF;
+  width: 260px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span span a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span span a:hover {
+  color: #DDDDDD;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a {
+  color: #999999;
+  margin-right: 10px;
+  position: relative;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a:hover .tips {
+  display: block;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a img {
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a img.tips {
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  display: none;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a:hover {
+  color: #FFFFFF;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a.first {
+  color: #33cc99;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a.first:hover {
+  color: #5cd6ad;
+}
+html body #J_footer .footer-other div.footer-container .footer-service {
+  width: 100%;
+  text-align: left;
+  margin-top: 24px;
+}
+html body #J_footer .footer-other div.footer-container .footer-service b {
+  font-size: 28px;
+  margin-right: 20px;
+}
+html body #J_footer .footer-other div.footer-container .footer-service span {
+  margin-right: 70px;
+}
+html body #J_footer .footer-other div.footer-container .footer-service input[type="button"] {
+  border: 2px solid #33cc99;
+  color: #33cc99;
+  background-color: #333333;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  *top: 10px;
+  *position: relative;
+}
+html body #J_footer .footer-other div.footer-container .footer-service input[type="button"]:hover {
+  border-color: #85e0c2;
+  color: #85e0c2;
+  background-color: #666666;
+}
+html body #J_footer .footer-other div.footer-split {
+  margin-top: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-width: 1000px;
+  height: 1px;
+  border-bottom: 1px solid #666666;
+}
+html body #J_footer .footer-other div.footer-bottom {
+  margin: auto auto;
+  width: 980px;
+  color: #FFFFFF;
+  padding: 0 10px;
+  text-align: left;
+  color: #818181;
+  cursor: default;
+}
+html body #J_footer .footer-other div.footer-bottom div span {
+  margin-left: 3px;
+  *margin-left: 6px;
+  margin-right: 10px;
+  font-family: "微软雅黑";
+}
+html body #J_footer .footer-other div.footer-bottom div img {
+  margin-top: 18px;
+  margin-right: 14px;
+}
+html body .left {
+  float: left;
+}
+html body .right {
+  float: right;
+}
+html body .clear-both {
+  clear: both;
+}
+html body .scroll_to_top {
+  width: 79px;
+  height: 79px;
+  background: url("../../images/common/bg/scroll_to_top_hover.png") no-repeat 0 0;
+  position: fixed;
+  right: 5%;
+  bottom: 50px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+html body .scroll_to_top:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+html body a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #33cc99;
+}
+html body a:hover {
+  color: #2cb386;
+}
+html body img {
+  border: none;
+}
+html body dl,
+html body dt,
+html body dd,
+html body ul,
+html body ol,
+html body li,
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6,
+html body p,
+html body form,
+html body input,
+html body th,
+html body td {
+  margin: 0px;
+  padding: 0px;
+}
+html body ol,
+html body ul {
+  list-style: none;
+}
+html body input {
+  font-family: '微软雅黑', sans-serif;
+}
+html body input[type="button"],
+html body input[type="submit"],
+html body input[type="reset"] {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  background-color: #33cc99;
+  color: #FFFFFF;
+}
+html body input[type="button"]:hover,
+html body input[type="submit"]:hover,
+html body input[type="reset"]:hover {
+  background-color: #5cd6ad;
+}
+html body input[type="button"]:active,
+html body input[type="submit"]:active,
+html body input[type="reset"]:active {
+  background-color: #29a37a;
+}
+html body input[type="button"].large,
+html body input[type="submit"].large,
+html body input[type="reset"].large {
+  height: 40px;
+  width: 250px;
+}
+html body input[type="button"].short,
+html body input[type="submit"].short,
+html body input[type="reset"].short {
+  height: 40px;
+  width: 150px;
+}
+html body input[type="button"].tender,
+html body input[type="submit"].tender,
+html body input[type="reset"].tender {
+  width: 185px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  background: #33CB99;
+  color: #fff;
+}
+html body input[type="button"].tender:hover,
+html body input[type="submit"].tender:hover,
+html body input[type="reset"].tender:hover {
+  background: #2cb386;
+}
+html body input[type="button"].inv-ten,
+html body input[type="submit"].inv-ten,
+html body input[type="reset"].inv-ten {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background: #33CB99;
+  color: #fff;
+}
+html body input[type="button"].inv-ten:hover,
+html body input[type="submit"].inv-ten:hover,
+html body input[type="reset"].inv-ten:hover {
+  background: #2cb386;
+}
+html body input[type="text"],
+html body input[type="password"],
+html body textarea,
+html body select {
+  border: 1px solid #CCCCCC;
+  font-size: 12px;
+  letter-spacing: 1px;
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 6px;
+}
+html body input[type="text"]:hover,
+html body input[type="password"]:hover,
+html body textarea:hover,
+html body select:hover {
+  border-color: #33cc99;
+}
+html body input[type="text"]:focus,
+html body input[type="password"]:focus,
+html body textarea:focus,
+html body select:focus {
+  border-color: #2cb386;
+  box-shadow: 0px 0px 3px #33cc99;
+}
+html body input[type="text"].normal,
+html body input[type="password"].normal {
+  height: 40px;
+  line-height: 40px;
+  width: 196px;
+  padding-left: 6px;
+  padding-right: 46px;
+}
+html body select.normal {
+  height: 40px;
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 6px;
+}
+html body textarea.normal {
+  height: 120px;
+  width: 510px;
+  padding-top: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  line-height: 20px;
+  resize: none;
+}
+.mp-top-dredge {
+  width: 810px;
+  height: 124px;
+  margin-bottom: 11px;
+  margin-left: -813px;
+  background: url("../../images/account-common/my_top_dredge/my_pan-topbg.png") no-repeat;
+}
+.mp-top-dredge .mpt-dredge {
+  width: 620px;
+  height: 70px;
+  text-align: left;
+  padding: 45px 0 0 170px;
+  font-size: 14px;
+  background: url("../../images/account-common/my_top_dredge/my_pan-top-photo1.png") 100px 22px no-repeat;
+}
+.mp-top-dredge .mpt-dredge .m-dre {
+  width: 79px;
+  height: 34px;
+  font-size: 14px;
+  margin-left: 34px;
+}
+.mp-top-dredge .mpt-dredge .m-dre:hover {
+  background: #2cb386;
+}
+#J_account_left {
+  width: 180px;
+  float: left;
+  margin-right: 8px;
+}
+.maleft {
+  background: #FFF;
+}
+.maleft .mal-photo {
+  width: 180px;
+  height: 120px;
+  background: url("../../images/account-common/account_left/photo-1.png") center center no-repeat;
+}
+.maleft .mal-username {
+  width: 95px;
+  height: 35px;
+  padding: 0 40px 0 45px;
+  font-size: 12px;
+  /* background:url("../../img/account/my_account_left/pic-1.png") 10px 0 no-repeat;*/
+  margin-bottom: 15px;
+  /*.malun-id{
+            font-size:10px;
+            width:100px;
+          }*/
+}
+.maleft .mal-dredge-w {
+  width: 180px;
+  height: 20px;
+  margin-bottom: 10px;
+  text-indent: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #33CC99;
+  cursor: pointer;
+  background: url("../../images/account-common/account_left/pic-2.png") 60px 0 no-repeat;
+}
+.maleft .mal-dredge-y {
+  width: 180px;
+  height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: url("../../images/account-common/account_left/pic-3.png") 75px 0 no-repeat;
+}
+.maleft .mal-request {
+  width: 180px;
+  height: 34px;
+  margin-bottom: 10px;
+}
+.maleft .mal-request .mal-invite {
+  width: 79px;
+  height: 34px;
+  font-size: 14px;
+}
+.maleft .mal-request .mal-invite:hover {
+  background: #2cb386;
+}
+.last-entry {
+  width: 180px;
+  height: 32px;
+  font-size: 12px;
+}
+.mal-navigation {
+  width: 178px;
+  height: 188px;
+  margin-top: 1px;
+  background: #FFF;
+  padding: 1px;
+}
+.mal-navigation li {
+  width: 178px;
+  height: 47px;
+  font-size: 14px;
+  line-height: 46px;
+  cursor: pointer;
+}
+.mal-navigation li:hover {
+  color: #33CC99;
+}
+.mal-navigation .mal-current {
+  background: #fafafa;
+  color: #33CB99;
+}
+.mal-navigation .mal-current:hover {
+  color: #33Cb99;
+}
+.floatleft {
+  float: left;
+}
+.currentgreen {
+  color: #33CC99;
+}
+#J_container {
+  width: 100%;
+  text-align: center;
+  background: #fafafa;
+  padding: 30px 0 72px;
+}
+#J_container #J_my_manage_right {
+  width: 1000px;
+  margin: 0 auto;
+}
+#J_container #J_my_manage_right #J_my_manage {
+  overflow: hidden;
+  float: left;
+}
+#J_container #J_my_manage_right #J_my_manage .news-supervise {
+  width: 738px;
+  padding: 28px 37px 0;
+  background: #fff;
+}
+#J_container #J_my_manage_right #J_my_manage .news-supervise .supervise-tit {
+  height: 45px;
+  border-top: 1px solid #33cc99;
+  border-bottom: 1px solid #33cc99;
+  position: relative;
+}
+#J_container #J_my_manage_right #J_my_manage .news-supervise .supervise-tit h3 {
+  width: 369px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+#J_container #J_my_manage_right #J_my_manage .news-supervise .supervise-tit .triangle {
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #33CC99 transparent;
+  position: absolute;
+  bottom: 0;
+  left: 175px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise {
+  width: 738px;
+  padding: 0 37px 74px;
+  background: #fff;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli {
+  width: 100%;
+  line-height: 60px;
+  border-bottom: 1px dashed #ccc;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .disnone {
+  display: none;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaultshow {
+  text-align: left;
+  font-size: 14px;
+  height: 60px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaultshow .reviseone {
+  text-indent: 27px;
+  width: 140px;
+  margin-left: 100px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaultshow .passwordbg {
+  background: url("../../images/account-manage/passwordbg.png") left center no-repeat;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaultshow .mobilebg {
+  background: url("../../images/account-manage/mobilebg.png") 2px center no-repeat;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaultshow .emaildbg {
+  background: url("../../images/account-manage/emailbg.png") left center no-repeat;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaultshow .revisetwo {
+  width: 370px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaultshow .revisethree {
+  width: 40px;
+  text-decoration: underline;
+  color: #33cc99;
+  cursor: pointer;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide {
+  background: #fafafa;
+  padding-left: 130px;
+  text-align: left;
+  padding-top: 21px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .star {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 20px;
+  height: 10px;
+  background: url("../../images/account-manage/starbg.png") left center no-repeat;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass {
+  width: 100%;
+  line-height: 40px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpassword {
+  *position: relative;
+  *left: 0;
+  *top: -10px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 92px;
+  margin-right: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input .input-password {
+  font-size: 12px;
+  width: 239px;
+  height: 38px;
+  padding-left: 10px;
+  border: 1px solid #cfcfcf;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input .mobile-proving {
+  width: 116px;
+  *margin-right: 10px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input .provingma {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 86px;
+  height: 38px;
+  margin-bottom: -15px;
+  margin-left: 6px;
+  background: url("../../images/account-manage/peovingma.png") no-repeat;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input .gain-proving {
+  *position: relative;
+  *left: 0;
+  *top: -10px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 12px;
+  margin-left: 10px;
+  line-height: 38px;
+  cursor: pointer;
+  color: #33cc99;
+  text-decoration: underline;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input .gain-proving:hover {
+  color: #2cb386;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input.code-container input {
+  width: 80px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .oldpass-input.code-container img {
+  position: relative;
+  top: 16px;
+  left: 0;
+  *top: 3px;
+  height: 41px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .intensity {
+  line-height: 32px;
+  font-size: 14px;
+  padding-left: 116px;
+  color: #999;
+  height: 40px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .intensity .intenlength {
+  margin-left: 10px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .raw-pass .intensity .intenlength .inten-minwidth {
+  width: 44px;
+  height: 7px;
+  margin: 0 1px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: #ccc;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .marbottom {
+  margin-bottom: 30px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .marbottom div#J_password_strong {
+  position: absolute;
+  color: #999999;
+  margin-top: 2px;
+  line-height: 20px;
+  margin-left: 118px;
+  font-size: 14px;
+  display: none;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .marbottom div#J_password_strong label {
+  float: left;
+  margin-right: 6px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .marbottom div#J_password_strong span {
+  width: 55px;
+  height: 9px;
+  background-color: #CCCCCC;
+  display: block;
+  float: left;
+  margin: 6px 0px 0px 1px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .marbottom div#J_password_strong b {
+  float: left;
+  margin-left: 8px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .reviseyes {
+  height: 64px;
+  padding-left: 200px;
+  line-height: 32px;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .reviseyes .re-yes {
+  width: 76px;
+  height: 32px;
+  background: #33CC99;
+  color: #FFF;
+  border: 1px solid #33cc99;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulhide .reviseyes .re-yes:hover {
+  background: #2CB386;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulok {
+  width: 100%;
+  height: 215px;
+  padding-top: 90px;
+  background: #fafafa;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulok .reviseok {
+  width: 210px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 32px;
+  background: url("../../images/account-manage/defaulok.png") no-repeat;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .defaulok .revisefail {
+  background: url("../../images/account-manage/defaulfail.png") no-repeat;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .revisieoff {
+  width: 77px;
+  height: 50px;
+  margin: 25px auto;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .revisieoff .re-off {
+  width: 77px;
+  height: 32px;
+  background: #fafafa;
+  color: #33CC99;
+  border: 1px solid #33CC99;
+}
+#J_container #J_my_manage_right #J_my_manage .revise .reviseli .revisieoff .re-off:hover {
+  color: #fff;
+  background: #33CC99;
+}
+.deposit {
+  width: 738px;
+  height: 257px;
+  padding: 0 37px 0;
+  background: #fff;
+  display: none;
+}
+.deposit .depositli {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  text-align: left;
+  border-bottom: 1px dashed #ccc;
+}
+.deposit .depositli .depositone {
+  margin-left: 100px;
+  width: 130px;
+  text-indent: 28px;
+  margin-right: 16px;
+}
+.deposit .depositli .depositbg {
+  background: url("../../images/account-manage/depositbg.png") left center no-repeat;
+}
+.deposit .depositli .balancebg {
+  background: url("../../images/account-manage/balancebg.png") left center no-repeat;
+}
+.deposit .depositli .deposittwo {
+  width: 234px;
+}
+.deposit .depositli .depositthree {
+  width: 170px;
+}
+.deposit .depositli .depositthree .open-depsit {
+  width: 77px;
+  height: 32px;
+  border: 1px solid #33CC99;
+  margin-left: 91px;
+}
+.deposit .depositli .depositthree .open-depsit:hover {
+  background: #2cb386;
+}
+.deposit .depositli .depositthree .no-margin {
+  margin: 0;
+}
+.deposit .depositli .depositthree .cash-depsit {
+  background: #FFF;
+  color: #33CC99;
+  margin-left: 10px;
+}
+.deposit .depositli .depositthree .cash-depsit:hover {
+  background: #33CC99;
+  color: #FFF;
+}

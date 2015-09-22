@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="otherPackage" namespace="/other" extends="common-config">
+		<!-- 关于我们 -->
+		<action name="about">
+			<result name="success">/WEB-INF/view/about-us/about-us.jsp</result>
+		</action>
+		<!-- 普惠金融 -->
+		<action name="painewebber">
+			<result>/WEB-INF/view/painewebber/painewebber.jsp</result>
+		</action>
+		<!-- 资金托管介绍页 -->
+		<action name="deposit">
+			<result name="success">/WEB-INF/view/deposit/deposit.jsp</result>
+		</action>
+		<!-- 风控体系介绍 -->
+		<action name="danger-govern">
+			<result name="success">/WEB-INF/view/danger-govern/danger-govern.jsp</result>
+		</action>
+		<!-- 安全保障四大措施 -->
+		<action name="insurance">
+			<result name="success">/WEB-INF/view/insurance/insurance.jsp</result>
+		</action>
+		<!-- 帮助中心-优金客 -->
+		<action name="help">
+			<result name="success">/WEB-INF/view/help/help.jsp</result>
+		</action>
+		<!-- 帮助中心-优金客 -->
+		<action name="help-details">
+			<result name="success">/WEB-INF/view/help-details/help-details.jsp</result>
+		</action>
+		<!-- 借款协议 -->
+		<action name="loan_service" class="com.cn.pxzd.loan.action.FinancingAction">
+			<result name="success">/WEB-INF/view/protocol/protocol.jsp</result>
+		</action>
+		<!-- banner页显示 -->
+		<action name="new-edition">
+			<result name="success">/WEB-INF/view/new-edition/new-edition.jsp</result>
+		</action>
+		<action name="garden">
+			<result name="success">/WEB-INF/view/garden/garden.jsp</result>
+		</action>
+		<action name="salary">
+			<result name="success">/WEB-INF/view/salary/salary.jsp</result>
+		</action>
+		<action name="security">
+			<result name="success">/WEB-INF/view/security/security.jsp</result>
+		</action>
+		<!-- 银率网取数据接口 -->
+		<action name="bankRate" class="com.cn.pxzd.bankrate.action.BankRateAction">
+		</action>
+		<!-- 银率网平台附加走势数据返回 -->
+		<action name="bankrateRecord" class="com.cn.pxzd.bankrate.action.BankrateRecordAction">
+		</action>
+		<!-- 米袋网每日成交标 -->
+		<action name="success" class="com.cn.pxzd.medai.action.MedaiSuccessAction"></action>
+		<!-- 米袋网每日新增标 -->
+		<action name="new" class="com.cn.pxzd.medai.action.MedaiNewAction"></action>
+		<!-- 投友网获取借款列表 -->
+		<action name= "eyeloan" class="com.cn.pxzd.touyouwang.action.EyeloanAction"></action>
+		<!-- 投友网获取投标列表 -->
+		<action name= "eyebid" class="com.cn.pxzd.touyouwang.action.EyebidAction"></action>
+	</package>
+</struts>

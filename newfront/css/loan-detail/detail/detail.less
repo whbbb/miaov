@@ -1,0 +1,207 @@
+//引入公共样式
+@import url( "../../common/commonFun" );
+
+//模块：apply
+//作者：pk
+//说明：
+
+.detail() {
+  #J_detail {
+    .outer-size();
+    .maxCenter();
+    background:#f9f9f9;
+    padding-top:32px;
+    .detail {
+      .inner-size();
+      .center();
+      text-align: left;
+
+      div.prev, div.next{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: fixed;
+        background-image: url('../../images/common/ico/ico_left_right.png');
+        background-repeat: no-repeat;
+        top: 0px;
+        left: 0px;
+        z-index: 200;
+      }
+
+      div.prev{
+        background-position: 0px 0px;
+
+        &:hover{
+          background-position: 0px -50px;
+        }
+      }
+
+      div.next{
+        background-position: -50px 0px;
+
+        &:hover{
+          background-position: -50px -50px;
+        }
+      }
+
+      div#J_img_frame{
+        border-radius: 5px;
+
+        img{
+          margin: 20px;
+        }
+      }
+
+      .de-center{
+        background: #fff;
+
+        padding:0 46px 46px;
+        border:2px solid #D3D3D3;
+        .de-title{
+          color:#33CC99;
+          height:70px;
+          line-height:70px;
+        }
+        .de-b{
+           background: #f9f9f9;
+         }
+        .de-t{
+          height:240px;
+          .de-top{
+            font-size:14px;
+            padding-left:40px;
+            float:left;
+            width:400px;
+            color:#B2B2B2;
+            height:40px;
+            line-height:40px;
+            span{
+              width:70px;
+              margin-right:10px;
+              color:#000;
+              display:inline-block;
+              text-align:right;
+            }
+          }
+        }
+        .de-means{
+          padding-bottom: 40px;
+
+          .de-tit{
+            height:40px;
+            line-height:40px;
+            text-indent:20px;
+            font-size:14px;
+          }
+          .nobor{
+            border:none;
+          }
+          table{
+            width:826px;
+            margin-left:30px;
+            margin-top:10px;
+            margin-bottom:14px;
+            border-bottom:1px solid #F7F7F7;
+            border-top:1px dashed #cccccc;
+            text-indent:80px;
+            .mar{
+              height:30px;
+              padding-top:10px;
+            }
+          }
+          .de-papers{
+            width:400px;
+            color:#B1B1B1;
+            font-size:14px;
+            line-height:27px;
+            .de-pic{
+              display:inline-block;
+              width:22px;
+              height:15px;
+              background :url('../../images/explicit-present/detail/pic-1.gif') 2px 2px no-repeat;
+              margin-left:3px;
+              margin-bottom:-2px;
+              *margin-bottom:2px;
+              &:hover{
+                cursor:pointer;
+              }
+            }
+
+            .example{
+              margin-left: 60px;
+            }
+          }
+          .de-sfont{
+            font-size:12px;
+            text-indent:88px;
+          }
+          .de-green{
+            color:#33cc99;
+          }
+          .de-da-zl{
+            font-size:14px;
+
+          }
+          .de-datum{
+            margin-left:120px;
+            margin-top:30px;
+            overflow: hidden;
+
+            .de-da-wen{
+              .inline-block();
+              cursor:pointer;
+              height: 16px;
+              width: 16px;
+              margin-bottom: -3px;
+              *margin-bottom: 1px;
+              margin-left: 5px;
+
+              background: url('../../images/common/ico/ico_tip.png') no-repeat;
+              background-position: 0px 0px;
+
+              &:hover{
+                background-position: 0px -16px;
+              }
+            }
+
+            .de-da-gr{
+              width:474px;
+              text-indent:15px;
+              font-size:12px;
+            }
+          }
+          .de-kx tr{
+            line-height:27px;
+          }
+          .de-example{
+            height:25px;
+            .example{
+              float:right;
+              text-indent:93px;
+              width:384px;
+              color:#B1B1B1;
+              font-size:12px;
+            }
+          }
+        }
+      }
+      .de-apply{
+        height:120px;
+        padding-top:42px;
+        text-align:center;
+        color:#fff;
+        .de-apply-y{
+          width:278px;
+          height:47px;
+          margin:0 auto;
+          background:#33cc99;
+          line-height:47px;
+          cursor:pointer;
+        }
+        .de-apply-y:hover{
+          background:#2cb386;
+        }
+      }
+    }
+  }
+}

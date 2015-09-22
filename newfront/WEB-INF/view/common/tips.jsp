@@ -1,0 +1,195 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+    <script type="text/javascript" src="../../../js/common/tips.js" ></script>
+
+    <div id="J_result_tips_container">
+        <div id="J_result_tips_frame_container">
+            <!-- 投资支付申请完成 -->
+            <div class="result-frame financial-complete">
+                <div class="tips-header" >
+                    <label>提 示</label>
+                    <span request-url="/index.do">X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>
+                                请您在新打开的页面进行支付投标订单有效期为30分钟
+                                <p>付款完成前请不要关闭此窗口</p>
+                            </h4>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="/index.do" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 我的账户支付申请完成 -->
+            <div class="result-frame account-pay-complete">
+                <div class="tips-header" >
+                    <label>提 示</label>
+                    <span request-url="#">X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>
+                                请您在新打开的页面进行支付投标订单有效期为30分钟
+                                <p>付款完成前请不要关闭此窗口</p>
+                            </h4>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="#" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 开通资金托管申请完成 -->
+            <div class="result-frame f-account-complete">
+                <div class="tips-header" >
+                    <label>提 示</label>
+                    <span request-url="/index.do">X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>
+                                请您在新页面开通资金托管帐户
+                                <p>操作完成前请不要关闭该窗口</p>
+                            </h4>
+                            <p>如果您已成功开通资金托管账户，您可选择<a href="../../../account/recharge.do">充值</a> 进行理财投标或进行 <a href="../../../loan/loan.do">借款</a> 操作</p>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="/index.do" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 提现申请完成 -->
+            <div class="result-frame get-cash-complete">
+                <div class="tips-header" >
+                    <label>提 示</label>
+                    <span request-url="/index.do">X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>
+                                请您在新打开的页面进行提现
+                                <p>提现完成前请不要关闭该窗口 </p>
+                            </h4>
+                            <p>如果您已成功提现，您可前往 <a href="../../../account/my_account.do">我的账户</a> 查询资金变化</p>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="/index.do" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 充值申请完成 -->
+            <div class="result-frame recharge-complete">
+                <div class="tips-header" >
+                    <label>提 示</label>
+                    <span request-url="/index.do">X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>
+                                请您在新打开的页面进行充值
+                                <p>充值完成前请不要关闭该窗口</p>
+                            </h4>
+                            <p>如果您已成功充值，您可前往 <a href="../../../account/my_account.do">我的账户</a> 查询资金变化或进行 <a href="../../../financing/financing-skip.do">理财投标</a> 操作 </p>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="/index.do" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 还款申请完成 -->
+            <div class="result-frame repayment-complete">
+                <div class="tips-header" >
+                    <label>提 示</label>
+                    <span request-url="/index.do">X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>
+                                请您在新打开的页面进行还款
+                                <p>还款完成前请不要关闭该窗口 </p>
+                            </h4>
+                            <p>如果您已经成功还款，您可前往 <a href="../../../account/my_account.do">我的账户</a> 查询资金变化</p>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="../../../account/account-loan.do" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 借款申请提交成功 -->
+            <div class="result-frame loan-success">
+                <div class="tips-header" >
+                    <label>提 示</label>
+                    <span request-url="/index.do">X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>您的借款申请已提交！</h4>
+                            <p>请准备好相关资料，我们将在1~3个工作日内与您联系并收取</p>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="/index.do" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 借款申请提交失败 -->
+            <div class="result-frame loan-fail">
+                <div class="tips-header" >
+                    <label>错 误</label>
+                    <span>X</span>
+                    <div></div>
+                </div>
+                <div class="tips-content" >
+                    <div class="tip-message" >
+                        <ul>
+                            <h4>申请失败，请重新申请！</h4>
+                            <p>请核对您的填写信息后，重新输入</p>
+                            <br />
+                            <input value="确 定" type="button" class="short" request-url="/index.do" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--安全退出-->
+            <div class="result-frame logout-complete">
+                <div class="complete-top">
+                    <div class="top-left">
+                        <h3 class="dear">亲~</h3>
+                        <p>您已安全退出，</p>
+                        <p><span class="company">优金客</span>将保障您的资金安全！</p>
+                    </div>
+                    <div class="top-right">
+                        <p class="code">更多详情，请扫二维码：</p>
+                        <div class="company-code">
+                            <div class="code-xin">
+                                <div class="code-tit wei-xin">官方微信</div>
+                                <div class="wei-code"><img src="../../../images/common/ico/wei-code.png"/></div>
+                            </div>
+                            <div class="code-tweet">
+                                <div class="code-tit tweet">官方微博</div>
+                                <div class="tweet-code"><img src="../../../images/common/ico/tweet-code.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="complete-bottom">
+                    <input type="button" class="ensure" value="确定" request-url="/index.do"/>
+                </div>
+                <span class="close" request-url="/index.do"></span>
+                <div class="login-bg"></div>
+            </div>
+        </div>
+    </div>

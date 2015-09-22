@@ -1,0 +1,214 @@
+//引入公共样式
+@import url( "../../common/commonFun" );
+
+    //模块：轮播图 bannner
+    //作者：whb
+    //说明：banner + 登录状态
+
+    .bannerHight(){
+      height: 383px;
+    }
+
+    .banner(){
+      #J_banner {
+        .outer-size();
+        .maxCenter();
+        .bannerHight();
+        position: relative;
+        margin:0px;
+        padding: 0px;
+        border-bottom: 1px solid #cccccc;
+        cursor:default;
+        li{
+          .list();
+        }
+        .flexslider {
+          margin: 0px;
+          padding: 0px;
+          position: relative;
+          .bannerHight();
+          overflow: hidden;
+          background: url('../../images/index/banner/loading.gif') center center no-repeat;
+            .welcome-box{
+              .center();
+              width: @container-width;
+              position: relative;
+              z-index: 1;
+              .welcome{
+                width: 313px;
+                height: 340px;
+                background-color: #ffffff;
+                float: right;
+                margin:25px 78px auto auto;
+                overflow: hidden;
+                display: none;
+                .login-top{
+                  width: 100%;
+                  height: 150px;
+                  p{
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                  }
+                }
+                input[type="button"]{
+                  .button-big();
+                  margin:15px 30px 0px 30px;
+                  .button-normalcy();
+                  &:hover{
+                    .button-hover();
+                  }
+                }
+
+                .login-message{
+                  padding-top: 12px;
+                  padding-left: 30px;
+                  text-align: left;
+                  font-size: 14px;
+                  line-height: 24px;
+
+                  .message-money{
+                    color: @theme-color;
+                  }
+                }
+
+//                input[type="button"].button-hover{
+//                  .button-hover();
+//
+//                  &:hover{
+//                    .button-normalcy();
+//                  }
+//                }
+              }
+
+              .not-login{
+                p{
+                  color:#999999;
+                }
+                .login-p-1 {
+                  font-size: 28px;
+                  margin-top: 20px;
+                  color: @theme-color;
+                  span {
+                    font-size: 14px;
+                    color:#999999;
+                    margin-left: 15px;
+                  }
+                }
+                .login-p-2{
+                  font-size: 36px;
+                  margin-top: 16px;
+                }
+                .login-p-3{
+                  font-size: 14px;
+                  margin-top:0px;
+                }
+              }
+
+              .login{
+                color:@font-color;
+                .login-p-1 {
+                  font-size: 18px;
+                  margin-top: 25px;
+                  span {
+                    color: @theme-color;
+                  }
+                }
+                .login-p-2{
+                  font-size: 36px;
+                  margin-top: 30px;
+                }
+                .login-p-3{
+                  font-size: 14px;
+                  margin-top:25px;
+                  span{
+                    font-size: 24px;
+                    color:@theme-color;
+                  }
+                }
+              }
+            }
+        }
+        .slides {
+          margin:0px;
+          position: relative;
+          z-index: 1;
+          padding: 0px;
+        }
+        .slides li{
+          .bannerHight();
+          .maxCenter();
+          cursor:pointer;
+          background-position: 50% 0;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        .flex-control-nav {
+          position: absolute;
+          bottom: 10px;
+          z-index: 2;
+          width: 100%;
+          text-align: center;
+        }
+        .flex-control-nav li {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          margin: 0 5px;
+          *display:inline;
+          zoom: 1;
+        }
+        .flex-control-nav a {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          line-height: 40px;
+          overflow: hidden;
+          cursor: pointer;
+          margin-top: -60px;
+          float: left;
+          z-index: 1;
+        }
+        .flex-control-nav .flex-active {
+          background-position: 0 0;
+        }
+        .flex-direction-nav {
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          top: 146px;
+          left:0px;
+          margin: 0px;
+          padding: 0px;
+        }
+        .flex-direction-nav li a {
+          display: block;
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          cursor: pointer;
+          position: absolute;
+          z-index:2;
+          background-image: url('../../images/common/ico/ico_left_right.png');
+          background-repeat: no-repeat;
+        }
+        .flex-direction-nav li a.flex-prev {
+          top: 0px;
+          left: 40px;
+          background-position: 0px 0px;
+
+          &:hover{
+            background-position: 0px -50px;
+          }
+        }
+        .flex-direction-nav li a.flex-next {
+          top:0px;
+          right: 40px;
+          background-position: -50px 0px;
+
+          &:hover{
+            background-position: -50px -50px;
+          }
+        }
+      }
+    }

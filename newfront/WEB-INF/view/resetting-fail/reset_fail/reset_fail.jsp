@@ -1,0 +1,12 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<script type="text/javascript" src="../../../js/resetting-fail/reset_fail/reset_fail.js" ></script>
+
+<div class="reset-fail">
+    <h3 class="reset-fail-tit">重置密码</h3>
+    <div class="fail-body">
+        <p class="succeed">重置密码失败</p>
+        <p class="skip"><span class="count-down greenfont" id="toindex" target-url="/index.do">3</span> 秒后跳转至优金客首页</p>
+        <p class="greenfont gofirst">重置密码</p>
+    </div>
+</div>

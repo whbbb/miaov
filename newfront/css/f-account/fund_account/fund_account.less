@@ -1,0 +1,70 @@
+.fund_account(){
+  #J_container {
+    .maxCenter();
+    background: #fafafa;
+    padding: 30px 0 72px;
+    #J_fund_account {
+      width: 1000px;
+      margin: 0 auto;
+      .fund-acc {
+        width: 1000px;
+        height: 589px;
+        margin: 30px auto 0;
+        background: #fff;
+        .banner {
+          width: 1000px;
+          height: 101px;
+          margin-bottom: 10px;
+          background: url("../../images/f-account/banner.png") no-repeat;
+        }
+        .k-fund {
+          width: 1000px;
+          height: 415px;
+          background: #FFF;
+          .fun-tit {
+            height: 20px;
+            padding: 35px 0 50px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+          }
+          .information {
+            height: 48px;
+            margin-bottom: 22px;
+            input {
+              width: 229px;
+              height: 38px;
+              border: 1px solid #ccc;
+              line-height: 38px;
+              font-size: 12px;
+              padding: 0 10px;
+              margin-left: 20px;
+
+              &[data-name='id_card']{
+                text-transform: uppercase;
+              }
+            }
+            .funred {
+              display: inline-block;
+              width: 90px;
+              line-height: 36px;
+              text-align: right;
+              background: url("../../images/f-account/star.png") 0 13px no-repeat;
+            }
+          }
+          .fund-botton {
+            width: 250px;
+            height: 40px;
+            background: #33CC99;
+            font-size: 14px;
+            line-height: 40px;
+            margin-left: 115px;
+            &:hover {
+              background: #2cb386;
+            }
+          }
+        }
+      }
+    }
+  }
+}

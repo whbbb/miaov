@@ -1,0 +1,137 @@
+
+  .main(){
+    #J_main{
+      .maxCenter();
+      background-color: #FAFAFA;
+      padding: 50px 0px 100px;
+
+      .outer{
+        .max-inner-size();
+        .center();
+        background-color: #FFFFFF;
+
+        h2{
+          text-align: left;
+          padding: 20px 0px;
+          border-bottom: 1px solid #FAFAFA;
+
+          span.title{
+            font-size: 18px;
+            color: #333333;
+            font-weight: lighter;
+            margin-left: 90px;
+          }
+
+          span.login{
+            font-size: 14px;
+            color: #333333;
+            font-weight: lighter;
+            margin-left: 555px;
+            display: none;
+
+            a{
+              color: @theme-color;
+            }
+          }
+        }
+
+        form{
+          width: 100%;
+          text-align: left;
+        }
+
+        .inner{
+          .inner-size();
+          padding: 20px 0px 40px;
+          background: url("../../images/register/main/bg.png") 510px 25px no-repeat;
+
+          table.register-table{
+            font-size: 14px;
+            color: #333333;
+            margin-left: 70px;
+
+            tr{
+              td{
+                padding: 14px 6px;
+              }
+
+              td.left-td{
+                text-align: right;
+
+                span{
+                  color: #e53e3e;
+                  position: relative;
+                  top: 2px;
+                  margin-right: 6px;
+                }
+              }
+
+              td.right-td{
+                text-align: left;
+
+                input.short{
+                  width: 100px;
+                }
+
+                .code-container{
+                  img{
+                    position: absolute;
+                  }
+
+                  a{
+                    margin-left: 92px;
+                  }
+                }
+
+                a{
+                  font-size: 14px;
+
+                  &#J_get_code{
+                    height: 40px;
+                    line-height: 40px;
+                    margin-left: 10px;
+                    width: 125px;
+                    text-align: right;
+                    position: relative;
+                    display: inline-block;
+                    *display: inline;
+                    *zoom: 1;
+                  }
+                }
+
+                div#J_password_strong{
+                  position: absolute;
+                  color: #999999;
+                  margin-top: 2px;
+                  display: none;
+
+                  label{
+                    float: left;
+                    margin-right: 6px;
+                  }
+
+                  span{
+                    width: 55px;
+                    height: 9px;
+                    background-color: #CCCCCC;
+                    display: block;
+                    float: left;
+                    margin: 6px 0px 0px 1px;
+                  }
+
+                  b{
+                    float: left;
+                    margin-left: 8px;
+                  }
+                }
+              }
+
+              td.spacial-td{
+                padding: 0px 6px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

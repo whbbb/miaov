@@ -15,7 +15,7 @@ $(document).ready(function() {
             if(deleteLog){
                 $('#callbacksDiv').html('');
             }
-            $('#callbacksDiv').append('<p>onLeave - index:' + index + ' nextIndex:' + nextIndex + ' direction:' + direction + '</p>')
+            $('#callbacksDiv').append('<p>onLeave - product:' + index + ' nextIndex:' + nextIndex + ' direction:' + direction + '</p>')
         },
         afterRender: function(){
             $('#callbacksDiv').append('<p>afterRender</p>');

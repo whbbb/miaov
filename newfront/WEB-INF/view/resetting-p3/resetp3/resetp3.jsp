@@ -1,0 +1,23 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<script type="text/javascript" src="../../../js/resetting-p3/resetp3/resetp3.js"></script>
+
+<div class="resetp3">
+	<h3 class="resetp3-tit">重置密码</h3>
+	<form id="J_resetp3-form" action="../../../account/resetting-success.do" method="post" data-type="need-verify">
+		<input name="userCode" type="hidden" value="<s:property value='userCode'/>"/>
+		<input name="hash" type="hidden" value="<s:property value='hash'/>"/>
+		<div class="resetp3-bott">
+			<p class="resetp3-pla">请重新设置您的密码</p>
+			<div class="resetp3-input resetp3-mobile-phone">
+				<input name="userPassword" type="password" placeholder="至少为英文和数字的组合，6~18个字符" class="p3-mobilenum" data-name="password">
+			</div>
+			<div class="resetp3-input">
+				<input type="password" placeholder="请再次输入修改密码" class="p3-mobilenum" data-name="re_password">
+			</div>
+			<div class="next-but">
+				<input type="button" value="提交" class="large" id="resetp3-next">
+			</div>
+		</div>
+	</form>
+</div>

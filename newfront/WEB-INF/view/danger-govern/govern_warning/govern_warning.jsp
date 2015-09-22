@@ -1,0 +1,10 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<div class="waring">
+	<h3 class="waring-title">风险预警机制<span class="warging-line"></span></h3>
+	<div class=" waring-left waring-clock"></div>
+	<div class=" waring-left waring-explain">
+		<p class=" waring-p waring-expound">风险预警机制是指通过贷后检查，发现业务风险的早期预警信号，运用定量和定性分析相结合的方法，尽早识别风险的类别、程度、原因及其发展变化趋势，并按规定的权限和程序对问题业务采取针对性处理措施以及时防范、控制和化解业务风险。</p>
+		<p class=" waring-p wargin-situation">借款人在发生下列情况时，优金客将及时向理财人发出风险预警：生产经营状况恶化；抵（质）押物被有关机关法查封、冻结、扣押；抵（质）押物市场价值与评估价值差距拉大；抵（质）押物变现价值与评估价值差距拉大；抵（质）押物所有权发生争议；抵（质）押物变现能力降低；抵（质）押物实际占管人管理不善；借款人的经营机制和组织结构发生较大变化。</p>
+	</div>
+</div>

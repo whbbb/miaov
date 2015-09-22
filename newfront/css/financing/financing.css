@@ -1,0 +1,2079 @@
+div#J_result_tips_frame_container {
+  display: none;
+}
+div#J_result_tips_frame_container .result-frame {
+  display: none;
+  /*安全退出*/
+}
+div#J_result_tips_frame_container .result-frame .tips-header {
+  width: 650px;
+  background-color: #33cc99;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 16px 30px;
+}
+div#J_result_tips_frame_container .result-frame .tips-header label {
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame .tips-header span {
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+div#J_result_tips_frame_container .result-frame .tips-header div {
+  clear: both;
+}
+div#J_result_tips_frame_container .result-frame .tips-content {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background: #ffffff url("../../images/common/ico/ico_tip_bang.png") 180px 56px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message {
+  color: #333333;
+  text-align: left;
+  width: 266px;
+  margin-left: 270px;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message h4 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message h4 p {
+  padding-bottom: 0px;
+  padding-top: 6px;
+  color: #33cc99;
+}
+div#J_result_tips_frame_container .result-frame .tips-content .tip-message p {
+  font-size: 14px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+div#J_result_tips_frame_container .result-frame.loan-success .tips-content {
+  background: #ffffff url("../../images/common/ico/ico_tip_bang.png") 180px 52px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.loan-fail .tips-content {
+  background: #ffffff url("../../images/common/ico/ico_tip_error.png") 195px 52px no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete {
+  margin: 0 auto;
+  width: 660px;
+  height: 390px;
+  position: relative;
+  background: url("../../images/common/ico/complete.png") no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top {
+  width: 540px;
+  height: 170px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left {
+  width: 275px;
+  height: 170px;
+  float: left;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left .dear {
+  padding-top: 25px;
+  font-size: 24px;
+  height: 50px;
+  font-weight: normal;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-left .company {
+  color: #33CC99;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right {
+  width: 245px;
+  height: 170px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .code {
+  padding: 10px 0 28px 30px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code {
+  width: 245px;
+  height: 115px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-xin {
+  width: 122px;
+  height: 115px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-xin .wei-code {
+  padding: 15px 0 0 25px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tweet {
+  width: 122px;
+  height: 115px;
+  float: left;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tweet .tweet-code {
+  padding: 15px 0 0 25px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .code-tit {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  text-indent: 55px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .wei-xin {
+  background: url("../../images/common/ico/weixin.png") 20px center no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-top .top-right .company-code .tweet {
+  background: url("../../images/common/ico/tweet.png") 20px center no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom {
+  margin: 34px auto 0;
+  width: 250px;
+  height: 40px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom .ensure {
+  width: 250px;
+  height: 40px;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .complete-bottom .ensure:hover {
+  background: #2CB386;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  cursor: pointer;
+  background: url("../../images/common/ico/close.png") no-repeat;
+}
+div#J_result_tips_frame_container .result-frame.logout-complete .login-bg {
+  width: 215px;
+  height: 160px;
+  position: absolute;
+  left: -80px;
+  top: 210px;
+  background: url("../../images/common/ico/login-bg.png") no-repeat;
+}
+/* 引入头部*/
+/*引入优房宝 页面*/
+/*引入优车宝页面*/
+/*引入优选计划*/
+/*引入 薪金宝*/
+/*引入 公用右侧 筛选部分*/
+html {
+  width: 100%;
+  text-align: center;
+  min-width: 1000px;
+}
+html body {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  min-width: 1000px;
+  font-family: '微软雅黑', sans-serif;
+  color: #333333;
+}
+html body #J_header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  min-width: 1000px;
+  height: 140px;
+  z-index: 100;
+}
+html body #J_header .header {
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  min-width: 1000px;
+  background-color: #333333;
+  border-top: 2px solid #33cc99;
+  color: #FFFFFF;
+}
+html body #J_header .header table {
+  margin: auto auto;
+  text-align: center;
+  width: 1000px;
+  height: 45px;
+  border-collapse: collapse;
+  padding: 0px;
+  font-size: 14px;
+}
+html body #J_header .header table tr td {
+  padding: 0px;
+}
+html body #J_header .header table tr td#J_left {
+  text-align: left;
+  padding-left: 10px;
+}
+html body #J_header .header table tr td#J_left div {
+  float: left;
+}
+html body #J_header .header table tr td#J_left a {
+  float: left;
+  margin-left: 14px;
+}
+html body #J_header .header table tr td#J_left a img {
+  border: none;
+  display: block;
+}
+html body #J_header .header table tr td#J_left a img.color {
+  border: none;
+  display: none;
+}
+html body #J_header .header table tr td#J_left a img.tip {
+  display: none;
+  position: absolute;
+  margin-left: -43px;
+  margin-top: 8px;
+}
+html body #J_header .header table tr td#J_left a img.tip.qq {
+  margin-left: -47px;
+}
+html body #J_header .header table tr td#J_left a:hover img {
+  display: none;
+}
+html body #J_header .header table tr td#J_left a:hover img.color {
+  display: block;
+}
+html body #J_header .header table tr td#J_left a:hover img.tip {
+  display: block;
+}
+html body #J_header .header table tr td#J_left a.qq div {
+  height: 91px;
+}
+html body #J_header .header table tr td#J_right {
+  text-align: right;
+  padding-right: 10px;
+}
+html body #J_header .header table tr td#J_right div#J_help,
+html body #J_header .header table tr td#J_right div#J_login,
+html body #J_header .header table tr td#J_right div#J_user {
+  float: right;
+  color: #FFFFFF;
+  line-height: 44px;
+  height: 44px;
+}
+html body #J_header .header table tr td#J_right #J_help {
+  margin-left: 8px;
+  margin-right: 3px;
+}
+html body #J_header .header table tr td#J_right #J_help a {
+  color: #FFFFFF;
+  margin-left: 14px;
+}
+html body #J_header .header table tr td#J_right #J_help a:hover {
+  color: #DDDDDD;
+}
+html body #J_header .header table tr td#J_right #J_login a {
+  color: #FFFFFF;
+  margin-left: 14px;
+}
+html body #J_header .header table tr td#J_right #J_login a:hover {
+  color: #DDDDDD;
+}
+html body #J_header .header table tr td#J_right #J_user {
+  *margin-right: -50px;
+}
+html body #J_header .header table tr td#J_right #J_user table {
+  width: auto;
+}
+html body #J_header .header table tr td#J_right #J_user .flow-table {
+  vertical-align: top;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu {
+  text-align: center;
+  height: 43px;
+  overflow: hidden;
+  margin-left: 6px;
+  color: #FFFFFF;
+  background-color: #333333;
+  cursor: pointer;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table {
+  width: 100%;
+  height: 135px;
+  border-collapse: collapse;
+  padding: 0px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.first-td {
+  padding-left: 12px;
+  padding-right: 20px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.first-td b {
+  white-space: nowrap;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td {
+  text-align: left;
+  height: 45px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td a {
+  display: block;
+  padding-left: 12px;
+  padding-right: 20px;
+  height: 45px;
+  width: auto;
+  color: #9F9F9F;
+  font-size: 12px;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td a:hover {
+  background-color: #F6F6F6;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu table#J_user_table td.link-td a:active {
+  color: #33cc99;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu div {
+  display: block;
+  width: 6px;
+  height: 5px;
+  line-height: 5px;
+  margin-top: -24px;
+  margin-left: 80px;
+  *margin-top: 5px;
+  *margin-left: 0px;
+  position: absolute;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu .white {
+  display: block;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu .black {
+  display: none;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  height: 135px;
+  border-color: #DDDDDD;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu:hover .black {
+  display: block;
+}
+html body #J_header .header table tr td#J_right #J_user div.user-menu:hover .white {
+  display: none;
+}
+html body #J_header .nav {
+  width: 100%;
+  height: 93px;
+  line-height: 93px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CCCCCC;
+}
+html body #J_header .nav .nav-container {
+  margin: auto auto;
+  width: 1000px;
+}
+html body #J_header .nav .nav-container .logo {
+  float: left;
+  width: 395px;
+  padding-left: 10px;
+}
+html body #J_header .nav .nav-container .logo a {
+  display: block;
+  width: 395px;
+  height: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 22px;
+}
+html body #J_header .nav .nav-container .inner-nav {
+  float: right;
+  height: 93px;
+  position: relative;
+}
+html body #J_header .nav .nav-container .inner-nav a {
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 93px;
+  font-size: 18px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+html body #J_header .nav .nav-container .inner-nav a.last {
+  margin-right: 0px;
+}
+html body #J_header .nav .nav-container .inner-nav span {
+  width: 100px;
+  height: 3px;
+  display: none;
+  background-color: #33cc99;
+  position: absolute;
+  margin-left: 0px;
+  *margin-left: -500px;
+  margin-top: 90px;
+}
+html body #J_header #J_user_login_container #J_login_frame {
+  margin: auto auto;
+  width: 940px;
+  height: 408px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: default;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel {
+  float: right;
+  width: 244px;
+  height: 248px;
+  display: none;
+  padding: 64px;
+  *padding-bottom: 44px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel #J_user_login_close {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  left: 910px;
+  cursor: pointer;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="text"],
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="password"] {
+  width: 172px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 70px;
+  border-style: solid;
+  border-width: 1px;
+  color: #D2D2D2;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="text"]:focus,
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel input[type="password"]:focus {
+  color: #333333;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel img {
+  position: relative;
+  top: -32px;
+  *top: -34px;
+  left: -84px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container {
+  width: 253px;
+  margin-top: -26px;
+  *margin-top: -12px;
+  text-align: left;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container input[type="text"] {
+  width: 110px;
+  padding: 0px;
+  text-align: center;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container img {
+  width: 85px;
+  height: 40px;
+  border: 1px #cccccc solid;
+  position: relative;
+  top: 17px;
+  top: 16px\9;
+  *top: 6px;
+  left: 0px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .code-container a {
+  vertical-align: baseline;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 5px;
+  *position: relative;
+  *top: -13px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .forget {
+  margin-top: 10px;
+  height: 38px;
+  text-align: left;
+  vertical-align: middle;
+  width: 250px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .forget p {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 12px;
+  color: #333333;
+  margin-left: 2px;
+  height: 17px;
+  line-height: 17px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .forget a {
+  margin-left: 100px;
+  font-size: 12px;
+  vertical-align: middle;
+  color: #33cc99;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel .register span {
+  font-size: 12px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel #J_user_login_button {
+  width: 252px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #33cc99;
+  color: #FFFFFF;
+  border: none;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+html body #J_header #J_user_login_container #J_login_frame #J_login_panel #J_user_login_button:hover {
+  background-color: #5cd6ad;
+}
+html body #J_footer {
+  cursor: default;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border-top: 1px solid #E5E5E5;
+}
+html body #J_footer .friend-link {
+  width: 100%;
+  min-width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  *line-height: normal;
+  background-color: #666666;
+  text-align: center;
+}
+html body #J_footer .friend-link p {
+  margin: auto auto;
+  width: 980px;
+  padding: 0px 10px;
+  color: #FFFFFF;
+  cursor: default;
+  text-align: left;
+}
+html body #J_footer .friend-link p a {
+  color: #FFFFFF;
+  margin-left: 10px;
+  *margin-left: 14px;
+  margin-left: 14px\9;
+  margin-right: 18px;
+}
+html body #J_footer .friend-link p a:hover {
+  color: #DDDDDD;
+}
+html body #J_footer .footer-other {
+  width: 100%;
+  min-width: 1000px;
+  height: 280px;
+  background-color: #333333;
+}
+html body #J_footer .footer-other div.footer-container {
+  margin: auto auto;
+  width: 980px;
+  color: #FFFFFF;
+  padding: 0 10px;
+  padding-top: 24px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link {
+  width: 100%;
+  text-align: left;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span.last {
+  width: 174px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span.last span {
+  width: 174px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span {
+  display: inline-block;
+  color: #FFFFFF;
+  width: 260px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span span a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span span a:hover {
+  color: #DDDDDD;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a {
+  color: #999999;
+  margin-right: 10px;
+  position: relative;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a:hover .tips {
+  display: block;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a img {
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a img.tips {
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  display: none;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a:hover {
+  color: #FFFFFF;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a.first {
+  color: #33cc99;
+}
+html body #J_footer .footer-other div.footer-container .footer-link span p a.first:hover {
+  color: #5cd6ad;
+}
+html body #J_footer .footer-other div.footer-container .footer-service {
+  width: 100%;
+  text-align: left;
+  margin-top: 24px;
+}
+html body #J_footer .footer-other div.footer-container .footer-service b {
+  font-size: 28px;
+  margin-right: 20px;
+}
+html body #J_footer .footer-other div.footer-container .footer-service span {
+  margin-right: 70px;
+}
+html body #J_footer .footer-other div.footer-container .footer-service input[type="button"] {
+  border: 2px solid #33cc99;
+  color: #33cc99;
+  background-color: #333333;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  *top: 10px;
+  *position: relative;
+}
+html body #J_footer .footer-other div.footer-container .footer-service input[type="button"]:hover {
+  border-color: #85e0c2;
+  color: #85e0c2;
+  background-color: #666666;
+}
+html body #J_footer .footer-other div.footer-split {
+  margin-top: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-width: 1000px;
+  height: 1px;
+  border-bottom: 1px solid #666666;
+}
+html body #J_footer .footer-other div.footer-bottom {
+  margin: auto auto;
+  width: 980px;
+  color: #FFFFFF;
+  padding: 0 10px;
+  text-align: left;
+  color: #818181;
+  cursor: default;
+}
+html body #J_footer .footer-other div.footer-bottom div span {
+  margin-left: 3px;
+  *margin-left: 6px;
+  margin-right: 10px;
+  font-family: "微软雅黑";
+}
+html body #J_footer .footer-other div.footer-bottom div img {
+  margin-top: 18px;
+  margin-right: 14px;
+}
+html body .left {
+  float: left;
+}
+html body .right {
+  float: right;
+}
+html body .clear-both {
+  clear: both;
+}
+html body .scroll_to_top {
+  width: 79px;
+  height: 79px;
+  background: url("../../images/common/bg/scroll_to_top_hover.png") no-repeat 0 0;
+  position: fixed;
+  right: 5%;
+  bottom: 50px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+html body .scroll_to_top:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+html body a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #33cc99;
+}
+html body a:hover {
+  color: #2cb386;
+}
+html body img {
+  border: none;
+}
+html body dl,
+html body dt,
+html body dd,
+html body ul,
+html body ol,
+html body li,
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6,
+html body p,
+html body form,
+html body input,
+html body th,
+html body td {
+  margin: 0px;
+  padding: 0px;
+}
+html body ol,
+html body ul {
+  list-style: none;
+}
+html body input {
+  font-family: '微软雅黑', sans-serif;
+}
+html body input[type="button"],
+html body input[type="submit"],
+html body input[type="reset"] {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  background-color: #33cc99;
+  color: #FFFFFF;
+}
+html body input[type="button"]:hover,
+html body input[type="submit"]:hover,
+html body input[type="reset"]:hover {
+  background-color: #5cd6ad;
+}
+html body input[type="button"]:active,
+html body input[type="submit"]:active,
+html body input[type="reset"]:active {
+  background-color: #29a37a;
+}
+html body input[type="button"].large,
+html body input[type="submit"].large,
+html body input[type="reset"].large {
+  height: 40px;
+  width: 250px;
+}
+html body input[type="button"].short,
+html body input[type="submit"].short,
+html body input[type="reset"].short {
+  height: 40px;
+  width: 150px;
+}
+html body input[type="button"].tender,
+html body input[type="submit"].tender,
+html body input[type="reset"].tender {
+  width: 185px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  background: #33CB99;
+  color: #fff;
+}
+html body input[type="button"].tender:hover,
+html body input[type="submit"].tender:hover,
+html body input[type="reset"].tender:hover {
+  background: #2cb386;
+}
+html body input[type="button"].inv-ten,
+html body input[type="submit"].inv-ten,
+html body input[type="reset"].inv-ten {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background: #33CB99;
+  color: #fff;
+}
+html body input[type="button"].inv-ten:hover,
+html body input[type="submit"].inv-ten:hover,
+html body input[type="reset"].inv-ten:hover {
+  background: #2cb386;
+}
+html body input[type="text"],
+html body input[type="password"],
+html body textarea,
+html body select {
+  border: 1px solid #CCCCCC;
+  font-size: 12px;
+  letter-spacing: 1px;
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 6px;
+}
+html body input[type="text"]:hover,
+html body input[type="password"]:hover,
+html body textarea:hover,
+html body select:hover {
+  border-color: #33cc99;
+}
+html body input[type="text"]:focus,
+html body input[type="password"]:focus,
+html body textarea:focus,
+html body select:focus {
+  border-color: #2cb386;
+  box-shadow: 0px 0px 3px #33cc99;
+}
+html body input[type="text"].normal,
+html body input[type="password"].normal {
+  height: 40px;
+  line-height: 40px;
+  width: 196px;
+  padding-left: 6px;
+  padding-right: 46px;
+}
+html body select.normal {
+  height: 40px;
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 6px;
+}
+html body textarea.normal {
+  height: 120px;
+  width: 510px;
+  padding-top: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  line-height: 20px;
+  resize: none;
+}
+#J_container {
+  width: 100%;
+  text-align: center;
+  background: #fafafa;
+  padding: 30px 0 72px;
+}
+#J_container #J_fin_cen {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+#J_container #J_fin_cen #J_fin_top {
+  width: 1000px;
+  height: 50px;
+}
+#J_container #J_fin_cen #J_fin_top .fc-title {
+  height: 50px;
+  width: 730px;
+  *float: left;
+}
+#J_container #J_fin_cen #J_fin_top .fc-title li {
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  width: 140px;
+  height: 50px;
+  color: #33CC99;
+  cursor: pointer;
+}
+#J_container #J_fin_cen #J_fin_top .fc-title li:hover {
+  color: #2CB386;
+}
+#J_container #J_fin_cen #J_fin_top .fc-title li.fc-a {
+  background: #33CB99;
+  color: #FFF;
+}
+#J_container #J_fin_cen #J_fin_top .fc-title li.fc-a:hover {
+  background: #33CB99;
+  color: #FFF;
+}
+#J_container #menu {
+  width: 100%;
+  background-color: #fafafa;
+  height: 60px;
+  z-index: 999;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+#J_container .menu {
+  width: 1000px;
+  margin: 0px auto;
+}
+#J_container .menu .logo {
+  float: left;
+}
+#J_container .menu .logo img {
+  margin-top: 12px;
+  float: left;
+}
+#J_container .menu .logo img.slogan {
+  margin-left: 28px;
+}
+#J_container .menu #nav {
+  float: right;
+  font-size: 18px;
+  font-family: "微软雅黑";
+}
+#J_container .menu li {
+  float: left;
+  text-align: center;
+  width: 100px;
+}
+#J_container #nav {
+  float: right;
+}
+#J_container #nav li a {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  height: 60px;
+  line-height: 55px;
+}
+#J_container #nav li a:hover {
+  color: #33CC99;
+  height: 55px;
+  border-bottom: 5px solid #33CC99;
+}
+#J_container #nav li ul {
+  line-height: 29px;
+  list-style-type: none;
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  z-index: 9;
+  left: -999em;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  border-top: 2px solid #cccccc;
+  background-color: #ffffff;
+  *margin-left: -50px;
+}
+#J_container #nav li ul li {
+  height: 40px;
+  float: left;
+  width: 100px;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+#J_container #nav li ul a {
+  display: block;
+  line-height: 40px;
+  font-size: 14px;
+  height: 100%;
+  width: 100px;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+#J_container #nav li ul a:hover {
+  color: #33CC99;
+  height: 40px;
+  border-bottom: 1px solid #cccccc;
+  text-decoration: none;
+  font-weight: normal;
+}
+#J_container #nav li:hover ul {
+  left: auto;
+}
+#J_container #nav li.sfhover ul {
+  left: auto;
+}
+#J_container #Pagination {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+  text-align: right;
+  margin-bottom: 30px;
+}
+#J_container #Pagination a,
+#J_container #Pagination span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0px 3px;
+  border: 1px #cccccc solid;
+  color: #333333;
+  text-decoration: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+#J_container #Pagination span.current {
+  background-color: #33CC99;
+  color: #ffffff;
+}
+#J_container #Pagination span.prev,
+#J_container #Pagination span.next {
+  background-color: #ffffff;
+  color: #333333;
+}
+#J_container #Pagination .prev:hover,
+#J_container #Pagination .next:hover {
+  background-color: #33CC99;
+  color: #ffffff;
+}
+#J_container #Pagination span.prev:hover,
+#J_container #Pagination span.next:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+#J_antrum {
+  float: left;
+  /*优房宝*/
+}
+#J_antrum .pow {
+  margin-bottom: 50px;
+  /*left*/
+}
+#J_antrum .pow .pow-left {
+  width: 730px;
+  float: left;
+  background: #FFF;
+  border-top: 2px solid #33CB99;
+}
+#J_antrum .pow .pow-left .pow-bam {
+  width: 685px;
+  height: 80px;
+  margin: 30px auto;
+  border-bottom: 1px solid  #33CB99;
+}
+#J_antrum .pow .pow-left .pow-bam .p-b-content {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 25px;
+  font-size: 14px;
+}
+#J_antrum .pow .pow-left .pow-list {
+  margin-left: -5px;
+  width: 750px;
+}
+#J_antrum .pow .pow-left .pow-list li {
+  padding-bottom: 7px;
+  width: 739px;
+  height: 132px;
+  border-top: 1px solid #fafafa;
+}
+#J_antrum .pow .pow-left .pow-list li.antrumbg:hover {
+  background: url("../../images/financing/antrumbg.png") no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left {
+  float: left;
+  margin-left: 7px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top {
+  width: 520px;
+  height: 45px;
+  padding-top: 25px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details {
+  float: left;
+  width: 424px;
+  height: 20px;
+  text-align: left;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de1 {
+  cursor: pointer;
+  width: 424px;
+  height: 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 {
+  width: 424px;
+  height: 22px;
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 22px;
+  *line-height: 24px;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #999;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi {
+  float: left;
+  width: 200px;
+  margin-left: 6px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi .kong {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai {
+  float: left;
+  padding-left: 65px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-grd {
+  width: 12px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  display: inline-block;
+  background: url("../../images/financing/fin-pic.png") 0 0 no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-db {
+  display: inline-block;
+  width: 11px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -12px 0 no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-diya {
+  width: 21px;
+  height: 14px;
+  display: inline-block;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -37px 0 no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-1 {
+  background: url("../../images/financing/fin-de-rank.png") right 0px no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-2 {
+  background: url("../../images/financing/fin-de-rank.png") right -22px no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-3 {
+  background: url("../../images/financing/fin-de-rank.png") right -44px no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-4 {
+  background: url("../../images/financing/fin-de-rank.png") right -66px no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-5 {
+  background: url("../../images/financing/fin-de-rank.png") right -88px no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom {
+  width: 500px;
+  height: 28px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  *height: 34px;
+  *margin-top: 12px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom li {
+  width: 123px;
+  height: 28px;
+  line-height: 30px;
+  *line-height: 35px;
+  float: left;
+  margin: 0;
+  border: 0;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .blb-big {
+  font-size: 28px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-pic {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-bottom: -7px;
+  margin-right: 5px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-1 {
+  margin-bottom: -3px;
+  background: url("../../images/financing/fin-pic1.png") 0 0 no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-2 {
+  background: url("../../images/financing/fin-pic1.png") -31px 0 no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-3 {
+  background: url("../../images/financing/fin-pic1.png") -63px 0 no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-4 {
+  background: url("../../images/financing/fin-pic1.png") -93px 0 no-repeat;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom .green {
+  color: #33Cb99;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom .plb-time {
+  margin-left: -30px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-left .p-l-bottom .sum {
+  width: 170px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right {
+  float: left;
+  width: 185px;
+  height: 100%;
+  margin-top: 7px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-progress-box {
+  width: 185px;
+  height: 35px;
+  font-size: 10px;
+  position: relative;
+  margin-top: 8px;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val {
+  position: absolute;
+  left: -10%;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-val {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  background: #33CB99;
+  color: #FFF;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-triangle {
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  margin-bottom: 2px;
+  border-width: 5px;
+  border-style: solid dashed dashed dashed;
+  border-color: #33CB99 transparent transparent transparent;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg {
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  overflow: hidden;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg .plr-progress-bar {
+  background: #33CB99;
+  width: 0%;
+  height: 100%;
+  float: left;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-balance {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #999;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .plr-balance .plr-balance-mon {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #22CB99;
+}
+#J_antrum .pow .pow-left .pow-list li .p-l-right .tender-dark {
+  cursor: default;
+  background: #ccc;
+  color: #FFF;
+}
+#J_machine {
+  float: left;
+  display: none;
+  /*优车宝*/
+}
+#J_machine .pow {
+  margin-bottom: 50px;
+  /*left*/
+}
+#J_machine .pow .pow-left {
+  width: 730px;
+  float: left;
+  background: #FFF;
+  border-top: 2px solid #33CB99;
+}
+#J_machine .pow .pow-left .pow-bam {
+  width: 685px;
+  height: 80px;
+  margin: 30px auto;
+  border-bottom: 1px solid #33CB99;
+}
+#J_machine .pow .pow-left .pow-bam .p-b-content {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 25px;
+  font-size: 14px;
+}
+#J_machine .pow .pow-left .pow-list {
+  width: 750px;
+  margin-left: -5px;
+}
+#J_machine .pow .pow-left .pow-list li {
+  padding-bottom: 7px;
+  width: 739px;
+  height: 132px;
+  border-top: 1px solid #fafafa;
+}
+#J_machine .pow .pow-left .pow-list li.machinebg:hover {
+  background: url("../../images/financing/machinebg.png") no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left {
+  float: left;
+  margin-left: 7px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top {
+  width: 520px;
+  height: 45px;
+  padding-top: 25px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details {
+  float: left;
+  width: 424px;
+  height: 20px;
+  text-align: left;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de1 {
+  cursor: pointer;
+  width: 424px;
+  height: 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 {
+  width: 424px;
+  height: 22px;
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 22px;
+  *line-height: 24px;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #999;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi {
+  float: left;
+  width: 200px;
+  margin-left: 6px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi .kong {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai {
+  float: left;
+  padding-left: 65px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-grd {
+  width: 12px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  display: inline-block;
+  background: url("../../images/financing/fin-pic.png") 0 0 no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-db {
+  display: inline-block;
+  width: 11px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -12px 0 no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-diya {
+  width: 21px;
+  height: 14px;
+  display: inline-block;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -37px 0 no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-1 {
+  background: url("../../images/financing/fin-de-rank.png") right 0px no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-2 {
+  background: url("../../images/financing/fin-de-rank.png") right -22px no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-3 {
+  background: url("../../images/financing/fin-de-rank.png") right -44px no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-4 {
+  background: url("../../images/financing/fin-de-rank.png") right -66px no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-5 {
+  background: url("../../images/financing/fin-de-rank.png") right -88px no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom {
+  width: 500px;
+  height: 28px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  *height: 34px;
+  *margin-top: 12px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom li {
+  width: 123px;
+  height: 28px;
+  line-height: 30px;
+  *line-height: 35px;
+  float: left;
+  margin: 0;
+  border: 0;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .blb-big {
+  font-size: 28px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-pic {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-bottom: -7px;
+  margin-right: 5px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-1 {
+  margin-bottom: -3px;
+  background: url("../../images/financing/fin-pic1.png") 0 0 no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-2 {
+  background: url("../../images/financing/fin-pic1.png") -31px 0 no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-3 {
+  background: url("../../images/financing/fin-pic1.png") -63px 0 no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-4 {
+  background: url("../../images/financing/fin-pic1.png") -93px 0 no-repeat;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom .green {
+  color: #33Cb99;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom .plb-time {
+  margin-left: -30px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-left .p-l-bottom .sum {
+  width: 170px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right {
+  float: left;
+  width: 185px;
+  height: 100%;
+  margin-top: 7px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-progress-box {
+  width: 185px;
+  height: 35px;
+  font-size: 10px;
+  position: relative;
+  margin-top: 8px;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val {
+  position: absolute;
+  left: -10%;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-val {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  background: #33CB99;
+  color: #FFF;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-triangle {
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  margin-bottom: 2px;
+  border-width: 5px;
+  border-style: solid dashed dashed dashed;
+  border-color: #33CB99 transparent transparent transparent;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg {
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  overflow: hidden;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg .plr-progress-bar {
+  background: #33CB99;
+  width: 0%;
+  height: 100%;
+  float: left;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-balance {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #999;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .plr-balance .plr-balance-mon {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #22CB99;
+}
+#J_machine .pow .pow-left .pow-list li .p-l-right .tender-dark {
+  cursor: default;
+  background: #ccc;
+  color: #FFF;
+}
+#J_arranged {
+  float: left;
+  display: none;
+  /*优选计划*/
+}
+#J_arranged .pow {
+  margin-bottom: 50px;
+  /*left*/
+}
+#J_arranged .pow .pow-left {
+  width: 730px;
+  float: left;
+  background: #FFF;
+  border-top: 2px solid #33CB99;
+}
+#J_arranged .pow .pow-left .pow-bam {
+  width: 685px;
+  height: 80px;
+  margin: 30px auto;
+  border-bottom: 1px solid #33CB99;
+}
+#J_arranged .pow .pow-left .pow-bam .p-b-content {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 25px;
+  font-size: 14px;
+}
+#J_arranged .pow .pow-left .pow-list {
+  width: 750px;
+  margin-left: -5px;
+}
+#J_arranged .pow .pow-left .pow-list li {
+  padding-bottom: 7px;
+  width: 739px;
+  height: 132px;
+  border-top: 1px solid #fafafa;
+}
+#J_arranged .pow .pow-left .pow-list li.arrangedbg:hover {
+  background: url("../../images/financing/arrangedbg.png") no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left {
+  float: left;
+  margin-left: 7px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top {
+  width: 520px;
+  height: 45px;
+  padding-top: 25px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details {
+  float: left;
+  width: 424px;
+  height: 20px;
+  text-align: left;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de1 {
+  cursor: pointer;
+  width: 424px;
+  height: 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 {
+  width: 424px;
+  height: 22px;
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 22px;
+  *line-height: 24px;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #999;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi {
+  float: left;
+  width: 200px;
+  margin-left: 6px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi .kong {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai {
+  float: left;
+  padding-left: 65px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-grd {
+  width: 12px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  display: inline-block;
+  background: url("../../images/financing/fin-pic.png") 0 0 no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-db {
+  display: inline-block;
+  width: 11px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -12px 0 no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-diya {
+  width: 21px;
+  height: 14px;
+  display: inline-block;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -37px 0 no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-1 {
+  background: url("../../images/financing/fin-de-rank.png") right 0px no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-2 {
+  background: url("../../images/financing/fin-de-rank.png") right -22px no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-3 {
+  background: url("../../images/financing/fin-de-rank.png") right -44px no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-4 {
+  background: url("../../images/financing/fin-de-rank.png") right -66px no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-5 {
+  background: url("../../images/financing/fin-de-rank.png") right -88px no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom {
+  width: 500px;
+  height: 28px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  *height: 34px;
+  *margin-top: 12px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom li {
+  width: 123px;
+  height: 28px;
+  line-height: 30px;
+  *line-height: 35px;
+  float: left;
+  margin: 0;
+  border: 0;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .blb-big {
+  font-size: 28px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-pic {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-bottom: -7px;
+  margin-right: 5px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-1 {
+  margin-bottom: -3px;
+  background: url("../../images/financing/fin-pic1.png") 0 0 no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-2 {
+  background: url("../../images/financing/fin-pic1.png") -31px 0 no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-3 {
+  background: url("../../images/financing/fin-pic1.png") -63px 0 no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-4 {
+  background: url("../../images/financing/fin-pic1.png") -93px 0 no-repeat;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom .green {
+  color: #33Cb99;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom .plb-time {
+  margin-left: -30px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-left .p-l-bottom .sum {
+  width: 170px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right {
+  float: left;
+  width: 185px;
+  height: 100%;
+  margin-top: 7px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-progress-box {
+  width: 185px;
+  height: 35px;
+  font-size: 10px;
+  position: relative;
+  margin-top: 8px;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val {
+  position: absolute;
+  left: -10%;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-val {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  background: #33CB99;
+  color: #FFF;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-triangle {
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  margin-bottom: 2px;
+  border-width: 5px;
+  border-style: solid dashed dashed dashed;
+  border-color: #33CB99 transparent transparent transparent;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg {
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  overflow: hidden;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg .plr-progress-bar {
+  background: #33CB99;
+  width: 0%;
+  height: 100%;
+  float: left;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-balance {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #999;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .plr-balance .plr-balance-mon {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #22CB99;
+}
+#J_arranged .pow .pow-left .pow-list li .p-l-right .tender-dark {
+  cursor: default;
+  background: #ccc;
+  color: #FFF;
+}
+#J_metals {
+  float: left;
+  display: none;
+  /*薪金宝*/
+}
+#J_metals .pow {
+  margin-bottom: 50px;
+  /*left*/
+}
+#J_metals .pow .pow-left {
+  width: 730px;
+  float: left;
+  background: #FFF;
+  border-top: 2px solid #33CB99;
+}
+#J_metals .pow .pow-left .pow-bam {
+  width: 685px;
+  height: 80px;
+  margin: 30px auto;
+  border-bottom: 1px solid #33CB99;
+}
+#J_metals .pow .pow-left .pow-bam .p-b-content {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 25px;
+  font-size: 14px;
+}
+#J_metals .pow .pow-left .pow-list {
+  width: 750px;
+  margin-left: -5px;
+}
+#J_metals .pow .pow-left .pow-list li {
+  padding-bottom: 7px;
+  width: 739px;
+  height: 132px;
+  border-top: 1px solid #fafafa;
+}
+#J_metals .pow .pow-left .pow-list li.metalsbg:hover {
+  background: url("../../images/financing/metalsbg.png") no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left {
+  float: left;
+  margin-left: 7px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top {
+  width: 520px;
+  height: 45px;
+  padding-top: 25px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details {
+  float: left;
+  width: 424px;
+  height: 20px;
+  text-align: left;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de1 {
+  cursor: pointer;
+  width: 424px;
+  height: 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 {
+  width: 424px;
+  height: 22px;
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 22px;
+  *line-height: 24px;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #999;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi {
+  float: left;
+  width: 200px;
+  margin-left: 6px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-benxi .kong {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai {
+  float: left;
+  padding-left: 65px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-grd {
+  width: 12px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  display: inline-block;
+  background: url("../../images/financing/fin-pic.png") 0 0 no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-db {
+  display: inline-block;
+  width: 11px;
+  height: 13px;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -12px 0 no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .de2-dai .de2-diya {
+  width: 21px;
+  height: 14px;
+  display: inline-block;
+  margin: 0 5px -2px 20px;
+  background: url("../../images/financing/fin-pic.png") -37px 0 no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-1 {
+  background: url("../../images/financing/fin-de-rank.png") right 0px no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-2 {
+  background: url("../../images/financing/fin-de-rank.png") right -22px no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-3 {
+  background: url("../../images/financing/fin-de-rank.png") right -44px no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-4 {
+  background: url("../../images/financing/fin-de-rank.png") right -66px no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-top .pltop-details .plt-de2 .d2-5 {
+  background: url("../../images/financing/fin-de-rank.png") right -88px no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom {
+  width: 500px;
+  height: 28px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  *height: 34px;
+  *margin-top: 12px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom li {
+  width: 123px;
+  height: 28px;
+  line-height: 30px;
+  *line-height: 35px;
+  float: left;
+  margin: 0;
+  border: 0;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .blb-big {
+  font-size: 28px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-pic {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-bottom: -7px;
+  margin-right: 5px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-1 {
+  margin-bottom: -3px;
+  background: url("../../images/financing/fin-pic1.png") 0 0 no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-2 {
+  background: url("../../images/financing/fin-pic1.png") -31px 0 no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-3 {
+  background: url("../../images/financing/fin-pic1.png") -63px 0 no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom li .plb-4 {
+  background: url("../../images/financing/fin-pic1.png") -93px 0 no-repeat;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom .green {
+  color: #33Cb99;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom .plb-time {
+  margin-left: -30px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-left .p-l-bottom .sum {
+  width: 170px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right {
+  float: left;
+  width: 185px;
+  height: 100%;
+  margin-top: 7px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-progress-box {
+  width: 185px;
+  height: 35px;
+  font-size: 10px;
+  position: relative;
+  margin-top: 8px;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val {
+  position: absolute;
+  left: -10%;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-val {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  background: #33CB99;
+  color: #FFF;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-progress-val .plr-triangle {
+  width: 0px;
+  height: 0px;
+  display: inline-block;
+  margin-bottom: 2px;
+  border-width: 5px;
+  border-style: solid dashed dashed dashed;
+  border-color: #33CB99 transparent transparent transparent;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg {
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  overflow: hidden;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-progress-box .plr-bar-bg .plr-progress-bar {
+  background: #33CB99;
+  width: 0%;
+  height: 100%;
+  float: left;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-balance {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #999;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .plr-balance .plr-balance-mon {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #22CB99;
+}
+#J_metals .pow .pow-left .pow-list li .p-l-right .tender-dark {
+  cursor: default;
+  background: #ccc;
+  color: #FFF;
+}
+#J_financing_choose {
+  /*right*/
+}
+#J_financing_choose .pow-right {
+  width: 250px;
+  height: 600px;
+  float: left;
+  margin-left: 20px;
+  text-align: left;
+}
+#J_financing_choose .pow-right .screen {
+  font-weight: normal;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+#J_financing_choose .pow-right .options {
+  width: 100%;
+}
+#J_financing_choose .pow-right .options li {
+  height: 90px;
+  font-size: 16px;
+}
+#J_financing_choose .pow-right .options li .o-detail {
+  margin-top: 15px;
+  font-size: 14px;
+}
+#J_financing_choose .pow-right .options li .o-detail li {
+  font-size: 12px;
+  float: left;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+#J_financing_choose .pow-right .options li .o-detail .xwd {
+  margin: 0 15px;
+}
+#J_financing_choose .pow-right .options li .o-detail .o-rank {
+  margin-right: 10px;
+  width: 30px;
+  padding: 0;
+  text-align: center;
+}
+#J_financing_choose .pow-right .options li .o-de-b {
+  margin-left: 56px;
+  display: inline;
+}
+#J_financing_choose .pow-right .options li .o-d-all {
+  text-align: center;
+  background: #33CB99;
+  color: #FFF;
+}
+#J_financing_choose .pow-right .go {
+  width: 148px;
+  height: 38px;
+  margin: 0 auto;
+}
+#J_financing_choose .pow-right .go .again {
+  width: 148px;
+  height: 38px;
+  line-height: 34px;
+  background: #FFF;
+  border: 1px solid #33CB99;
+  color: #33CB99;
+}
+#J_financing_choose .pow-right .go .again:hover {
+  background: #33Cb99;
+  color: #FFF;
+}
+.gravatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+.gravatar .module {
+  width: 100%;
+  height: 100%;
+}
+.pic-default {
+  background: url("../../images/financing/pic-default.png") no-repeat;
+}
+.pic-antrum {
+  background: url("../../images/financing/pic-antrum.png") no-repeat;
+}
+.pic-machine {
+  background: url("../../images/financing/pic-machine.png") no-repeat;
+}
+.pic-arranged {
+  background: url("../../images/financing/pic-arranged.png") no-repeat;
+}
+.pic-metals {
+  background: url("../../images/financing/pic-metals.png") no-repeat;
+}
+.pl-pic1 {
+  background: url("../../images/financing/pic1.png") no-repeat;
+}
+.pl-pic2 {
+  background: url("../../images/financing/pic2.png") no-repeat;
+}
+.pl-pic3 {
+  background: url("../../images/financing/pic3.png") no-repeat;
+}
+.pl-pic4 {
+  background: url("../../images/financing/pic4.png") no-repeat;
+}

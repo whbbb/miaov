@@ -1,0 +1,300 @@
+.my_loan_footlist(){
+  .floatleft{
+    float:left;
+  }
+  .greenfont{
+    color:#33CC99;
+    cursor:pointer;
+  }
+  .orangefont{
+    color:#ff9900;
+  }
+
+  .pan-list{
+    width:739px;
+    height:530px;
+    padding:33px 34px 30px 37px;
+    background:#FFF;
+    margin-bottom:30px;
+    text-align:left;
+    .pan-list-tit{
+      width:739px;
+      height:40px;
+      clear:both;
+      line-height:40px;
+      position: relative;
+      z-index: 99;
+
+      .firsttit{
+        height:40px;
+        margin-right:43px;
+        cursor:default;
+        font-size:18px;
+      }
+      .genre{
+        float:left;
+        margin-left:340px;
+        font-size:14px;
+      }
+      .menu{
+        float:left;
+        width:200px;
+        position:relative;
+        font-size:14px;
+        color:#CCC;
+        line-height:25px;
+        margin-left:20px;
+        .fl-select{
+          *margin-left:-20px;
+          width:195px;
+          height:33px;
+          border:1px solid #ccc;
+          background:#FFF;
+          color:#333;
+          text-align:left;
+          padding:0 10px;
+        }
+        .fl-hidebut{
+          width:193px;
+          position:absolute;
+          right:5px;
+          top:33px;
+          background:#FFF;
+          border-left:1px solid #ccc;
+          border-bottom:1px solid #ccc;
+          border-right:1px solid #ccc;
+          z-index:9;
+          display:none;
+          li{
+            cursor:pointer;
+            height:30px;
+            color:#333;
+            padding:0 10px;
+            &:hover{
+              background:#33CC99;
+            }
+          }
+        }
+        .next-triangle{
+          width:20px;
+          height:31px;
+          position:absolute;
+          top:1px;
+          right:6px;
+          background:url("../../images/account/my_account_right/my_pandect/next-triangle.png") 3px  13px  no-repeat #FFF;
+          &:hover{
+            cursor:pointer;
+            background:url("../../images/account/my_account_right/my_pandect/next-triangle.png") -14px 13px  no-repeat #FFF;
+          }
+        }
+      }
+    }
+  }
+  .recordtit{
+    width:740px;
+    height:40px;
+    background:#d9f5ec;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    margin-bottom:1px;
+  }
+  .fldate{
+    width:240px;
+    position:relative;
+    .maxeight{
+      text-align:left;
+      padding-left:70px;
+    }
+  }
+  .flmoney{
+    width:110px;
+  }
+  .flremarks{
+    width:170px;
+  }
+  .dremarksbg{
+    /*等*/
+    background:url("../../images/account-loan/deng.png")  center center no-repeat;
+  }
+  .yremarksbg{
+    /*月*/
+     background:url("../../images/account-loan/yue.png")  center center no-repeat;
+  }
+  .bremarksbg{
+    /*本*/
+     background:url("../../images/account-loan/ben.png")  center center no-repeat;
+  }
+
+  .loan-list{
+    width:740px;
+    height:345px;
+    /*有记录*/
+    .loanlist-detail{
+      font-size:14px;
+      text-align:center;
+      position:relative;
+       .table-adjust();
+      .disnone{
+        display:none;
+      }
+      .ldtr{
+        position:absolute;
+        left:0;
+      }
+      tr{
+        height:35px;
+        line-height:35px;
+        cursor:pointer;
+        width:740px;
+       &:hover{
+         background:#fafafa;
+       }
+        .dnone-detail{
+          cursor:default;
+          width:730px;
+          height:361px;
+          background:#fafafa;
+          position:absolute;
+          left:0;
+          top:36px;
+          text-align:left;
+          padding:29px 0 0 9px;
+          font-size:14px;
+          line-height:24px;
+          .basic-details{
+            height:55px;
+            line-height:32px;
+            .basicli{
+              color:#999;
+              float:left;
+              font-size:12px;
+              margin-right:35px;
+              .basic-sum{
+                color:#333;
+              }
+            }
+          }
+          .recordoff{
+            width:20px;
+            height:20px;
+            position:absolute;
+            right:8px;
+            top:6px;
+            cursor:pointer;
+            background:url("../../images/account-loan/recordoff.png") no-repeat;
+          }
+          .minute{
+            line-height:24px;
+            margin-bottom:10px;
+          }
+          .minute-tit{
+            font-size:12px;
+            text-align:center;
+            width:713px;
+            height:25px;
+            li{
+              float:left;
+            }
+          }
+          .min-first{
+            width:90px;
+          }
+          .min-second{
+            width:95px;
+          }
+          .min-third{
+            width:95px;
+          }
+          .min-fourth{
+            width:95px;
+          }
+          .min-fifth{
+            width:75px;
+          }
+          .min-sixth{
+            width:70px;
+          }
+          .min-seventh{
+            width:70px;
+          }
+          .min-eighth{
+            width:70px;
+          }
+          .min-ninth{
+            width:50px;
+          }
+          .min-detail{
+            font-size:12px;
+            overflow-y:auto;
+            width:730px;
+            height:220px;
+            .minute-details{
+              .table-adjust();
+              width:713px;
+              text-align:center;
+              tr{
+                cursor:default;
+                height:35px;
+                line-height:35px;
+                td{
+                  margin:0 3px;
+                }
+              }
+              .min-details-tr{
+
+                .default{
+                  color:#ccc;
+                }
+                .greenfont{
+                  color:#33CC99;
+                }
+              }
+            }
+          }
+        }
+      }
+      .protocol{
+        display:inline-block;
+        width:65px;
+        height:35px;
+        position:absolute;
+        left:0 ;
+        top:0;
+        background:url("../../images/account-loan/protocol.png") 25px center no-repeat;
+      }
+    }
+    /*无记录时显示*/
+    .no-record{
+      width:290px;
+      height:80px;
+      line-height:65px;
+      text-indent:90px;
+      background:url("../../images/account-loan/no-record.png")  220px  170px no-repeat;
+      padding:170px 0 0 220px;
+    }
+  }
+  .pagination{
+    float:right;
+    margin-top:40px;
+    span{
+      display:inline-block;
+      margin:0 5px;
+    }
+    ul{
+      float:left;
+
+      li{
+        float:left;
+        margin:0 5px;
+        cursor:pointer;
+      }
+      .current-page{
+        color:#33cc99;
+      }
+    }
+  }
+  .fafa{
+    background:#fafafa;
+  }
+}

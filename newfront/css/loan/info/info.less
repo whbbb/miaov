@@ -1,0 +1,101 @@
+  //引入公共样式
+  @import url( "../../common/commonFun" );
+
+    //模块：info 借款说明
+    //作者：pk
+    //说明：
+
+    .info(){
+      #J_info {
+        .outer-size();
+        .maxCenter();
+        background-color: #FFFFFF;
+
+        .info{
+          .inner-size();
+          .center();
+          text-align: left;
+          padding-top: 30px;
+          cursor: default;
+
+          span{
+            margin-left: 10px;
+            margin-bottom: 20px;
+            .inline-block();
+          }
+
+          span.last{
+            margin-left: 470px;
+          }
+
+          .info-inner{
+            height: 300px;
+
+            div.left{
+              margin-left: 10px;
+
+              dl{
+                display: block;
+                width: 490px;
+
+                dt{
+                  float: left;
+                  width: 40px;
+                  height: 32px;
+                  padding: 10px 0px;
+                }
+                dd{
+                  padding: 10px 0px;
+                  float: left;
+                  font-size: 14px;
+                  height: 32px;
+                  line-height: 32px;
+                  min-width: 230px;
+                }
+
+                dd.last{
+                  min-width: 170px;
+                }
+              }
+            }
+
+            div.right{
+              text-align: left;
+              width: 430px;
+
+              p{
+                margin-top: 15px;
+                margin-bottom: 32px;
+                font-size: 14px;
+              }
+
+              dl{
+                display: block;
+                height: 25px;
+                margin-top: 24px;
+
+                dt{
+                  float: left;
+                  height: 25px;
+                  line-height: 25px;
+                  font-size: 14px;
+                }
+                dd{
+                  font-size: 12px;
+                  text-align: center;
+                  width: 64px;
+                  float: left;
+                  height: 25px;
+                  line-height: 25px;
+                  margin-left: 10px;
+                }
+              }
+
+              p.bottom{
+                margin-top: 31px;
+              }
+            }
+          }
+        }
+      }
+    }

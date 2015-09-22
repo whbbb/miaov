@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<!-- 默认Struts根配置文件 -->
+<struts>
+	<!-- ActionURL后缀，如有多个，用逗号分开 -->
+	<constant name="struts.action.extension" value="do" />
+	<!-- 编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 文本信息 -->
+	<constant name="struts.custom.i18n.resources" value="messageResource" />
+
+	<!-- Spring 自动装配策略 -->
+	<constant name="struts.objectFactory.spring.autoWire" value="type" />
+	<constant name="struts.objectFactory.spring.autoWire.alwaysRespect" value="true" />
+	
+	<!-- 关闭动态方法调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<!-- OGNL中禁用静态方法调用 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="false" />
+	<!-- Action名中禁用斜线 -->
+	<constant name="struts.enable.SlashesInActionNames" value="false" />
+	
+	<!-- 不使用UI模板 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- url标签用 -->
+	<constant name="struts.url.http.port" value="8080" />
+	<constant name="struts.url.https.port" value="8443" />
+	<!-- 上传文件暂存位置 -->
+	<constant name="struts.multipart.saveDir" value="C:/WINDOWS/Temp" />
+	<!-- 上传文件大小限制 -->
+	<constant name="struts.multipart.maxSize" value="104857600" />
+
+
+	<!-- 项目基础包 -->
+    <package name="common-config" abstract="true">
+        <result-types>
+            <!-- JSP -->
+            <result-type name="dispatcher" class="org.apache.struts2.dispatcher.ServletDispatcherResult" default="true"/>
+            <!-- 文件下载 -->
+            <result-type name="stream" class="org.apache.struts2.dispatcher.StreamResult"/>
+            <!-- redirect -->
+            <result-type name="redirect" class="org.apache.struts2.dispatcher.ServletRedirectResult"/>
+            <result-type name="redirectAction" class="org.apache.struts2.dispatcher.ServletActionRedirectResult"/>
+        	<!-- Action链 -->
+            <!-- result-type name="chain" class="com.opensymphony.xwork2.ActionChainResult"/-->
+            <!-- freemarker -->
+            <!-- result-type name="freemarker" class="org.apache.struts2.views.freemarker.FreemarkerResult"/-->
+        </result-types>
+
+        <interceptors>
+			<!-- 异常映射拦截器，捕捉Action的方法执行期间抛出的异常,并把它映射到一个result. -->
+            <interceptor name="exception" class="com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor"/>
+			<!-- 多语言支持 -->
+            <interceptor name="i18n" class="com.opensymphony.xwork2.interceptor.I18nInterceptor"/>
+			<!-- Servlet相关参数设置 -->
+            <interceptor name="servletConfig" class="org.apache.struts2.interceptor.ServletConfigInterceptor"/>
+			<!-- 文件上传 -->           
+            <interceptor name="fileUpload" class="org.apache.struts2.interceptor.FileUploadInterceptor"/>
+			<!-- 参数拦截器 -->
+            <interceptor name="staticParams" class="com.opensymphony.xwork2.interceptor.StaticParametersInterceptor"/>
+            <interceptor name="actionMappingParams" class="org.apache.struts2.interceptor.ActionMappingParametersInteceptor"/>
+            <interceptor name="params" class="com.opensymphony.xwork2.interceptor.ParametersInterceptor"/>
+			<!-- 拦截Cookie值并填到Action里-->           
+            <interceptor name="cookie" class="org.apache.struts2.interceptor.CookieInterceptor"/>
+            <!-- 转存请求头的requestName到Action -->
+            <interceptor name="setRequesetName" class="com.cn.pxzd.common.RequestNameInterceptor" />
+			<!-- 保存OGNL的转换错误到fieldError -->
+            <interceptor name="conversionError" class="org.apache.struts2.interceptor.StrutsConversionErrorInterceptor"/>
+			<!-- 验证及出错返回对应的拦截器 -->            
+            <interceptor name="validation" class="org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor"/>
+            <interceptor name="workflow" class="com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor"/>
+			<!-- 检测旧式用法 -->
+            <interceptor name="deprecation" class="org.apache.struts2.interceptor.DeprecationInterceptor" />
+
+			<!-- Spring自动注入 -->
+            <!-- interceptor name="autowiring" class="com.opensymphony.xwork2.spring.interceptor.ActionAutowiringInterceptor"/-->
+			<!-- 向Response中添加Cookie -->
+            <!-- interceptor name="cookieProvider" class="org.apache.struts2.interceptor.CookieProviderInterceptor"/-->
+            
+            <interceptor-stack name="defaultStack">
+                <interceptor-ref name="exception"/>
+                <interceptor-ref name="i18n"/>
+                <interceptor-ref name="servletConfig"/>
+                <interceptor-ref name="fileUpload"/>
+                <interceptor-ref name="staticParams"/>
+                <interceptor-ref name="actionMappingParams"/>
+                <interceptor-ref name="params">
+                    <param name="excludeParams">^action:.*,^method:.*</param>
+                </interceptor-ref>
+                <interceptor-ref name="cookie">
+                	<param name="cookiesName">loginHash,loginCount,url</param>
+      				<param name="cookiesValue">*</param>
+                </interceptor-ref>
+                <interceptor-ref name="setRequesetName"/>
+                <interceptor-ref name="conversionError"/>
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="deprecation"/>
+            </interceptor-stack>
+       </interceptors>
+
+        <default-interceptor-ref name="defaultStack"/>
+
+        <default-class-ref class="com.cn.pxzd.common.CommonAction" />
+        <global-results>
+            <result name="error">/WEB-INF/view/maintain/maintain.jsp</result>
+        </global-results>
+    </package>
+
+    <package name="default" namespace="/" extends="common-config">
+        <default-action-ref name="index" />
+        
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+        <action name="blogic" class="com.cn.pxzd.blogic.action.BLogicAction"></action>
+        <!-- 调用假数据blogic -->
+        <action name="fakeblogic" class="com.cn.pxzd.blogic.action.FakeBLogicAction"></action>
+
+		<action name="error">
+			<result>/WEB-INF/view/error.jsp</result>
+		</action>
+		<action name="test">
+			<result>/WEB-INF/test.jsp</result>
+		</action>
+		<action name="score">
+			<result>/WEB-INF/score.jsp</result>
+		</action>
+		
+		<action name="index" class="com.cn.pxzd.account.action.IndexAction">
+			<result name="success">/WEB-INF/view/index/index.jsp</result>
+		</action>
+		
+    </package>
+
+    
+    <!-- 按业务分为5个xml文件 -->
+    <!-- 账户管理 -->
+    <include file="struts-account.xml"></include>
+   	<!-- 我要理财 -->
+    <include file="struts-financing.xml"></include>
+    <!-- 我要借款 -->
+    <include file="struts-loan.xml"></include>
+    <!-- 第三方支付相关 -->
+    <include file="struts-escrow.xml"></include>
+    <!-- 其它 -->
+    <include file="struts-other.xml"></include>
+</struts>

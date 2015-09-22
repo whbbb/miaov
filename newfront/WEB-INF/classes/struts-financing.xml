@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="financingPackage" namespace="/financing" extends="common-config">
+		<!-- 我要理财首页 -->
+		<action name="financing-skip">
+			<result name="success">/WEB-INF/view/financing-skip/financing-skip.jsp</result>
+		</action>
+	
+		<!-- 我要理财列表  优房宝 02-->
+		<action name="financing_antrum" class="com.cn.pxzd.financing.action.FinancingSkip">
+			<result name="success">/WEB-INF/view/financing/financing.jsp</result>
+			<result name="antrum">/WEB-INF/view/financing/antrum/antrum.jsp</result>
+		</action>
+		
+		<!-- 我要理财列表  优车宝 03-->
+		<action name="financing_machine"  class="com.cn.pxzd.financing.action.FinancingSkip">
+			<result name="success">/WEB-INF/view/financing/financing.jsp</result>
+			<result name="machine">/WEB-INF/view/financing/machine/machine.jsp</result>
+		</action>
+		
+		<!-- 我要理财列表  优选计划  01-->
+		<action name="financing_arranged"  class="com.cn.pxzd.financing.action.FinancingSkip">
+			<result name="success">/WEB-INF/view/financing/financing.jsp</result>
+			<result name="arranged">/WEB-INF/view/financing/arranged/arranged.jsp</result>
+		</action>
+		
+		<!-- 我要理财列表  薪金宝 04-->
+		<action name="financing_metals"  class="com.cn.pxzd.financing.action.FinancingSkip">
+			<result name="success">/WEB-INF/view/financing/financing.jsp</result>
+			<result name="metals">/WEB-INF/view/financing/metals/metals.jsp</result>
+		</action>
+		
+		<!-- 投标详情 -->
+		<action name="financial-details" class="com.cn.pxzd.financing.action.FinancialDetailsAction">
+			<result name="success">/WEB-INF/view/financial-details/financial-details.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		
+		<!-- 我要理财列表  条件查询用-->
+		<action name="financing_list" class="com.cn.pxzd.financing.action.FinancingSkip">
+			<result name="antrum">/WEB-INF/view/financing/antrum/antrum.jsp</result>
+			<result name="machine">/WEB-INF/view/financing/machine/machine.jsp</result>
+			<result name="arranged">/WEB-INF/view/financing/arranged/arranged.jsp</result>
+			<result name="metals">/WEB-INF/view/financing/metals/metals.jsp</result>
+			<result name="success"></result>
+		</action>
+		
+		<!--  支付跳转页 -->
+		<action name="myaccountPay" class="com.cn.pxzd.financing.action.MyaccountPayAction">
+			<result name="success">/WEB-INF/view/myaccount-pay/myaccount-pay.jsp</result>
+			<result name="investOvertop">../index.do</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 薪金宝落地页 -->
+		<action name="salary">
+			<result name="success">/WEB-INF/view/salary/salary.jsp</result>
+		</action>
+	</package>
+</struts>

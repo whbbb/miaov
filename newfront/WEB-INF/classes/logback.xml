@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+	<define name="logs.home" class="utils.init.logback.ProjectHomeLogbackPropertyDefiner" scope="context" />
+	
+	<property file="${logs.home}/../conf/system.properties" />
+	
+	<if condition='isDefined("logs.home")'>
+		<then>
+			<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+				<encoder>
+					<charset>UTF-8</charset>
+					<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+				</encoder>
+			</appender>
+			<appender name="DayFile"
+				class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+					<fileNamePattern>${logs.home}/logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+					<maxHistory>30</maxHistory>
+				</rollingPolicy>
+				<encoder>
+					<charset>UTF-8</charset>
+					<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+				</encoder>
+			</appender>
+
+			<root level="${logback.default.level}">
+				<appender-ref ref="STDOUT" />
+				<appender-ref ref="DayFile" />
+			</root>
+		</then>
+		<else>
+			<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+				<encoder>
+					<charset>UTF-8</charset>
+					<pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+				</encoder>
+			</appender>
+			<root>
+				<appender-ref ref="console" />
+			</root>
+		</else>
+	</if>
+	
+	<logger name="freemarker" level="${logback.frameworks.level}"/>
+	<logger name="com.opensymphony.xwork2" level="${logback.frameworks.level}"/>
+	<logger name="org.apache.struts2.components.template.FreemarkerTemplateEngine" level="${logback.frameworks.level}"/>
+	<logger name="org.apache.struts2.components.UIBean" level="${logback.frameworks.level}"/>
+	<logger name="org.apache.struts2.util.fs.JBossFileManager" level="${logback.frameworks.level}"/>
+	<logger name="org.apache.struts2.interceptor.CookieInterceptor" level="${logback.frameworks.level}"/>
+	
+	<!-- Suppress uninteresting logging from Spring -->
+    <logger name="org.springframework" level="${logback.frameworks.level}"/>
+    <logger name="org.springframework.beans.factory.config.PropertiesFactoryBean" level="${logback.frameworks.level}"/>
+    <logger name="org.springframework.beans.TypeConverterDelegate" level="${logback.frameworks.level}"/>
+    <logger name="org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl" level="${logback.frameworks.level}"/>
+    <!-- So that we don't get log messages for 404 Not Found conditions -->
+    <logger name="org.springframework.web.servlet.PageNotFound" level="${logback.frameworks.level}"/>
+	
+    <logger name="org.hibernate.type.BasicTypeRegistry" level="${logback.frameworks.level}"/>
+</configuration>

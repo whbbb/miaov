@@ -1,0 +1,431 @@
+
+  //引入公共样式方法
+  @import url( "./commonFun" );
+
+  .result_tips();
+
+  .header(){
+    #J_header{
+      position: relative;
+      .maxCenter();
+      min-width: @container-width;
+      height: 140px;
+      z-index: 100;
+
+      .header{
+        height: 45px;
+        .maxCenter();
+        min-width: @container-width;
+        background-color: #333333;
+        border-top: 2px solid @theme-color;
+        color: #FFFFFF;
+
+        table{
+          .center();
+          text-align: center;
+          width: @container-width;
+          height: 45px;
+          border-collapse:collapse;
+          padding: 0px;
+          font-size: 14px;
+
+          tr{
+            td{
+              padding: 0px;
+            }
+
+            td#J_left{
+              text-align: left;
+              padding-left: @container-padding;
+
+              div{
+                float: left;
+              }
+
+              a{
+                float: left;
+                margin-left: 14px;
+
+                img{
+                  border: none;
+                  display: block;
+                }
+
+                img.color{
+                  border: none;
+                  display: none;
+                }
+
+                img.tip{
+                  display: none;
+                  position: absolute;
+                  margin-left: -43px;
+                  margin-top: 8px;
+                }
+
+                img.tip.qq{
+                  margin-left: -47px;
+                }
+
+                &:hover{
+                  img{
+                    display: none;
+                  }
+
+                  img.color{
+                    display: block;
+                  }
+
+                  img.tip{
+                    display: block;
+                  }
+                }
+              }
+
+              a.qq{
+                div{
+                  height: 91px;
+                }
+              }
+            }
+
+            td#J_right{
+              text-align: right;
+              padding-right: @container-padding;
+
+              div#J_help, div#J_login, div#J_user{
+                float: right;
+                color: #FFFFFF;
+                line-height: 44px;
+                height: 44px;
+              }
+
+              #J_help{
+                margin-left: 8px;
+                margin-right: 3px;
+
+                a{
+                  color: #FFFFFF;
+                  margin-left: 14px;
+
+                  &:hover{
+                    color: #DDDDDD;
+                  }
+                }
+              }
+
+              #J_login{
+                //display: none;
+
+                a{
+                  color: #FFFFFF;
+                  margin-left: 14px;
+
+                  &:hover{
+                    color: #DDDDDD;
+                  }
+                }
+              }
+
+              #J_user{
+                //display: none;
+                *margin-right: -50px;
+
+                table{
+                  width: auto;
+                }
+                .flow-table{
+                  vertical-align: top;
+                }
+
+                div.user-menu{
+                  text-align: center;
+                  height: 43px;
+                  overflow: hidden;
+                  margin-left: 6px;
+                  color: #FFFFFF;
+                  background-color: #333333;
+                  cursor: pointer;
+
+                  border-bottom: 1px solid #333333;
+                  border-left: 1px solid #333333;
+                  border-right: 1px solid #333333;
+
+                  table#J_user_table{
+                    width: 100%;
+                    height: 45px * 3;
+                    border-collapse: collapse;
+                    padding: 0px;
+
+                    td.first-td{
+                      padding-left: 12px;
+                      padding-right: 20px;
+
+                      b{
+                        white-space: nowrap;
+                      }
+                    }
+
+                    td.link-td{
+                      text-align: left;
+                      height: 45px;
+
+                      a {
+                        display: block;
+                        padding-left: 12px;
+                        padding-right: 20px;
+                        height: 45px;
+                        width: auto;
+                        color: #9F9F9F;
+                        font-size: 12px;
+
+                        &:hover{
+                          background-color: #F6F6F6;
+                        }
+
+                        &:active {
+                          color: @theme-color;
+                        }
+                      }
+                    }
+                  }
+
+                  div{
+                    display: block;
+                    width: 6px;
+                    height: 5px;
+                    line-height: 5px;
+                    margin-top: -24px;
+                    margin-left: 80px;
+                    *margin-top: 5px;
+                    *margin-left: 0px;
+                    position: absolute;
+                  }
+
+                  .white{
+                    display: block;
+                  }
+
+                  .black{
+                    display: none;
+                  }
+
+                  &:hover{
+                    color: #000000;
+                    background-color: #FFFFFF;
+                    height: 45px * 3;
+                    border-color: #DDDDDD;
+                    overflow: visible;
+                    position: relative;
+                    z-index: 2;
+
+                    .black{
+                      display: block;
+                    }
+
+                    .white{
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .nav{
+        width: 100%;
+        height: 93px;
+        line-height: 93px;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #CCCCCC;
+
+        .nav-container{
+          .center();
+          width: @container-width;
+
+          .logo{
+            float: left;
+            width: 395px;
+            padding-left: 10px;
+
+            a{
+              display: block;
+              width: 395px;
+              height: 50px;
+              background-position: center center;
+              background-repeat: no-repeat;
+              margin-top: 22px;
+            }
+          }
+
+          .inner-nav{
+            float: right;
+            height: 93px;
+            position: relative;
+
+            a{
+              float: left;
+              text-align: center;
+              width: 100px;
+              height: 93px;
+              font-size: 18px;
+              color: #333333;
+              background-color: #FFFFFF;
+            }
+
+            a.last{
+              margin-right: 0px;
+            }
+
+            span{
+              width: 100px;
+              height: 3px;
+              display: none;
+              background-color: @theme-color;
+              position: absolute;
+              margin-left: 0px;
+              *margin-left: -500px;
+              margin-top: 90px;
+            }
+          }
+        }
+      }
+
+      #J_user_login_container{
+
+        #J_login_frame{
+          .center();
+          width: 940px;
+          height: 408px;
+          background-color: #FFFFFF;
+          background-repeat: no-repeat;
+          background-position: left center;
+          cursor: default;
+
+          #J_login_panel{
+            float: right;
+            width: 244px;
+            height: 248px;
+
+            display: none;
+
+            padding: 64px;
+            *padding-bottom: 44px;
+
+            #J_user_login_close{
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              top: 14px;
+              left: 910px;
+              cursor: pointer;
+            }
+
+            input[ type="text" ], input[ type="password" ]{
+              width: 172px;
+              height: 40px;
+              line-height: 40px;
+              padding-left: 70px;
+              border-style: solid;
+              border-width: 1px;
+              color: #D2D2D2;
+
+              &:focus{
+                color: #333333;
+              }
+            }
+
+            img{
+              position: relative;
+              top: -32px;
+              *top: -34px;
+              left: -84px;
+            }
+
+            .code-container{
+              width: 253px;
+              margin-top: -26px;
+              *margin-top: -12px;
+              text-align: left;
+
+              input[ type="text" ]{
+                width: 110px;
+                padding: 0px;
+                text-align: center;
+              }
+
+              img{
+                width: 85px;
+                height: 40px;
+                border: 1px @gray-color solid;
+                position: relative;
+                top: 17px;
+                top: 16px\9;
+                *top: 6px;
+                left: 0px;
+              }
+
+              a{
+                vertical-align: baseline;
+                .inline-block();
+                height: 40px;
+                line-height: 40px;
+                margin-left: 5px;
+                *position: relative;
+                *top: -13px;
+              }
+            }
+
+            .forget{
+              margin-top: 10px;
+              height: 38px;
+              text-align: left;
+              vertical-align: middle;
+              width: 250px;
+
+              p{
+                .inline-block();
+                font-size: 12px;
+                color: #333333;
+                margin-left: 2px;
+                height: 17px;
+                line-height: 17px;
+              }
+
+              a{
+                margin-left: 100px;
+                font-size: 12px;
+                vertical-align: middle;
+                color: @theme-color;
+              }
+            }
+
+            .register{
+              span{
+                font-size: 12px;
+              }
+            }
+
+            #J_user_login_button{
+              width: 252px;
+              height: 40px;
+              line-height: 40px;
+              background-color: @theme-color;
+              color: #FFFFFF;
+              border: none;
+              font-size: 18px;
+              font-family: "微软雅黑";
+              margin-top: 36px;
+              margin-bottom: 20px;
+
+              &:hover{
+                background-color: lighten( @theme-color, 10% );
+              }
+            }
+          }
+        }
+      }
+    }
+  }

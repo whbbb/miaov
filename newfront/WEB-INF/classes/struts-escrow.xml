@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="aescrowPackage" namespace="/escrow" extends="common-config">
+		<!-- 实名认证回调 -->
+		<action name="realNameCallBack" class="com.cn.pxzd.escrow.action.RealNameCallBackAction">
+			<result name="success" type="redirect">../escrow/returnSuccess.do</result>
+			<result name="error" type="redirect">../escrow/returnFail.do</result> 
+		</action>
+		<!-- 实名认证异步回调 -->
+		<action name="realNameNoticeCallBack" class="com.cn.pxzd.escrow.action.RealNameNoticeCallBackAction">
+		</action>
+		<!-- 网银充值 -->
+		<action name="rechargeCallBack" class="com.cn.pxzd.escrow.action.RechargeCallBackAction">
+			<result name="success" type="redirect">../escrow/returnSuccess.do</result>
+			<result name="error" type="redirect">../escrow/returnFail.do</result> 
+		</action>
+		<!-- 一键充值 -->
+		<action name="directRechargeCallBack" class="com.cn.pxzd.escrow.action.DirectRechargeCallBackAction">
+			<result name="success" type="redirect">../escrow/returnSuccess.do</result>
+			<result name="error" type="redirect">../escrow/returnFail.do</result> 
+		</action>
+		<!-- 网银充值异步回调 -->
+		<action name="rechargeNoticeCallBack" class="com.cn.pxzd.escrow.action.RechargeNoticeCallBackAction">
+		</action>
+		<!-- 一键充值异步回调 -->
+		<action name="directrechargeNoticeCallBack" class="com.cn.pxzd.escrow.action.DirectRechargeNoticeCallBackAction">
+		</action>
+		<!-- 用户投标(散标) -->
+		<action name="bidCallBack" class="com.cn.pxzd.escrow.action.BidCallBackAction">
+			<result name="success" type="redirect">../escrow/returnSuccess.do</result>
+			<result name="error" type="redirect">../escrow/returnFail.do</result>
+		</action>
+		<!-- 用户投标(散标)异步回调 -->
+		<action name="bidNoticeCallBack" class="com.cn.pxzd.escrow.action.BidCallNoticeBackAction">
+		</action>
+		<!-- 用户投标(精选) -->
+		<action name="financionCallBack" class="com.cn.pxzd.escrow.action.FinancionCallBackAction">
+			<result name="success" type="redirect">../escrow/returnSuccess.do</result>
+			<result name="error" type="redirect">../escrow/returnFail.do</result>
+		</action>
+		<!-- 用户投标(精选)异步回调 -->
+		<action name="financionNoticeCallBack" class="com.cn.pxzd.escrow.action.FinancionNoticeCallBackAction">
+		</action>
+		<!-- 用户提现 -->
+		<action name="withdrawCallBack" class="com.cn.pxzd.escrow.action.WithdrawCallBackAction">
+			<result name="success" type="redirect">../escrow/returnSuccess.do</result>
+			<result name="error" type="redirect">../escrow/returnFail.do</result>
+		</action>
+		<!-- 用户提现异步回调 -->
+		<action name="withdrawNoticeCallBack" class="com.cn.pxzd.escrow.action.WithdrawNoticeCallBackAction">
+		</action>
+		<!-- 用户金额查询 -->
+		<action name="searchAcountMoneyCallBack" class="com.cn.pxzd.escrow.action.SearchAcountMoneyCallBackAction">
+		</action>
+		<!-- 账户还款 -->
+		<action name="refundCallBack" class="com.cn.pxzd.escrow.action.RefundCallBackAction">
+			<result name="success" type="redirect">../escrow/returnSuccess.do</result>
+			<result name="error" type="redirect">../escrow/returnFail.do</result>
+		</action>
+		<!-- 账户还款异步回调 -->
+		<action name="refundNoticeCallBack" class="com.cn.pxzd.escrow.action.RefundNoticeCallBackAction">
+		
+		</action>
+		
+		<!-- 返回成功 -->
+		<action name="returnSuccess">
+			<result name="success">/WEB-INF/view/return-success/return-success.jsp</result>
+		</action>
+		<!-- 返回失败 -->
+		<action name="returnFail">
+			<result name="success">/WEB-INF/view/return-fail/return-fail.jsp</result>
+		</action>
+		<!-- 新开窗口从后台取值传往丰付-实名认证 -->
+		<action name="toRegister" class="com.cn.pxzd.escrow.action.ToRegisterAction">
+			<result name="success">/WEB-INF/view/escrow/toRegister.jsp</result>
+			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+		</action>
+		<!-- 新开窗口从后台取值传往丰付-充值 -->
+ 		<action name="toRecharge" class="com.cn.pxzd.escrow.action.ToRechargeAction">
+ 			<result name="success">/WEB-INF/view/escrow/toRecharge.jsp</result>
+ 			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+ 		</action>
+ 		<!-- 新开窗口从后台取值传往丰付-提现 -->
+ 		<action name="toWithdraw" class="com.cn.pxzd.escrow.action.ToWithdrawAction">
+ 			<result name="success">/WEB-INF/view/escrow/toWithdraw.jsp</result>
+ 			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+ 		</action>
+ 		<!-- 新开窗口从后台取值传往丰付-投资支付 -->
+<!--  		<action name="toManualBid" class="com.cn.pxzd.escrow.action.ToManualBidAction"> -->
+<!--  			<result name="success">/WEB-INF/view/escrow/toManualBid.jsp</result> -->
+<!--  			<result name="login" type="redirect">../product.do?loginFlag=2</result> -->
+<!--  		</action> -->
+ 		<!-- 新开窗口从后台取值传往丰付-还款 -->
+ 		<action name="toRepayDetail" class="com.cn.pxzd.escrow.action.ToRepayDetailAction">
+ 			<result name="success">/WEB-INF/view/escrow/toRepayDetail.jsp</result>
+ 			<result name="login" type="redirect">../index.do?loginFlag=2</result>
+ 		</action>
+	</package>
+</struts>

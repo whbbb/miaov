@@ -1,0 +1,25 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+    <script type="text/javascript" src="../../../js/index/history/history.js"></script>
+
+    <div class="history">
+        <div class="title">优金客历程</div>
+        <div class="process" style="background-image: url( '../../../images/index/history/sp-line.png' )">
+            <span id="J_born">
+                <p>2015年3月17日</p>
+                <img src="../../../images/index/history/vertical-line.png" unselectable="on" />
+                <div>很多我们一辈子都不会忘记的事情，就在我们念念不忘的日子里，这一天，<b>优金客诞生了！</b></div>
+            </span>
+            <span id="J_volume">
+                <p>2015年4月</p>
+                <img src="../../../images/index/history/vertical-line.png" unselectable="on" />
+                <div>上线首月注册用户669名，交易量突破<b>980,000</b>元不积跬步，无以至千里；不积小流，无以成江海！</div>
+            </span>
+            <span id="J_future">
+                <p>2015年~未来</p>
+                <img src="../../../images/index/history/vertical-line.png" unselectable="on" />
+                <div>关于未来，太多的事，您的支持，是我们的动力。晨光熹微，或是夕阳西下，我就在这里，等待您的加入···</div>
+            </span>
+            <div class="year">2015</div>
+        </div>
+    </div>

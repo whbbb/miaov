@@ -1,0 +1,324 @@
+.detailtop(){
+  #J_container{
+    .maxCenter();
+    background:#fafafa;
+    padding:20px 0 72px;
+  }
+  #J_item{
+    width:1000px;
+    *height:1000px;
+    background:#FFF;
+    margin:0 auto;
+    #J_detailtop{
+      width:1000px;
+      height:400px;
+      margin-top:50px;
+      padding-top:24px;
+      border-top:3px solid #33CC99;
+      .datum{
+        background:#fafafa;
+        width:950px;
+        height:235px;
+        margin:0 25px 40px;
+        position:relative;
+        .head-portrait{
+          width:46px;
+          height:46px;
+          float:left;
+          margin:16px 15px 173px 30px;
+          background:url("../../images/financial-details/fin-head-portrait.png") no-repeat;
+          cursor:pointer;
+        }
+        .substance{
+          width:538px;
+          height:235px;
+          float:left;
+          border-right:2px solid #fdfdfd;
+          .sub-fin{
+            width:385px;
+            height:21px;
+            margin-top:32px;
+            margin-bottom:23px;
+            font-size:18px;
+            text-align:left;
+            *margin-left:-152px;
+            .sub-rank{
+              display:inline-block;
+              width:21px;
+              height:21px;
+              margin-bottom:-5px;
+              margin-left:5px;
+            }
+            .sr1{
+              background:url("../../images/financial-details/fin-sub-rank.png")  0 0 no-repeat;
+            }
+            .sr2{
+              background:url("../../images/financial-details/fin-sub-rank.png")  0 -22px no-repeat;
+            }
+            .sr3{
+              background:url("../../images/financial-details/fin-sub-rank.png")  0 -44px no-repeat;
+            }
+            .sr4{
+              background:url("../../images/financial-details/fin-sub-rank.png")  0 -66px no-repeat;
+            }
+            .sr5{
+              background:url("../../images/financial-details/fin-sub-rank.png") 0 -88px no-repeat;
+            }
+          }
+          .sub-num{
+            width:578px;
+            height:50px;
+            margin-bottom:25px;
+            font-size:12px;
+            margin-left:-30px;
+            li{
+              float:left;
+              width:134px;
+              line-height:25px;
+              *line-height:26px;
+              .annotate{
+                height:25px;
+                line-height:25px;
+              }
+              .midd{
+                font-size:18px;
+              }
+              .sun-big{
+                font-size:32px;
+                color:#33CB99;
+                margin-top:-10px;
+                *margin-bottom:5px;
+              }
+              .sub-sm{
+                font-size:24px;
+                color:#33CB99;
+              }
+            }
+            .sum-first{
+              margin-top:-5px;
+            }
+          }
+          .sub-underscore{
+            width:536px;
+            height:15px;
+            font-size:12px;
+            margin-bottom:25px;
+            .su-left{
+              float:left;
+              width:250px;
+              text-align:left;
+              *margin-left:-1px;
+            }
+            .su-right{
+              float:left;
+              width:230px;
+              text-align:left;
+              .sur-grd{
+                display:inline-block;
+                width:12px;
+                height:14px;
+                margin:0 12px -2px;
+                *margin:0 12px 2px;
+                background:url( "../../images/financial-details/fin-pic.png")  0 0  no-repeat;
+              }
+              .sur-db{
+                display:inline-block;
+                width:11px;
+                height:13px;
+                margin:0 10px;
+                *margin:0 10px 4px;
+                background:url("../../images/financial-details/fin-pic.png")  -12px 0px  no-repeat;
+              }
+              .sur-dy{
+                display:inline-block;
+                width:20px;
+                height:14px;
+                margin:0 10px -2px;
+                *margin:0 10px 2px;
+                background:url("../../images/financial-details/fin-pic.png")  -38px 0px  no-repeat;
+              }
+            }
+          }
+          .sub-date{
+            width:535px;
+            height:20px;
+            text-align:left;
+            font-size:12px;
+            *margin-left:-2px;
+            li{
+              float:left;
+              width:265px;
+            }
+          }
+        }
+        .investment{
+          display:none;
+          font-size:14px;
+          width:252px;
+          height:178px;
+          float:left;
+          margin:27px  14px 30px 39px;
+          .inv-balance{
+            width:250px;
+            height:80px;
+            text-align:left;
+            *margin-left:-1px;
+            li{
+              height:26px;
+            }
+          }
+          .inv-input-box{
+            width:249px;
+            height:38px;
+            position:relative;
+            margin-bottom:16px;
+            margin-top:2px;
+            input{
+              width:200px;
+              height:36px;
+              background:#FFF;
+              border:1px solid #33CB99;
+              padding:0 39px 0 10px;
+              line-height:38px;
+            }
+            .inv-yuan{
+              position:absolute;
+              top:0;
+              right:5px;
+              line-height:38px;
+            }
+          }
+          .inv-button{
+            width:250px;
+            height:40px;
+          }
+        }
+
+        /* 未登录是 右侧显示的*/
+        .not-remind{
+          display:none;
+          width:252px;
+          height:178px;
+          float:left;
+          margin:27px  14px 30px 39px;
+          .remind{
+            height:70px;
+            padding-top:30px;
+            background:url("../../images/financial-details/top-unlogin.png") 0 20px no-repeat;
+            .remind-p{
+              line-height:30px;
+              font-size:20px;
+              text-align:left;
+              padding-left:80px;
+            }
+            .min-font{
+              font-size:14px;
+              color:#a0a0a0;
+            }
+          }
+          .remind-but{
+            padding-top:30px;
+            width:250px;
+            height:40px;
+            font-size:14px;
+            .ashore{
+              width:250px;
+              height:40px;
+              &:hover{
+                background:#2Cb386;
+              }
+            }
+          }
+        }
+
+        /*章*/
+        .chapter{
+          width:252px;
+          height:178px;
+          float:left;
+          margin:27px  14px 30px 39px;
+          overflow:hidden;
+          .chapter-pic{
+            width:100%;
+            height:100%;
+          }
+          .audit{
+            background:url("../../images/financial-details/audit.png")  center center no-repeat;
+          }
+          .intact{
+            background:url("../../images/financial-details/intact.png")  center center no-repeat;
+          }
+          .repayment{
+            background:url("../../images/financial-details/repayment.png")  center center no-repeat;
+          }
+          .liu-cease{
+            background:url("../../images/financial-details/liu-cease.png")  center center no-repeat;
+          }
+          .top-limit{
+            background:url("../../images/financial-details/top-limit.png")  center center no-repeat;
+          }
+          .dis-none{
+            display:none;
+          }
+          .current-show{
+            display:block;
+          }
+        }
+        .prompt{
+          /*width:198px;*/
+          height:280px;
+          position:absolute;
+          bottom:0;
+          left:90px;
+          background:#FFF;
+          border:1px solid #CCC;
+          display:none;
+          padding-right:50px;
+          .san{
+            display:inline-block;
+            width:9px;
+            height:11px;
+            background:url("../../images/financial-details/fin-san.png") no-repeat ;
+            position:absolute;
+            top:80px;
+            left:-9px;
+          }
+          .pormpt-credit{
+            margin:27px 0 15px 23px;
+            height:16px;
+            font-size:14px;
+            color:#33CB99;
+            text-align:left;
+          }
+          .yours{
+            text-align:left;
+            margin:0 0 0 23px;
+            font-size:12px;
+            line-height:20px;
+            li{
+              height:20px;
+            }
+          }
+        }
+      }
+      .loan-depict{
+        width:950px;
+        height:100px;
+        margin:0 25px 0;
+        text-align:left;
+        font-size:14px;
+        h3{
+          height:20px;
+          line-height:22px;
+          font-weight:normal;
+          font-size:20px;
+          margin-bottom:20px;
+        }
+        p{
+          line-height:26px;
+          text-indent:2em;
+        }
+      }
+    }
+  }
+}
